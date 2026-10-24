@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedback-triage-ai"
+version = "0.1.0"
+description = "Local customer-feedback analysis internship proof of concept"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.7,<3",
+    "transformers>=4.57,<5",
+    "datasets>=3,<5",
+    "accelerate>=1,<2",
+    "scikit-learn>=1.6,<2",
+    "streamlit>=1.45,<2",
+    "pydantic>=2.10,<3",
+    "python-dotenv>=1,<2",
+    "matplotlib>=3.10,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools]
+packages = ["feedback_analyzer", "scripts"]
+
+[tool.setuptools.package-dir]
+feedback_analyzer = "src/feedback_analyzer"
+scripts = "scripts"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

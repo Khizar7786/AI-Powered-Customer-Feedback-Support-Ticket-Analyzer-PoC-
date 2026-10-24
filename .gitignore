@@ -1,0 +1,45 @@
+# Python environment, generated packaging, and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local credentials and configuration (only placeholders belong in Git)
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Downloaded weights/caches and machine-specific tools
+models/
+.cache/
+.huggingface/
+.torch/
+.idea/
+.vscode/
+
+# Local database sidecars; keep required sample outputs reviewable later
+*.db-journal
+*.db-shm
+*.db-wal
+*.log
+Thumbs.db
+.DS_Store
+
+# Local implementation plans and supplied assessment; preserve on this machine
+/AGENTS.md
+/project.md
+/BUILD_STEPS.md
+/docs/progress.md
+/docs/Internship_Technical_Assessment_AI_Analyzer.docx
+/.agents/
+/.codex/
+
+# Machine-specific setup snapshots; retain future evaluation/sample deliverables
+/reports/environment*.json
