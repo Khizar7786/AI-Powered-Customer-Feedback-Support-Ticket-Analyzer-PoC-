@@ -76,6 +76,8 @@ The 12-record sample includes all three exact assessment messages and deliberate
 
 ## Configuration
 
+Category-dataset audit/review/splitting uses a separate command and schema; see [data-review.md](data-review.md). `python -m scripts.prepare_data --audit-only` creates the review workflow. The default `python -m scripts.prepare_data` reads `data/reviewed_messages.csv` and refuses to freeze splits while review or conflict resolution is pending. It does not train or alter the Streamlit upload path.
+
 The current app needs no `.env` file, credentials, or downloaded weights. When later integration requires configuration, copy the template without overwriting an existing file:
 
 ```powershell

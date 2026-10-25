@@ -2,7 +2,7 @@
 
 A local customer-feedback and support-ticket analyzer being built as an internship proof of concept.
 
-**Current status: Stage 2 implemented.** Upload a tickets CSV or load the included sample, validate it, and inspect candidates, ignored messages, and input errors by source line. Original message text is preserved. Model training/inference, API integration, SQLite storage, and exports are pending; AI analysis stays disabled. The included CSV is an application fixture, not a labeled training dataset or prediction output.
+**Current status: Stage 3 preparation workflow implemented; human dataset review and final splits pending.** Streamlit supports Stage 2 upload/validation/preview with original messages and source-line errors. A separate command audits category data, creates a review copy, and freezes grouped splits only after recorded review and conflict resolution. Model training/inference, API integration, SQLite storage, and exports are pending; AI analysis stays disabled.
 
 ## Run locally
 
@@ -30,9 +30,19 @@ Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message
 
 Tests cover CSV validation and qualification boundaries plus setup and simulated Streamlit sessions, using isolated configuration and mocked devices. Stage 1 also verified tiny GPU/CPU operations and browser startup/reload. These checks do not verify model predictions, API access, training speed, or accuracy. A second fresh-environment installation has not been verified.
 
+## Prepare category data
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.prepare_data --audit-only
+# After your review/corrections and explicit conflict decisions:
+.\.venv\Scripts\python.exe -m scripts.prepare_data
+```
+
+Follow the [data review guide](docs/data-review.md). Raw drafts stay unchanged; the separate review copy remains unreviewed until you review individual rows. Seed 42 balances whole development groups toward 420 train / 90 validation and keeps the 90 test-pool rows held out. Pending review or unresolved overlap prevents final splits. Actual dataset/split hashes, IDs, decisions, and count deviations are recorded; no training or evaluation runs here.
+
 ## Architecture
 
-Reusable Python code lives in `src/feedback_analyzer/`, executable workflows in `scripts/`, and the local interface in `app.py`. The current implementation covers configuration, setup inspection, shared CSV ingestion, and conservative filtering. Validated previews live in session state; ordinary reruns do not revalidate the file.
+Reusable Python code lives in `src/feedback_analyzer/`, workflows in `scripts/`, and the local interface in `app.py`. Application CSV ingestion is separate from labeled-data preparation. Training records project only message text and the category target; metadata stays outside model inputs. Validated UI previews live in session state; ordinary reruns do not revalidate the file.
 
 The planned analysis pipeline uses one fine-tuned local `distilbert/distilbert-base-uncased` classifier for Bug Report, Feature Request, Billing Issue, General Inquiry, Customer Feedback, and Non-Qualifying. Local sentiment inference will reuse `cardiffnlp/twitter-roberta-base-sentiment-latest` without initial training. One configurable GPT/OpenAI or Gemini API provider will generate priority, a grounded product/feature name, and a short reply draft. Pydantic validation, SQLite persistence, and CSV/JSON exports will connect to a shared CLI/Streamlit pipeline in later stages.
 
