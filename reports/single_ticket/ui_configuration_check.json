@@ -1,0 +1,8 @@
+{
+  "verification_kind": "actual local Streamlit AppTest configuration guard; provider method guarded and never called",
+  "complete_button_disabled_without_key": true,
+  "no_fake_live_reply_displayed": true,
+  "provider_calls": 0,
+  "live_api_verified": false,
+  "held_out_intent_test_opened": false
+}

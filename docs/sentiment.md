@@ -17,7 +17,7 @@ The pinned model revision is `3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7`. `SENTIM
 2. Click **Analyze categories**. Blank/exact-greeting ignores, invalid rows and predicted Non-Qualifying messages receive no sentiment.
 3. Click **Analyze sentiment**. Only qualifying category results reach the sentiment model. **CPU** is the default; **Auto** can use CUDA, with visible CPU fallback if CUDA fails.
 
-The category-plus-sentiment table remains **partial analysis**. Priority, product/feature and reply are absent, so **Fully processed stays 0** and full **Analyze tickets** stays disabled. A sentiment failure is an error and retains the category and original message; it never becomes spam or an invented Neutral label.
+The category-plus-sentiment batch table remains **partial analysis**. Priority, product/feature and reply are absent from this batch action, so **Fully processed stays 0** and bulk **Analyze tickets** stays disabled. The separate [Stage 7 single-ticket form](generation.md) adds validated API fields when configuration is ready. A sentiment failure is an error and retains the category and original message; it never becomes spam or an invented Neutral label.
 
 Models are cached separately with `st.cache_resource`, batch size one and a lock for concurrent sessions. Inference uses evaluation mode and no gradients. Results remain in session state: ordinary reruns do not repeat predictions, while **Reanalyze sentiment** explicitly repeats them using the cached model. Changing input, category results, model files or device invalidates stale sentiment results. Startup/validation do not load sentiment weights, download a model or analyze messages.
 

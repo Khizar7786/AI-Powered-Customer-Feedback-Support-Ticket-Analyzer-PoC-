@@ -1,0 +1,44 @@
+{
+  "verified_at_utc": "2026-10-26T06:10:32.573671+00:00",
+  "sdk_version": "2.54.0",
+  "documentation_checked_date": "2026-10-26",
+  "documented_example_model": "gpt-5.4-mini",
+  "model_support": "Responses API and Structured Outputs documented; account access verified by the recorded real integration request",
+  "official_sources": [
+    "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "https://developers.openai.com/api/docs/guides/structured-outputs",
+    "https://developers.openai.com/api/docs/libraries"
+  ],
+  "sdk_default_max_retries_measured": 2,
+  "sdk_default_timeout_measured": {
+    "connect": 5.0,
+    "read": 600,
+    "write": 600,
+    "pool": 600
+  },
+  "application_policy": {
+    "sdk_max_retries": 0,
+    "configured_manual_retries_default": 1,
+    "io_timeout_seconds_default": 20,
+    "connect_timeout_seconds_default": 5,
+    "retryable_statuses": "429 except insufficient_quota; >=500",
+    "bounded_backoff_seconds_max": 2,
+    "timeout_or_connection_auto_retry": false,
+    "output_tokens_default": 600
+  },
+  "mocked_verification": {
+    "full_suite_passed": 318,
+    "full_suite_seconds": 90.62,
+    "real_sdk_parser_test": "httpx.MockTransport; no live API response"
+  },
+  "live_api_verified": true,
+  "live_verified_at_utc": "2026-10-26T07:11:31.927875+00:00",
+  "real_integration": {
+    "source_report": "reports/single_ticket/live_check.json",
+    "streamlit_report": "reports/single_ticket/streamlit_live_check.json",
+    "actual_model": "gpt-5.4-mini",
+    "attempts": 1,
+    "duration_seconds": 6.3170795000041835,
+    "reply_sent": false
+  }
+}

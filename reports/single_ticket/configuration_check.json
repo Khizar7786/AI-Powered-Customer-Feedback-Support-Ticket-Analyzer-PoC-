@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-10-26T07:12:33.649881+00:00",
+  "provider": "openai",
+  "held_out_intent_test_opened": false,
+  "reply_sent": false,
+  "live_api_verified": false,
+  "status": "configuration_present_unverified",
+  "model": "gpt-5.4-mini",
+  "message": "Configuration is present; no API request has been made."
+}

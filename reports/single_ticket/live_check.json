@@ -1,0 +1,59 @@
+{
+  "checked_at_utc": "2026-10-26T07:11:03.006165+00:00",
+  "provider": "openai",
+  "held_out_intent_test_opened": false,
+  "reply_sent": false,
+  "live_api_verified": true,
+  "status": "processed",
+  "model": "gpt-5.4-mini",
+  "message": "Actual local model and OpenAI result; no reply was sent.",
+  "verification_kind": "real_local_models_and_openai",
+  "result": {
+    "ticket": {
+      "ticket_id": "T001",
+      "message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+    },
+    "status": "processed",
+    "category": {
+      "category": "Bug Report",
+      "confidence": 0.5858913064002991,
+      "input_tokens": 23,
+      "used_tokens": 23,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "sentiment": {
+      "sentiment": "Negative",
+      "confidence": 0.8985980749130249,
+      "input_tokens": 22,
+      "used_tokens": 22,
+      "max_length": 512,
+      "truncated": false,
+      "device": "cpu",
+      "model_input": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+    },
+    "generated": {
+      "details": {
+        "priority": "Urgent",
+        "product_feature": "Checkout",
+        "suggested_reply": "Thanks for reporting this. I am sorry the payment page is crashing on Chrome when you click Checkout; could you share any error message or the browser version you are using?"
+      },
+      "receipt": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "response_id": "resp_045425c8aebfd241016adefd213c5087d2901d60a7da33d910",
+        "attempts": 1,
+        "duration_seconds": 6.3170795000041835,
+        "completed_at_utc": "2026-10-26T07:11:31.927875+00:00",
+        "input_tokens": 471,
+        "output_tokens": 58,
+        "prompt_version": "ticket-details-v1"
+      }
+    },
+    "reason": null,
+    "error": null,
+    "reply_is_draft": true
+  },
+  "sdk_version": "2.54.0"
+}

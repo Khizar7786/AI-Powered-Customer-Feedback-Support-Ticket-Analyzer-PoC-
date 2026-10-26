@@ -1,0 +1,15 @@
+{
+  "verification_kind": "actual Streamlit AppTest rendering saved real OpenAI/local-model output",
+  "source_report": "reports/single_ticket/live_check.json",
+  "live_api_verified": true,
+  "complete_action_enabled_with_configuration": true,
+  "actual_reply_displayed": true,
+  "draft_notice_displayed": true,
+  "additional_api_calls_showing_report_or_rerunning": 0,
+  "held_out_intent_test_opened": false,
+  "browser_visual_check": false,
+  "actual_category": "Bug Report",
+  "actual_sentiment": "Negative",
+  "actual_priority": "Urgent",
+  "actual_product_feature": "Checkout"
+}

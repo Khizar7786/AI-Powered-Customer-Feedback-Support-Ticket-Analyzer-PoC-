@@ -1,4 +1,4 @@
-"""Validate tickets and explicitly run partial local category analysis."""
+"""Local previews and explicit single-ticket structured analysis."""
 
 from pathlib import Path
 import hashlib
@@ -10,6 +10,7 @@ from feedback_analyzer.category_analysis import CategoryBatch, analyze_categorie
 from feedback_analyzer.config import CLASSIFIER_MODEL_ID, SENTIMENT_MODEL_ID, load_config
 from feedback_analyzer.readiness import inspect_api_config, inspect_device, inspect_model_files
 from feedback_analyzer.sentiment_analysis import SentimentBatch, analyze_sentiments
+from feedback_analyzer.single_ticket_ui import render_single_ticket
 
 
 @st.cache_resource
@@ -75,7 +76,7 @@ def render_setup() -> None:
     st.subheader("Generative API configuration")
     api = inspect_api_config(config)
     st.write(f"**{api.state}** — {api.detail}")
-    st.write("In Stage 7, choose one provider and configure its model and key in your local .env file. See docs/setup.md.")
+    st.write("OpenAI is the selected provider. Set LLM_PROVIDER=openai, LLM_MODEL and OPENAI_API_KEY in ignored local .env. See docs/generation.md.")
     st.caption("Only configuration presence is inspected. Credentials are never displayed; no API call is made.")
 
 
@@ -331,7 +332,7 @@ def sentiment_action() -> None:
 def main() -> None:
     st.set_page_config(page_title="Feedback Triage AI", page_icon="💬")
     st.title("Feedback Triage AI")
-    st.caption("Customer feedback and support-ticket analysis · Stage 6")
+    st.caption("Customer feedback and support-ticket analysis · Stage 7")
     st.subheader("Upload and preview tickets")
     st.write("Upload a UTF-8 CSV with the columns `ticket_id,message`, or try the included sample.")
     st.caption(
@@ -364,8 +365,9 @@ def main() -> None:
 
     category_action(st.session_state.get("csv_preview"))
     sentiment_action()
+    render_single_ticket(category_classifier, sentiment_classifier)
     st.button("Analyze tickets", key="analyze_tickets", disabled=True)
-    st.caption("Full analysis is not available yet. Category and sentiment analysis are local; no API requests or database writes run.")
+    st.caption("Batch analysis and storage are later stages. Local category/sentiment buttons make no API calls; the separate single-ticket action uses OpenAI.")
     with st.expander("Model and API setup"):
         render_setup()
 
