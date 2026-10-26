@@ -1,0 +1,11 @@
+{
+  "status": "model_unavailable",
+  "message": "The local sentiment checkpoint could not be verified. Run python -m scripts.evaluate_sentiment --download-model or check --model-dir. No development predictions or metrics were created.",
+  "checked_at_utc": "2026-10-26T05:16:46.119383+00:00",
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "held_out_intent_test_opened": false,
+  "sentiment_training_performed": false,
+  "run_directory": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\reports\\sentiment_development\\runs\\20261026T051638041216Z_development_51b96bbc",
+  "reviewed_evaluation": false,
+  "metrics_calculated": false
+}

@@ -1,0 +1,91 @@
+example_id,true_label,predicted_label
+DEV0008,General Inquiry,General Inquiry
+DEV0016,Non-Qualifying,Non-Qualifying
+DEV0017,Non-Qualifying,Non-Qualifying
+DEV0021,Billing Issue,Billing Issue
+DEV0026,Billing Issue,Billing Issue
+DEV0037,Feature Request,Feature Request
+DEV0039,Feature Request,General Inquiry
+DEV0052,Feature Request,Feature Request
+DEV0053,Customer Feedback,Customer Feedback
+DEV0056,General Inquiry,General Inquiry
+DEV0073,Customer Feedback,Customer Feedback
+DEV0078,Customer Feedback,Customer Feedback
+DEV0082,General Inquiry,General Inquiry
+DEV0090,Customer Feedback,Customer Feedback
+DEV0091,Customer Feedback,Customer Feedback
+DEV0093,Non-Qualifying,Bug Report
+DEV0094,General Inquiry,General Inquiry
+DEV0095,Bug Report,Bug Report
+DEV0101,Feature Request,Feature Request
+DEV0108,Non-Qualifying,Non-Qualifying
+DEV0117,Customer Feedback,Customer Feedback
+DEV0119,Bug Report,Bug Report
+DEV0121,Non-Qualifying,Non-Qualifying
+DEV0124,Bug Report,Bug Report
+DEV0134,Feature Request,Feature Request
+DEV0137,Non-Qualifying,Feature Request
+DEV0142,Non-Qualifying,Billing Issue
+DEV0146,Feature Request,Feature Request
+DEV0147,General Inquiry,General Inquiry
+DEV0151,Customer Feedback,Customer Feedback
+DEV0152,General Inquiry,General Inquiry
+DEV0158,Customer Feedback,Customer Feedback
+DEV0179,Billing Issue,Billing Issue
+DEV0185,Feature Request,Feature Request
+DEV0192,Billing Issue,Billing Issue
+DEV0198,Billing Issue,Billing Issue
+DEV0199,General Inquiry,General Inquiry
+DEV0204,Billing Issue,Billing Issue
+DEV0214,General Inquiry,General Inquiry
+DEV0217,Bug Report,Bug Report
+DEV0219,Feature Request,Feature Request
+DEV0228,Feature Request,Feature Request
+DEV0229,Bug Report,Bug Report
+DEV0236,General Inquiry,General Inquiry
+DEV0249,Customer Feedback,Customer Feedback
+DEV0251,General Inquiry,General Inquiry
+DEV0253,Bug Report,Bug Report
+DEV0255,Billing Issue,Billing Issue
+DEV0257,General Inquiry,General Inquiry
+DEV0258,General Inquiry,General Inquiry
+DEV0259,General Inquiry,General Inquiry
+DEV0279,Billing Issue,Billing Issue
+DEV0281,General Inquiry,General Inquiry
+DEV0294,Non-Qualifying,Non-Qualifying
+DEV0310,Billing Issue,Billing Issue
+DEV0311,Customer Feedback,Customer Feedback
+DEV0312,Non-Qualifying,Non-Qualifying
+DEV0320,General Inquiry,General Inquiry
+DEV0322,Feature Request,Feature Request
+DEV0327,Billing Issue,Billing Issue
+DEV0328,General Inquiry,General Inquiry
+DEV0338,Non-Qualifying,Bug Report
+DEV0339,Bug Report,Bug Report
+DEV0342,Customer Feedback,Feature Request
+DEV0343,Feature Request,Feature Request
+DEV0352,Billing Issue,Billing Issue
+DEV0363,Bug Report,Bug Report
+DEV0369,Bug Report,Bug Report
+DEV0386,General Inquiry,General Inquiry
+DEV0398,General Inquiry,General Inquiry
+DEV0403,Non-Qualifying,Non-Qualifying
+DEV0405,Feature Request,Feature Request
+DEV0426,Bug Report,Bug Report
+DEV0435,Non-Qualifying,Non-Qualifying
+DEV0439,Bug Report,Bug Report
+DEV0440,Customer Feedback,Customer Feedback
+DEV0445,Bug Report,Bug Report
+DEV0454,Non-Qualifying,Non-Qualifying
+DEV0456,Non-Qualifying,Non-Qualifying
+DEV0460,Customer Feedback,Customer Feedback
+DEV0465,General Inquiry,General Inquiry
+DEV0473,Feature Request,Feature Request
+DEV0477,Bug Report,Bug Report
+DEV0483,Feature Request,Feature Request
+DEV0485,Bug Report,Bug Report
+DEV0492,Non-Qualifying,Non-Qualifying
+DEV0494,Customer Feedback,Customer Feedback
+DEV0499,Bug Report,Bug Report
+DEV0500,Feature Request,Feature Request
+DEV0505,Customer Feedback,Customer Feedback

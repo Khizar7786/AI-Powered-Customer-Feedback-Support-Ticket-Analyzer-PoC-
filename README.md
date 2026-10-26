@@ -2,7 +2,7 @@
 
 A local customer-feedback and support-ticket analyzer being built as an internship proof of concept.
 
-**Current status: Stage 3 preparation workflow implemented; human dataset review and final splits pending.** Streamlit supports Stage 2 upload/validation/preview with original messages and source-line errors. A separate command audits category data, creates a review copy, and freezes grouped splits only after recorded review and conflict resolution. Model training/inference, API integration, SQLite storage, and exports are pending; AI analysis stays disabled.
+**Current status: Stage 6 local category and sentiment inference work in Streamlit.** Validate a CSV, analyze categories, then explicitly analyze sentiment for qualifying tickets. Results remain partial while priority, product/feature and reply are absent. Full analysis, API, SQLite and exports remain pending. Category validation scored **0.9305 macro-F1 / 93.33% accuracy** on synthetic, assistant-reviewed data. Sentiment uses existing Cardiff weights without training; independent reviewed sentiment metrics await your examples. Held-out intent-test content stayed unopened during Stages 4–6.
 
 ## Run locally
 
@@ -18,7 +18,9 @@ py -3.12 -m venv .venv
 
 Open `http://127.0.0.1:8501`. No API key or model download is needed for the current setup page. [Setup instructions](docs/setup.md) cover the CPU alternative, the tested dependency export, configuration, and environment checks.
 
-Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message` and click **Validate CSV**. The sample deliberately includes invalid records: expect **6 candidates, 2 ignored, and 4 input errors**. Fix reported rows in the source file and upload again. Blank messages and exact `hi`/`hello`/`hey` greetings are ignored; longer greetings, short complaints, and messages containing URLs remain candidates for later classification. A candidate is not a processed result.
+Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message` and click **Validate CSV**. The sample deliberately includes invalid records: expect **6 candidates, 2 ignored, and 4 input errors**. Then click **Analyze categories**: the real saved model produced **5 partial results, 3 ignored, 4 errors and 0 fully processed** on CPU and CUDA. Original text and truncation flags remain visible. Low confidence alone never means spam. The [category inference guide](docs/intent-inference.md) covers CPU fallback, caching, missing-model guidance and actual results.
+
+Then click **Analyze sentiment** (CPU by default). Ignored/invalid rows receive no sentiment. Local models and session results are cached; ordinary reruns do not repeat inference. Full **Analyze tickets** remains disabled until later fields are implemented.
 
 ## Verify
 
@@ -28,7 +30,7 @@ Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-Tests cover CSV validation and qualification boundaries plus setup and simulated Streamlit sessions, using isolated configuration and mocked devices. Stage 1 also verified tiny GPU/CPU operations and browser startup/reload. These checks do not verify model predictions, API access, training speed, or accuracy. A second fresh-environment installation has not been verified.
+The full suite passes **258 tests**, including explicitly mocked inference/UI failures and cache/review boundaries. Separate real category training/reload, CPU/CUDA category inference, CPU sentiment development inference and actual-model Streamlit AppTest checks passed. Live API access, reviewed sentiment accuracy, held-out intent accuracy, recent browser visual checks and a second fresh-environment installation remain unverified. See the stage guides for measured evidence.
 
 ## Prepare category data
 
@@ -38,12 +40,34 @@ Tests cover CSV validation and qualification boundaries plus setup and simulated
 .\.venv\Scripts\python.exe -m scripts.prepare_data
 ```
 
-Follow the [data review guide](docs/data-review.md). Raw drafts stay unchanged; the separate review copy remains unreviewed until you review individual rows. Seed 42 balances whole development groups toward 420 train / 90 validation and keeps the 90 test-pool rows held out. Pending review or unresolved overlap prevents final splits. Actual dataset/split hashes, IDs, decisions, and count deviations are recorded; no training or evaluation runs here.
+Follow the [data review guide](docs/data-review.md). Raw drafts stay unchanged; the command does not approve labels itself. For the current local corpus, the user explicitly delegated review to the assistant: 24 labels were corrected and 67 flagged test candidates were independently reauthored and checked. Seed 42 keeps whole development groups together and all 90 test-pool IDs held out. Actual hashes, IDs, decisions, review origin, and class-count changes are recorded. Data/review artifacts remain local; this preparation command does not train.
+
+## Train the classifier
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.train_intent --smoke
+.\.venv\Scripts\python.exe -m scripts.train_intent
+.\.venv\Scripts\python.exe -m scripts.train_intent --verify-only
+```
+
+The [training guide](docs/training.md) explains prerequisites, pinned reproduction, memory/CPU options, concepts and artifact transfer. Training refuses to overwrite existing run directories. The best model/tokenizer/labels are in `models/ticket_classifier`; actual configuration, duration, history, validation metrics, curves and reload evidence are in `reports/intent_training`. Weights and caches are excluded from Git. Validation scores on this small synthetic corpus do not establish real-customer accuracy.
+
+## Sentiment setup and evaluation
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --download-model
+.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --development --output-dir reports/sentiment_development
+.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment
+# After you supply and check your independently written labels:
+.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --reviewed
+```
+
+Fill the header-only `data/sentiment_eval.csv` with `message,expected_sentiment`, about 30 independent messages/~10 per sentiment. No human labels are supplied for you. The [sentiment guide](docs/sentiment.md) explains review confirmation, source-row validation and saved metrics/errors. Pending data produces no accuracy claims. Actual assessment checks returned T001 Negative, T002 Positive; ignored T003 was skipped. The Twitter-domain model may behave differently on other support tickets, and no sample-specific label rules are used.
 
 ## Architecture
 
-Reusable Python code lives in `src/feedback_analyzer/`, workflows in `scripts/`, and the local interface in `app.py`. Application CSV ingestion is separate from labeled-data preparation. Training records project only message text and the category target; metadata stays outside model inputs. Validated UI previews live in session state; ordinary reruns do not revalidate the file.
+Reusable Python code lives in `src/feedback_analyzer/`, workflows in `scripts/`, and the local interface in `app.py`. Application CSV ingestion is separate from labeled-data preparation. Training uses only message text and category targets. Shared category analysis serves the UI and Python callers. The model is resource-cached, and previews/results live in session state; ordinary reruns do not repeat inference. Labels come from saved configuration, and loading never downloads a fallback model.
 
-The planned analysis pipeline uses one fine-tuned local `distilbert/distilbert-base-uncased` classifier for Bug Report, Feature Request, Billing Issue, General Inquiry, Customer Feedback, and Non-Qualifying. Local sentiment inference will reuse `cardiffnlp/twitter-roberta-base-sentiment-latest` without initial training. One configurable GPT/OpenAI or Gemini API provider will generate priority, a grounded product/feature name, and a short reply draft. Pydantic validation, SQLite persistence, and CSV/JSON exports will connect to a shared CLI/Streamlit pipeline in later stages.
+The local pipeline uses one fine-tuned `distilbert/distilbert-base-uncased` category classifier and the existing `cardiffnlp/twitter-roberta-base-sentiment-latest` sentiment model. Only messages and targets train the classifier; metadata stays outside features. One configurable GPT/OpenAI or Gemini API provider will later generate priority, a grounded product/feature name and a reply draft. Pydantic validation, SQLite persistence and CSV/JSON exports will connect to the shared pipeline in later stages.
 
 Source, tests, dependency files, and setup documentation are included. Credentials, local environments, caches, downloaded model weights, and machine-specific diagnostic reports stay outside Git. Actual sample SQLite/CSV outputs will be added after the analysis pipeline works.

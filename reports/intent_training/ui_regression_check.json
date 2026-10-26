@@ -1,0 +1,12 @@
+{
+  "method": "Streamlit AppTest with actual local checkpoint file detection; no model weights loaded",
+  "sample_counts": {
+    "Rows read": "12",
+    "Candidates": "6",
+    "Ignored": "2",
+    "Input errors": "4"
+  },
+  "rerun_preserved_preview": true,
+  "analysis_disabled": true,
+  "held_out_test_opened": false
+}

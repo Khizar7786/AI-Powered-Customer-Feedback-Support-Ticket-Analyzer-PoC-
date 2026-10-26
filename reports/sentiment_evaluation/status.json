@@ -1,0 +1,21 @@
+{
+  "status": "pending_reviewed_data",
+  "message": "Supply your independently written and labeled messages in data/sentiment_eval.csv, then run with --reviewed after checking every label. No evaluation metrics were calculated.",
+  "checked_at_utc": "2026-10-26T05:20:37.687882+00:00",
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "held_out_intent_test_opened": false,
+  "sentiment_training_performed": false,
+  "input_path": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\data\\sentiment_eval.csv",
+  "input_sha256": "42d5dca92051730b7cb472a89dc42608098f1e2b83bd2ab77e91ce144929fcb5",
+  "class_counts": {
+    "Negative": 0,
+    "Neutral": 0,
+    "Positive": 0
+  },
+  "issues": [],
+  "warnings": [
+    "Learning target is about 30 independently authored/reviewed messages, around 10 per sentiment; actual counts are reported."
+  ],
+  "row_count": 0,
+  "review_attested": false
+}

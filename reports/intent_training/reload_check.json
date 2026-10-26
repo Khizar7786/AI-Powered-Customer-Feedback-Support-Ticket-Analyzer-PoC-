@@ -1,0 +1,13 @@
+{
+  "load_success": true,
+  "device": "cpu",
+  "mode": "full",
+  "num_labels": 6,
+  "forward_shape": [
+    1,
+    6
+  ],
+  "logits_finite": true,
+  "label_mappings_match": true,
+  "held_out_test_opened": false
+}

@@ -1,6 +1,7 @@
 """Human-reviewed dataset preparation; never train or approve a label."""
 
 from collections import Counter
+from contextlib import contextmanager
 import csv
 from datetime import datetime, timezone
 import hashlib
@@ -9,7 +10,8 @@ import json
 import os
 from pathlib import Path
 import re
-from tempfile import TemporaryDirectory
+import shutil
+from uuid import uuid4
 
 from feedback_analyzer.dataset_audit import COLUMNS, AuditResult, load_dataset, make_issue
 from feedback_analyzer.dataset_split import dataset_fingerprint, prepare_grouped_splits
@@ -18,6 +20,21 @@ from feedback_analyzer.dataset_split import dataset_fingerprint, prepare_grouped
 DECISION_COLUMNS = ("issue_id", "decision", "notes", "dataset_sha256")
 PAIR_CODES = {"near_duplicate", "prior_audit_pair"}
 STRUCTURAL_CODES = {"file_read", "file_encoding", "file_schema", "csv_parse", "csv_width"}
+
+
+@contextmanager
+def _staging_directory(parent: Path):
+    """Inherit normal workspace ACLs; Windows private temp ACLs survive renames."""
+    temporary = parent / (".prepare-splits-" + uuid4().hex)
+    temporary.mkdir()
+    try:
+        yield temporary
+    finally:
+        resolved = temporary.resolve()
+        if resolved.parent != parent.resolve() or not resolved.name.startswith(".prepare-splits-"):
+            raise ValueError("Unexpected staging directory; refusing cleanup.")
+        if temporary.exists():
+            shutil.rmtree(temporary)
 
 
 def file_hash(path: Path) -> str:
@@ -233,6 +250,8 @@ def freeze_splits(audit: AuditResult, output: Path, seed: int, related_pairs: li
             raise ValueError("Existing frozen manifest/report is incomplete; refusing to overwrite it.")
         if (manifest.get("dataset_sha256"), manifest.get("source_sha256"), manifest.get("seed"), manifest.get("decisions_sha256")) != (fingerprint, audit.source_sha256, seed, decision_hash):
             raise ValueError("A different dataset/configuration is already frozen here; choose a new output directory.")
+        if manifest.get("source_provenance") != provenance:
+            raise ValueError("Review/source provenance changed after freezing; choose a new output directory.")
         if set(manifest.get("splits", {})) != {"train", "validation", "test"}:
             raise ValueError("Existing manifest does not list exactly train/validation/test.")
         for name, info in manifest["splits"].items():
@@ -244,7 +263,7 @@ def freeze_splits(audit: AuditResult, output: Path, seed: int, related_pairs: li
                 raise ValueError("Existing frozen split files changed; refusing to overwrite them.")
         return manifest
     output.parent.mkdir(parents=True, exist_ok=True)
-    with TemporaryDirectory(prefix=".prepare-splits-", dir=output.parent) as temporary:
+    with _staging_directory(output.parent) as temporary:
         stage = Path(temporary) / "frozen"
         stage.mkdir()
         metadata = {}
@@ -265,14 +284,22 @@ def freeze_splits(audit: AuditResult, output: Path, seed: int, related_pairs: li
                     "splits": metadata, "targets": {"train": 420, "validation": 90, "test": 90},
                     "algorithm": "seeded whole-group class/count balancing; related groups remain together",
                     "model_input": ["message"], "target": "label", "evaluation_run": False}
+        review_origin = provenance.get("review_authorization", {})
+        if review_origin:
+            manifest["review_origin"] = review_origin
         _json_write(stage / "manifest.json", manifest)
         lines = ["# Frozen reviewed dataset splits", "", f"Dataset SHA-256: `{fingerprint}`", f"Seed: {seed}", "",
                  "| Split | Actual rows | Target rows | Class counts |", "|---|---|---|---|"]
         for name, info in metadata.items():
             lines.append(f"| {name} | {info['count']} | {manifest['targets'][name]} | {info['labels']} |")
+        review_statement = (
+            "Review was performed by the assistant on the user's explicit delegation; no human label review is claimed."
+            if review_origin.get("method") == "assistant_user_authorized"
+            else "Human review status is supplied by the reviewer, not certified by this script."
+        )
         lines += ["", "Count deviations are reported, not hidden. Related scenario groups stay together. "
                   "All original test-pool IDs remain test-only. Source/review hashes and IDs are retained in the manifest.", "",
-                  "Human review status is supplied by the reviewer, not certified by this script. "
+                  review_statement + " "
                   "Synthetic data remains synthetic after review. No model was trained or evaluated."]
         (stage / "split_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         os.rename(stage, output)

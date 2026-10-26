@@ -1,0 +1,47 @@
+{
+  "files": {
+    "config.json": {
+      "bytes": 955,
+      "sha256": "a7c1d8fb45bf3eb8126c53c22dda3d256d181fead51a76a34505ebc313cdd812"
+    },
+    "label_mappings.json": {
+      "bytes": 355,
+      "sha256": "05bb78ac63e03178629eb75c0746eec5e584c3586c0208a7fecc4fde99fe52fe"
+    },
+    "model.safetensors": {
+      "bytes": 267844872,
+      "sha256": "993d236aa4473be875c004a9a1c8256271286349b7c929eb67bbb7aa5c087b06"
+    },
+    "special_tokens_map.json": {
+      "bytes": 132,
+      "sha256": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6"
+    },
+    "tokenizer.json": {
+      "bytes": 711494,
+      "sha256": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344"
+    },
+    "tokenizer_config.json": {
+      "bytes": 1283,
+      "sha256": "bc031204730c8133364b75fa720e4fa42d2a50e7f41154da68105a9aad7b3c9b"
+    },
+    "training_args.bin": {
+      "bytes": 5969,
+      "sha256": "31614624c85bb8ff894efeec6f4d914540328d8be1d7bf1b824d2e49bbb6540c"
+    },
+    "training_data_manifest.json": {
+      "bytes": 11197,
+      "sha256": "cd9ed064d7eebdf7bd70596d5bdf8ab5190cc273dba3d60bbe6bb2e6469019fc"
+    },
+    "training_summary.json": {
+      "bytes": 28378,
+      "sha256": "7c2214cb061c33e9458b15afd31e9e40d7b2df9bd6371221bef3a59dc11d4428"
+    },
+    "vocab.txt": {
+      "bytes": 231508,
+      "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    }
+  },
+  "best_checkpoint_weights_match_export": true,
+  "best_global_step": 159,
+  "held_out_test_opened": false
+}

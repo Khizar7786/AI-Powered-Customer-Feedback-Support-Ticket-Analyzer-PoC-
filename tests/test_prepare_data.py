@@ -21,6 +21,29 @@ LABELS = (
 )
 
 
+def test_delegated_review_origin_is_preserved_without_claiming_human_review(tmp_path):
+    source = tmp_path / "data" / "raw" / "draft.csv"
+    write_rows(source, fixture_rows())
+    result = invoke(tmp_path, source, "--audit-only")
+    assert result.returncode == 0, result.stdout + result.stderr
+    reviewed = tmp_path / "reviewed_messages.csv"
+    sidecar = Path(str(reviewed) + ".provenance.json")
+    provenance = json.loads(sidecar.read_text(encoding="utf-8"))
+    origin = {"method": "assistant_user_authorized", "human_review_performed": False}
+    provenance["review_authorization"] = origin
+    sidecar.write_text(json.dumps(provenance), encoding="utf-8")
+    result = invoke(tmp_path, reviewed)
+    assert result.returncode == 0, result.stdout + result.stderr
+    manifest = json.loads((tmp_path / "splits" / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["review_origin"] == origin
+    assert "no human label review is claimed" in (tmp_path / "splits" / "split_report.md").read_text(encoding="utf-8")
+    provenance["review_authorization"]["human_review_performed"] = True
+    sidecar.write_text(json.dumps(provenance), encoding="utf-8")
+    result = invoke(tmp_path, reviewed)
+    assert result.returncode == 2
+    assert "provenance changed" in result.stdout
+
+
 def fixture_rows(status="reviewed"):
     """Distinct deterministic text avoids making lexical test fixtures related."""
     rows = []

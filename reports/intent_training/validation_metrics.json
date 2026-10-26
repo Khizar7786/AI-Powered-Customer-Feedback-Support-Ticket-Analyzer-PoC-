@@ -1,0 +1,122 @@
+{
+  "dataset_role": "validation",
+  "mode": "full",
+  "metrics": {
+    "validation_loss": 0.522717297077179,
+    "validation_accuracy": 0.9333333333333333,
+    "validation_macro_f1": 0.9305462679123631,
+    "validation_runtime": 0.4747,
+    "validation_samples_per_second": 189.597,
+    "validation_steps_per_second": 94.799
+  },
+  "classification_report": {
+    "Bug Report": {
+      "precision": 0.8823529411764706,
+      "recall": 1.0,
+      "f1-score": 0.9375,
+      "support": 15.0
+    },
+    "Feature Request": {
+      "precision": 0.875,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9032258064516129,
+      "support": 15.0
+    },
+    "Billing Issue": {
+      "precision": 0.9166666666666666,
+      "recall": 1.0,
+      "f1-score": 0.9565217391304348,
+      "support": 11.0
+    },
+    "General Inquiry": {
+      "precision": 0.95,
+      "recall": 1.0,
+      "f1-score": 0.9743589743589743,
+      "support": 19.0
+    },
+    "Customer Feedback": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
+    },
+    "Non-Qualifying": {
+      "precision": 1.0,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.8461538461538461,
+      "support": 15.0
+    },
+    "accuracy": 0.9333333333333333,
+    "macro avg": {
+      "precision": 0.9373366013071895,
+      "recall": 0.9333333333333335,
+      "f1-score": 0.9305462679123631,
+      "support": 90.0
+    },
+    "weighted avg": {
+      "precision": 0.938818082788671,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9313390339225204,
+      "support": 90.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      11,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      19,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      14,
+      0
+    ],
+    [
+      2,
+      1,
+      1,
+      0,
+      0,
+      11
+    ]
+  ],
+  "label_order": [
+    "Bug Report",
+    "Feature Request",
+    "Billing Issue",
+    "General Inquiry",
+    "Customer Feedback",
+    "Non-Qualifying"
+  ],
+  "held_out_test_evaluated": false
+}

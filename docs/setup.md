@@ -54,7 +54,7 @@ Open `http://127.0.0.1:8501`. Stop the server with Ctrl+C. If that port is alrea
 
 The diagnostic checks Python/package versions, CUDA availability, available GPU memory, and tiny tensor calculations. Add `--output reports/environment.json` to save a local JSON report. These reports are machine-specific and excluded from Git. A passing tiny calculation does not prove that model training fits in memory or measure model speed.
 
-The **Model and API setup** expander shows device information and setup status for the category classifier, sentiment model, and generative API. Missing model files and an unconfigured API are expected. Existing files are labeled **Detected (unverified)**; configuration presence is **Configured (unverified)**. Neither status proves working inference or API access. **Analyze tickets** remains disabled throughout Stage 2.
+The **Model and API setup** expander shows device information and setup status for the category classifier, sentiment model, and generative API. Existing files are labeled **Detected (unverified)** because this lightweight inspection does not load weights; configuration presence is **Configured (unverified)**. Neither status proves working inference or API access. **Analyze categories** uses the trained classifier; **Analyze sentiment** then runs only for qualifying results. Full **Analyze tickets** stays disabled while later fields are pending.
 
 ## Upload and preview (Stage 2)
 
@@ -72,13 +72,13 @@ Missing IDs, missing/extra fields, and every occurrence of a duplicated ID appea
 
 Tables show the starting and ending physical CSV line, including the header in line numbering. The row inspector displays the original message with whitespace preserved; normalized input is separate. Broken quoting stops parsing because subsequent record boundaries are uncertain. Prior records and the remaining raw text stay inspectable, with a file-level error explaining the stop. Header/encoding errors prevent row parsing. Correct errors in the source file and upload again; the app does not modify files.
 
-The 12-record sample includes all three exact assessment messages and deliberate edge cases. Expected validation counts are **6 candidates, 2 ignored, 4 input errors**. This is input-validation evidence, not AI prediction output. No model loading, API requests, database writes, or training take place in this flow.
+The 12-record sample includes all three exact assessment messages and deliberate edge cases. Expected validation counts are **6 candidates, 2 ignored, 4 input errors**. No model loading, API requests, database writes, or training take place during validation. After validation, **Analyze categories** runs the saved model locally and shows partial outcomes; see the [Stage 5 guide](intent-inference.md). Actual sample category results are **5 partial, 3 ignored, 4 errors, 0 fully processed**.
 
 ## Configuration
 
 Category-dataset audit/review/splitting uses a separate command and schema; see [data-review.md](data-review.md). `python -m scripts.prepare_data --audit-only` creates the review workflow. The default `python -m scripts.prepare_data` reads `data/reviewed_messages.csv` and refuses to freeze splits while review or conflict resolution is pending. It does not train or alter the Streamlit upload path.
 
-The current app needs no `.env` file, credentials, or downloaded weights. When later integration requires configuration, copy the template without overwriting an existing file:
+Upload/preview needs no `.env`, credentials or downloaded weights. Category analysis requires the complete trained checkpoint at `CLASSIFIER_DIR`; it needs no API credentials or sentiment model. Missing checkpoints show the training command. To customize local paths or configure later integration, copy the template without overwriting an existing file:
 
 ```powershell
 if (-not (Test-Path -LiteralPath .env)) { Copy-Item -LiteralPath .env.example -Destination .env }
@@ -86,10 +86,10 @@ if (-not (Test-Path -LiteralPath .env)) { Copy-Item -LiteralPath .env.example -D
 
 Set `LLM_PROVIDER` to the selected provider (`openai` or `gemini`), `LLM_MODEL` to a verified available model, and the matching `OPENAI_API_KEY` or `GEMINI_API_KEY` locally. Provider selection and live API integration are pending. Environment variables override the project-root `.env`; secret values are not displayed by the setup page. Keep `.env` out of Git.
 
-`CLASSIFIER_DIR` defaults to `models/ticket_classifier` and `SENTIMENT_DIR` to `models/sentiment`. Relative paths resolve from the project root. Model files are excluded from Git; training/model acquisition instructions will be added when those workflows are implemented.
+`CLASSIFIER_DIR` defaults to `models/ticket_classifier` and `SENTIMENT_DIR` to `models/sentiment`. Relative paths resolve from the project root. Model files are excluded from Git. The [training guide](training.md) covers classifier training and transfer. The [sentiment guide](sentiment.md) covers `python -m scripts.evaluate_sentiment --download-model`, CPU-default inference and your separately reviewed sentiment data. Sentiment weights are reused without training, and no API credentials are needed for either local model.
 
 ## Verification scope
 
 Stage 1 was checked with Python 3.12.5, PyTorch 2.11.0+cu128, an NVIDIA RTX 3050 Ti Laptop GPU, real float32/float16 GPU operations, and a separate forced-CPU float32 operation. CPU execution was checked using the CUDA wheel; a separate CPU-wheel installation has not been verified. The Streamlit server and browser startup/reload were checked locally.
 
-Automated tests cover configuration precedence, placeholder handling, model-file detection, device fallback, CSV schema/encoding/record errors, duplicate IDs, physical line attribution, filtering boundaries, preview persistence, secret exclusion, resource caching, and disabled analysis. UI tests use mocked devices/fake artifacts and simulated Streamlit sessions. No model training, ticket inference, generative API calls, or final evaluation has been performed. See the [README](../README.md) for implementation status and planned architecture.
+Automated tests cover configuration, CSV validation/filtering, data preparation, training, category/sentiment inference and review-gated sentiment evaluation. The full suite passes 258 tests with explicit mocked UI/device failures and cache/reprocessing checks. Separate real training/reload, CPU/CUDA category inference, CPU sentiment development and real-model Streamlit AppTest sessions passed. CUDA failure/OOM paths are mocked. Browser visual verification, independent reviewed sentiment metrics, generative API calls, full analysis and held-out intent evaluation remain pending. See the [README](../README.md), [training guide](training.md), [category guide](intent-inference.md) and [sentiment guide](sentiment.md).

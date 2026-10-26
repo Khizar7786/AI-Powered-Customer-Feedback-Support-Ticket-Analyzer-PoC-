@@ -1,0 +1,13 @@
+{
+  "status": "development_complete",
+  "message": "Unlabeled development inference and separate published assessment checks finished. Reviewed evaluation data is still required; no accuracy claim was made.",
+  "checked_at_utc": "2026-10-26T05:18:25.137740+00:00",
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "held_out_intent_test_opened": false,
+  "sentiment_training_performed": false,
+  "run_directory": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\reports\\sentiment_development\\runs\\20261026T051817154831Z_development_94866c2b",
+  "model_revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+  "reviewed_evaluation": false,
+  "metrics_calculated": false,
+  "inference_error_count": 0
+}

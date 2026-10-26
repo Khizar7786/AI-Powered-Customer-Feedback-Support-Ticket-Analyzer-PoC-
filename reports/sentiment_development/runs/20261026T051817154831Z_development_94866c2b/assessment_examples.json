@@ -1,0 +1,55 @@
+{
+  "status": "assessment_fixture_check",
+  "model_id": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "model_revision": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+  "results": [
+    {
+      "ticket_id": "T001",
+      "message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+      "expected_sentiment": "Negative",
+      "expectation_origin": "published assessment fixture, not user-labeled evaluation data",
+      "status": "predicted",
+      "prediction": {
+        "sentiment": "Negative",
+        "confidence": 0.8985980749130249,
+        "input_tokens": 22,
+        "used_tokens": 22,
+        "max_length": 512,
+        "truncated": false,
+        "device": "cpu",
+        "model_input": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+      },
+      "match": true
+    },
+    {
+      "ticket_id": "T002",
+      "message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
+      "expected_sentiment": "Positive",
+      "expectation_origin": "published assessment fixture, not user-labeled evaluation data",
+      "status": "predicted",
+      "prediction": {
+        "sentiment": "Positive",
+        "confidence": 0.9744122624397278,
+        "input_tokens": 21,
+        "used_tokens": 21,
+        "max_length": 512,
+        "truncated": false,
+        "device": "cpu",
+        "model_input": "Hi team, it would be awesome if you could add a dark mode to the mobile app."
+      },
+      "match": true
+    },
+    {
+      "ticket_id": "T003",
+      "message": "Hello, hope you are having a nice day!",
+      "status": "ignored",
+      "reason": "Published assessment marks this greeting Non-Qualifying; sentiment intentionally not run.",
+      "prediction": null
+    }
+  ],
+  "metrics_calculated": false,
+  "reviewed_evaluation": false,
+  "held_out_intent_test_opened": false,
+  "sentiment_training_performed": false,
+  "domain_limitations": "This existing English Twitter/TweetEval model may interpret support-ticket wording differently. Polite feature requests, sarcasm, mixed feelings and domain-specific complaints need reviewed checks. Confidence scores are not calibrated guarantees. No sentiment model was trained."
+}
