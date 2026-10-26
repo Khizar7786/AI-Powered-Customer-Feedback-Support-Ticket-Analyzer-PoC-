@@ -15,22 +15,19 @@ py -3.12 -m venv .venv
 
 Tested: Python 3.12.5, PyTorch 2.11.0+cu128, Transformers 4.57.6, Streamlit 1.66.1, Pydantic 2.14.1, OpenAI SDK 2.54.0, pytest 9.1.1. Copy `.env.example` to ignored `.env`; set `LLM_PROVIDER=openai`, `LLM_MODEL` (tested: `gpt-5.4-mini`) and your own `OPENAI_API_KEY`.
 
-## Models and commands
+## Model, dataset, and commands
 
-The reviewed synthetic 420/90/90 splits are included; weights are excluded. Transfer the original `models/ticket_classifier/` directory separately, or train a new checkpoint from the included splits with the pinned revision below. New scores may differ. Download Cardiff sentiment weights with `python -m scripts.evaluate_sentiment --download-model`. [Training](docs/training.md), [sentiment setup](docs/sentiment.md). Data preparation needs the separately transferred raw/review working copy. Future tuning needs a new independent test set.
-
-Use `.\.venv\Scripts\python.exe` in place of `python` below:
+The public [fine-tuned classifier](https://huggingface.co/khizar7786/feedback-triage-distilbert) has the exact weights and six labels used for the reported category result. The public [reviewed synthetic dataset](https://huggingface.co/datasets/khizar7786/feedback-triage-tickets) contains the same frozen 420/90/90 splits and manifest included here. Download the pinned classifier and the existing Cardiff sentiment model before complete analysis:
 
 ```powershell
-python -m scripts.prepare_data --audit-only  # requires the separately transferred raw draft
-python -m scripts.train_intent --smoke --revision 12040accade4e8a0f71eabdb258fecc2e7e948be
-python -m scripts.train_intent --revision 12040accade4e8a0f71eabdb258fecc2e7e948be --report-dir reports/intent_training_reproduction
-python -m scripts.evaluate_intent  # requires the exact original checkpoint for saved one-pass result
-python -m scripts.evaluate_sentiment
-python -m scripts.analyze --input data/sample_tickets.csv
-python -m streamlit run app.py
-python -m pytest
+.\.venv\Scripts\hf.exe download khizar7786/feedback-triage-distilbert --revision f1f2494c16064c3fcd02cca9c1c13a78c1cd8283 --local-dir models/ticket_classifier
+.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --download-model
+.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv
+.\.venv\Scripts\python.exe -m streamlit run app.py
+.\.venv\Scripts\python.exe -m pytest
 ```
+
+You can instead [train](docs/training.md) a new classifier from the included splits; its results may differ. Rebuilding splits requires the separately transferred raw/review working copy. The saved one-pass [category evaluation](docs/evaluation.md) belongs to the pinned original checkpoint. Future tuning needs a new independent test set.
 
 Open `http://127.0.0.1:8501`, load/upload a CSV, validate, then click **Analyze tickets**. Preview needs no models or key; complete analysis needs both local models and OpenAI. The 12-row sample has four deliberate input errors, so CLI exit code 1 can accompany saved outcomes. Use `--reprocess` for changed inputs/configuration and `--retry-errors` for explicit failed-row retries.
 
