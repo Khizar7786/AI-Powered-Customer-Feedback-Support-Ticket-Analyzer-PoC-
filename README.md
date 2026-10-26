@@ -2,7 +2,7 @@
 
 A local customer-feedback and support-ticket analyzer being built as an internship proof of concept.
 
-**Current status: Stage 7 single-ticket analysis passed a real OpenAI integration check.** A separate explicit Streamlit action connects local category/sentiment to validated priority, nullable product/feature and an unsent reply draft. Actual sample T001 returned **Bug Report / Negative / Urgent / Checkout**; its real draft was displayed through Streamlit AppTest without another request. CSV category/sentiment analysis remains partial; complete batches, SQLite and exports are later stages. Category validation scored **0.9305 macro-F1 / 93.33% accuracy** on synthetic, assistant-reviewed data. Independent reviewed sentiment metrics await your examples. Held-out intent-test content stayed unopened during Stages 4–7.
+**Current status: Stage 9 implements the complete review/export interface.** Upload and validate tickets, explicitly analyze with progress, review Processed/Ignored/Errors, filter category/priority/sentiment and inspect original messages/unsent drafts. Four downloads and shared CLI/UI file exports are available. SQLite reuse and explicit reprocessing/retry remain in place. Category validation scored **0.9305 macro-F1 / 93.33% accuracy** on synthetic, assistant-reviewed data; independently reviewed sentiment metrics await your examples. The automated full-flow check passed; the manual browser check is blocked by Computer Use URL detection. Held-out intent-test content remains unopened.
 
 ## Run locally
 
@@ -20,7 +20,7 @@ Open `http://127.0.0.1:8501`. No API key or model download is needed for the cur
 
 Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message` and click **Validate CSV**. The sample deliberately includes invalid records: expect **6 candidates, 2 ignored, and 4 input errors**. Then click **Analyze categories**: the real saved model produced **5 partial results, 3 ignored, 4 errors and 0 fully processed** on CPU and CUDA. Original text and truncation flags remain visible. Low confidence alone never means spam. The [category inference guide](docs/intent-inference.md) covers CPU fallback, caching, missing-model guidance and actual results.
 
-Then click **Analyze sentiment** (CPU by default). Ignored/invalid rows receive no sentiment. Local models and session results are cached; ordinary reruns do not repeat inference. Bulk **Analyze tickets** remains disabled until batch orchestration is implemented.
+Click **Analyze tickets** for complete batch analysis and SQLite persistence, then review outcome tabs, filters, details and downloads. Ignored/invalid rows receive no downstream sentiment/API call. Filters/downloads/widget changes use saved session results without repeating analysis or inserts. Optional local category/sentiment checks are in the advanced expander. [Interface/export guide](docs/interface.md)
 
 For one complete ticket, put your OpenAI key in ignored `.env`, click **Refresh API setup**, then use the separate single-ticket form. The model is configurable (`gpt-5.4-mini` by default). No reply is sent. **Show saved live integration check** displays the recorded real draft without another request. See the [Stage 7 guide](docs/generation.md) for validation, retry limits and the explicit `python -m scripts.check_ticket --live` check. Without `--live`, that command checks configuration without requesting the API.
 
@@ -32,7 +32,19 @@ For one complete ticket, put your OpenAI key in ignored `.env`, click **Refresh 
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-The full suite passes **318 tests**, including explicitly mocked local/API failures, structured-output/refusal handling and UI cache/review boundaries. Separate real category training/reload, CPU/CUDA category inference, CPU sentiment development inference and actual-model Streamlit AppTest checks passed. Stage 7 also passed a real single-ticket API request and saved-reply Streamlit AppTest, separately from mocked tests. Reviewed sentiment accuracy, held-out intent accuracy, recent browser visual checks and a second fresh-environment installation remain unverified. See the stage guides for measured evidence.
+The full suite passed **379 tests**. The real sample batch saved **5 processed / 3 ignored / 4 input errors** in [SQLite](outputs/tickets.db). Stage 9 CLI/UI checks reused all 12 actual results, verified all four export payloads/files and made zero additional API calls; filters/reruns made no duplicate inserts. [Verification evidence and limits](docs/interface.md). Reviewed sentiment accuracy, held-out intent accuracy, manual browser downloads and a second fresh-environment installation remain unverified.
+
+## Analyze and save tickets
+
+```powershell
+.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv
+# Only when deliberately accepting changed text/configuration for known IDs:
+.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv --reprocess
+# Only when deliberately retrying matching previous failures:
+.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv --retry-errors
+```
+
+Outcomes go to `outputs/tickets.db`; `--database PATH` overrides it in the CLI. Both interfaces save [results.csv](outputs/results.csv), [ignored.csv](outputs/ignored.csv), [errors.json](outputs/errors.json) and [batch.json](outputs/batch.json) beside the database. CSV protects formula-like text; JSON preserves originals. The sample intentionally has four invalid records, so exit 1 is expected. The [batch guide](docs/batch.md) explains identities, accounting and recovery.
 
 ## Prepare category data
 
@@ -70,6 +82,6 @@ Fill the header-only `data/sentiment_eval.csv` with `message,expected_sentiment`
 
 Reusable Python code lives in `src/feedback_analyzer/`, workflows in `scripts/`, and the local interface in `app.py`. Application CSV ingestion is separate from labeled-data preparation. Training uses only message text and category targets. Shared category analysis serves the UI and Python callers. The model is resource-cached, and previews/results live in session state; ordinary reruns do not repeat inference. Labels come from saved configuration, and loading never downloads a fallback model.
 
-The local pipeline uses one fine-tuned `distilbert/distilbert-base-uncased` category classifier and the existing `cardiffnlp/twitter-roberta-base-sentiment-latest` sentiment model. Only messages and targets train the classifier; metadata stays outside features. The selected OpenAI adapter generates priority, a grounded product/feature phrase and a reply draft in one structured operation per qualifying ticket; local category/sentiment remain authoritative. Shared Pydantic schemas validate complete/ignored/error outcomes. SQLite persistence and batch CSV/JSON exports remain later work.
+The local pipeline uses one fine-tuned `distilbert/distilbert-base-uncased` category classifier and the existing `cardiffnlp/twitter-roberta-base-sentiment-latest` sentiment model. Only messages and targets train the classifier; metadata stays outside features. OpenAI generates priority, a grounded product/feature phrase and a reply draft in one structured operation per qualifying ticket; local category/sentiment remain authoritative. Pydantic validates outcomes. SQLite uses unique identities, short transactions and persistent work claims. CLI and Streamlit share both analysis and exports; downloads read prepared session bytes.
 
-Source, tests, dependency files, and setup documentation are included. Credentials, local environments, caches, downloaded model weights, and machine-specific diagnostic reports stay outside Git. Actual sample SQLite/CSV outputs will be added after the analysis pipeline works.
+Source, tests, dependency files, setup guides and actual sample SQLite/CSV/JSON output are available. Credentials, local environments, caches, downloaded model weights and machine-specific diagnostic reports stay outside Git.

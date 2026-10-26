@@ -29,7 +29,7 @@ The separate **Complete analysis of one ticket** form accepts an ID and the orig
 
 Blank/exact greeting-only messages are ignored before model prediction. A local Non-Qualifying prediction skips sentiment and the API. Qualifying tickets receive local category and sentiment predictions, followed by one structured generation operation. Only a valid complete result is `processed`; failed processing remains `error`, with available local results retained. Replies are unsent drafts.
 
-The existing CSV **Analyze categories** and **Analyze sentiment** buttons still produce partial batch analysis. Complete batch orchestration, SQLite and exports belong to later stages.
+The existing CSV **Analyze categories** and **Analyze sentiment** buttons still produce partial local analysis. [Stage 8 Analyze tickets](batch.md) runs the complete shared pipeline and persists results in SQLite. The single-ticket form described here keeps its session-only behavior. Exports belong to Stage 9.
 
 Session results are keyed by ticket ID/message, safe configuration, prompt version, model-file stamps and local configuration-file stamp. Reruns and resubmitting an already analyzed input reuse its outcome, including when returning to an earlier input. To deliberately retry/reanalyze, select the explicit reprocessing checkbox and submit; this may incur another API charge. This is per-session memory, not durable storage or a billing guarantee.
 

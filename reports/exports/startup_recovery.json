@@ -1,0 +1,12 @@
+{
+  "checked_at_utc": "2026-10-26T08:35:56.751304+00:00",
+  "reported_error": "ImportError: load_generation_options",
+  "source_function_present": true,
+  "fresh_python_imports": "passed",
+  "fresh_streamlit_apptest_startup": "passed",
+  "startup_api_calls": 0,
+  "action": "restarted verified Streamlit server on port 8501 with project .venv Python",
+  "streamlit_health": 200,
+  "code_changes_required": false,
+  "held_out_intent_test_opened": false
+}

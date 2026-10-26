@@ -1,0 +1,65 @@
+{
+  "verification_kind": "actual CLI export of existing real model/API SQLite outcomes; guarded calls supplied no fabricated outputs",
+  "counts": {
+    "processed": 5,
+    "ignored": 3,
+    "error": 4
+  },
+  "processed_csv_rows": 5,
+  "ignored_csv_rows": 3,
+  "error_json_rows": 4,
+  "complete_json_rows": 12,
+  "additional_api_calls": 0,
+  "model_loads": 0,
+  "canonical_outcomes_before": 12,
+  "canonical_outcomes_after": 12,
+  "export_manifest_matches": true,
+  "exit_code": 1,
+  "held_out_intent_test_opened": false,
+  "reply_sent": false,
+  "summary": {
+    "run_id": "2c1a2e97b28440b5b73288781b256394",
+    "database": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\outputs\\tickets.db",
+    "rows": 12,
+    "counts": {
+      "processed": 5,
+      "ignored": 3,
+      "error": 4
+    },
+    "fully_processed": 5,
+    "reused": 12,
+    "file_errors": [],
+    "persistence_errors": [],
+    "export_error": null,
+    "errors": [
+      {
+        "source_row": 10,
+        "ticket_id": null,
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Missing ticket_id."
+      },
+      {
+        "source_row": 11,
+        "ticket_id": "T009",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Duplicate ticket_id in source rows 11, 12; all occurrences require correction."
+      },
+      {
+        "source_row": 12,
+        "ticket_id": "T009",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Duplicate ticket_id in source rows 11, 12; all occurrences require correction."
+      },
+      {
+        "source_row": 13,
+        "ticket_id": "T010",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Expected 2 CSV fields, found 3. Quote messages containing commas or newlines."
+      }
+    ]
+  }
+}

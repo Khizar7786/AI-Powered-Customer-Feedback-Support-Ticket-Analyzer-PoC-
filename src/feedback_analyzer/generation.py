@@ -44,12 +44,11 @@ class GenerationError(RuntimeError):
         self.attempts = attempts
 
 
-class GenerationSettings(BaseModel):
+class GenerationOptions(BaseModel):
     model_config = ConfigDict(extra="forbid", hide_input_in_errors=True)
 
     provider: str = "openai"
     model: str
-    api_key: SecretStr = Field(exclude=True, repr=False)
     timeout_seconds: float = Field(default=20, ge=1, le=60)
     max_retries: int = Field(default=1, ge=0, le=1)
     max_output_tokens: int = Field(default=600, ge=128, le=2000)
@@ -68,6 +67,9 @@ class GenerationSettings(BaseModel):
             raise ValueError("Set LLM_MODEL to a documented model ID.")
         return value
 
+class GenerationSettings(GenerationOptions):
+    api_key: SecretStr = Field(exclude=True, repr=False)
+
     @field_validator("api_key")
     @classmethod
     def required_key(cls, value):
@@ -76,22 +78,35 @@ class GenerationSettings(BaseModel):
         return value
 
 
-def load_generation_settings(project_root: Path | None = None, environ: Mapping[str, str] | None = None) -> GenerationSettings:
+def _generation_values(project_root, environ):
     root = project_root or PROJECT_ROOT
     values = dict(dotenv_values(root / ".env", interpolate=False))
     values.update(os.environ if environ is None else environ)
+    return values
+
+
+def load_generation_options(project_root: Path | None = None, environ: Mapping[str, str] | None = None) -> GenerationOptions:
+    """Public configuration for persistent identity; never read a key into the result."""
+    values = _generation_values(project_root, environ)
     if values.get("LLM_PROVIDER") != "openai":
         raise GenerationError("configuration", "Set LLM_PROVIDER=openai in the local .env file.")
-    if not _configured(values.get("OPENAI_API_KEY")):
-        raise GenerationError("missing_credentials", "Set OPENAI_API_KEY in the ignored local .env file; do not paste it in the app or chat.")
     try:
-        return GenerationSettings(
-            provider="openai", model=values.get("LLM_MODEL", ""), api_key=SecretStr(values["OPENAI_API_KEY"]),
+        return GenerationOptions(
+            provider="openai", model=values.get("LLM_MODEL", ""),
             timeout_seconds=values.get("LLM_TIMEOUT_SECONDS", 20), max_retries=values.get("LLM_MAX_RETRIES", 1),
             max_output_tokens=values.get("LLM_MAX_OUTPUT_TOKENS", 600),
         )
     except (ValidationError, TypeError):
         raise GenerationError("configuration", "Check LLM_MODEL and bounded LLM_TIMEOUT_SECONDS/LLM_MAX_RETRIES/LLM_MAX_OUTPUT_TOKENS in .env.") from None
+
+
+def load_generation_settings(project_root: Path | None = None, environ: Mapping[str, str] | None = None) -> GenerationSettings:
+    values = _generation_values(project_root, environ)
+    if values.get("LLM_PROVIDER") != "openai":
+        raise GenerationError("configuration", "Set LLM_PROVIDER=openai in the local .env file.")
+    if not _configured(values.get("OPENAI_API_KEY")):
+        raise GenerationError("missing_credentials", "Set OPENAI_API_KEY in the ignored local .env file; do not paste it in the app or chat.")
+    return GenerationSettings(**load_generation_options(project_root, environ).model_dump(), api_key=SecretStr(values["OPENAI_API_KEY"]))
 
 
 class GenerationReceipt(BaseModel):
@@ -127,6 +142,11 @@ class OpenAIProvider:
         self._settings = settings
         self._injected_client = client
         self._sleep = sleep
+
+    @property
+    def public_options(self) -> dict:
+        """Let batch orchestration verify its fingerprint without exposing credentials."""
+        return self._settings.model_dump(mode="json")
 
     def generate(self, context: GenerationContext) -> GeneratedResult:
         from openai import OpenAI, APIConnectionError, APIStatusError, APITimeoutError

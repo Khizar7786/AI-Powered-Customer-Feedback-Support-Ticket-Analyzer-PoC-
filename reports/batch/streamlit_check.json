@@ -1,0 +1,16 @@
+{
+  "verification_kind": "actual Streamlit AppTest batch action displaying real SQLite outcomes; no fabricated model/API outputs",
+  "counts": {
+    "processed": 5,
+    "ignored": 3,
+    "error": 4
+  },
+  "reused_rows": 12,
+  "actual_reply_draft_displayed": true,
+  "additional_api_calls": 0,
+  "model_loads": 0,
+  "database_runs_before": 2,
+  "database_runs_after_submit_and_rerun": 3,
+  "ordinary_rerun_did_not_insert": true,
+  "browser_visual_check": false
+}

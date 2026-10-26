@@ -1,0 +1,54 @@
+{
+  "verification_kind": "fresh-process CLI replay using actual SQLite results; model/API methods guarded, no fake predictions",
+  "exit_code": 1,
+  "duration_seconds": 0.9957596000167541,
+  "canonical_records_before": 12,
+  "canonical_records_after": 12,
+  "additional_api_calls": 0,
+  "category_loads": 0,
+  "sentiment_loads": 0,
+  "summary": {
+    "run_id": "48261c04c06e4f309aa491e1bbded50e",
+    "database": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\outputs\\tickets.db",
+    "rows": 12,
+    "counts": {
+      "processed": 5,
+      "ignored": 3,
+      "error": 4
+    },
+    "fully_processed": 5,
+    "reused": 12,
+    "file_errors": [],
+    "persistence_errors": [],
+    "errors": [
+      {
+        "source_row": 10,
+        "ticket_id": null,
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Missing ticket_id."
+      },
+      {
+        "source_row": 11,
+        "ticket_id": "T009",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Duplicate ticket_id in source rows 11, 12; all occurrences require correction."
+      },
+      {
+        "source_row": 12,
+        "ticket_id": "T009",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Duplicate ticket_id in source rows 11, 12; all occurrences require correction."
+      },
+      {
+        "source_row": 13,
+        "ticket_id": "T010",
+        "stage": "input",
+        "code": "invalid_csv",
+        "message": "Expected 2 CSV fields, found 3. Quote messages containing commas or newlines."
+      }
+    ]
+  }
+}

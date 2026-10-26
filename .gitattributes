@@ -1,0 +1,4 @@
+# Generated sample exports are checksummed; preserve their exact bytes on every platform.
+/outputs/*.csv -text whitespace=cr-at-eol
+/outputs/*.json -text
+/outputs/*.db binary

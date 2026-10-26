@@ -1,0 +1,18 @@
+{
+  "full_suite_passed": 379,
+  "full_suite_seconds": 147.62,
+  "credential_scan_files": 81,
+  "credential_leak_files": [],
+  "missing_document_links": [],
+  "export_manifest_matches": true,
+  "sqlite_integrity": "ok",
+  "canonical_outcomes": 12,
+  "unfinished_claims": 0,
+  "duplicate_identities": 0,
+  "foreign_key_violations": 0,
+  "streamlit_health": 200,
+  "manual_browser_check": "blocked by Computer Use: current browser URL on Windows could not be determined confidently enough to enforce policy",
+  "physical_browser_downloads_verified": false,
+  "held_out_intent_test_opened": false,
+  "reply_sent": false
+}

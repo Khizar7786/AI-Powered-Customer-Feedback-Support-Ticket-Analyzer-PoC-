@@ -47,7 +47,7 @@ def render_single_ticket(category_loader: Callable, sentiment_loader: Callable) 
     st.subheader("Complete analysis of one ticket")
     st.caption(
         "This separate single-ticket action uses the local models, then sends a qualifying message and its "
-        "category/sentiment to OpenAI for one structured request. Replies are drafts. Batch analysis and storage are later stages."
+        "category/sentiment to OpenAI for one structured request. Replies are drafts. Use the batch action above for SQLite persistence."
     )
     st.button("Refresh API setup", key="refresh_api_setup")
     settings = None

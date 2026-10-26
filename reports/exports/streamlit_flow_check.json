@@ -1,0 +1,54 @@
+{
+  "verification_kind": "actual Streamlit AppTest with simulated uploader carrying the real sample CSV and real SQLite outcomes",
+  "counts": {
+    "processed": 5,
+    "ignored": 3,
+    "error": 4
+  },
+  "reused_rows": 12,
+  "filter_result_ticket_ids": [
+    "T002"
+  ],
+  "actual_original_and_draft_displayed": true,
+  "download_payloads": {
+    "download_processed": {
+      "file": "results.csv",
+      "bytes": 3386,
+      "sha256": "60d61434ba195bd6f3ecfc2514533d9ac40a3d6f074152869e64ced74e531b5e",
+      "on_click": "ignore"
+    },
+    "download_batch": {
+      "file": "batch.json",
+      "bytes": 24553,
+      "sha256": "5ce63dcd8af6b612bf02a10dddc988ac09bea1a02a17387706e5398a01f9b9ef",
+      "on_click": "ignore"
+    },
+    "download_ignored": {
+      "file": "ignored.csv",
+      "bytes": 1499,
+      "sha256": "5377d9976ed44985edc1caad7fde5d3c3d363196f5d0ae31e25dd08151762349",
+      "on_click": "ignore"
+    },
+    "download_errors": {
+      "file": "errors.json",
+      "bytes": 4221,
+      "sha256": "83616419e66bde06e2fba0f979b8a436cc9c4f71960106da3a98b2b949132e98",
+      "on_click": "ignore"
+    }
+  },
+  "downloads_match_saved_files": true,
+  "database_before": {
+    "runs": 4,
+    "outcomes": 12
+  },
+  "database_after_submit_filters_details_and_rerun": {
+    "runs": 5,
+    "outcomes": 12
+  },
+  "additional_api_calls": 0,
+  "additional_model_loads": 0,
+  "manual_browser_check": "blocked: Computer Use could not determine Chrome URL confidently enough to enforce policy",
+  "browser_download_clicks_verified": false,
+  "held_out_intent_test_opened": false,
+  "reply_sent": false
+}

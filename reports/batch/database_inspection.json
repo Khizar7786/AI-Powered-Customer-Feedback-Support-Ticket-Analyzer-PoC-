@@ -1,0 +1,169 @@
+{
+  "verification_kind": "fresh-process inspection and Pydantic reload of actual SQLite records",
+  "database": "outputs/tickets.db",
+  "integrity_check": "ok",
+  "foreign_key_violations": 0,
+  "canonical_outcomes": 12,
+  "duplicate_canonical_identities": 0,
+  "unfinished_claims": 0,
+  "validated_outcomes": 12,
+  "database_contains_api_key": false,
+  "batch_runs": [
+    {
+      "run_id": "439d9ff1e3e646da9c7c6793ae3a6a3a",
+      "total_count": 12,
+      "processed_count": 5,
+      "ignored_count": 3,
+      "error_count": 4
+    },
+    {
+      "run_id": "48261c04c06e4f309aa491e1bbded50e",
+      "total_count": 12,
+      "processed_count": 5,
+      "ignored_count": 3,
+      "error_count": 4
+    },
+    {
+      "run_id": "dc9d7dcd9dab4df289b8c1504a7a0efd",
+      "total_count": 12,
+      "processed_count": 5,
+      "ignored_count": 3,
+      "error_count": 4
+    }
+  ],
+  "batch_row_counts": [
+    {
+      "run_id": "439d9ff1e3e646da9c7c6793ae3a6a3a",
+      "rows": 12
+    },
+    {
+      "run_id": "48261c04c06e4f309aa491e1bbded50e",
+      "rows": 12
+    },
+    {
+      "run_id": "dc9d7dcd9dab4df289b8c1504a7a0efd",
+      "rows": 12
+    }
+  ],
+  "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+  "pipeline_version": "batch-v1",
+  "category_model": "distilbert/distilbert-base-uncased",
+  "sentiment_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+  "prompt_version": "ticket-details-v1",
+  "openai_version": "2.54.0",
+  "successful_api_attempts": 5,
+  "actual_outcomes": [
+    {
+      "ticket_id": null,
+      "status": "error",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": "invalid_csv"
+    },
+    {
+      "ticket_id": "T001",
+      "status": "processed",
+      "category": "Bug Report",
+      "sentiment": "Negative",
+      "priority": "Urgent",
+      "product_feature": "Checkout",
+      "error_code": null
+    },
+    {
+      "ticket_id": "T002",
+      "status": "processed",
+      "category": "Feature Request",
+      "sentiment": "Positive",
+      "priority": "Medium",
+      "product_feature": "mobile app",
+      "error_code": null
+    },
+    {
+      "ticket_id": "T003",
+      "status": "ignored",
+      "category": "Non-Qualifying",
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": null
+    },
+    {
+      "ticket_id": "T004",
+      "status": "ignored",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": null
+    },
+    {
+      "ticket_id": "T005",
+      "status": "ignored",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": null
+    },
+    {
+      "ticket_id": "T006",
+      "status": "processed",
+      "category": "Bug Report",
+      "sentiment": "Negative",
+      "priority": "Urgent",
+      "product_feature": "checkout",
+      "error_code": null
+    },
+    {
+      "ticket_id": "T007",
+      "status": "processed",
+      "category": "Bug Report",
+      "sentiment": "Negative",
+      "priority": "High",
+      "product_feature": "App",
+      "error_code": null
+    },
+    {
+      "ticket_id": "T008",
+      "status": "processed",
+      "category": "Billing Issue",
+      "sentiment": "Negative",
+      "priority": "Medium",
+      "product_feature": "invoice",
+      "error_code": null
+    },
+    {
+      "ticket_id": "T009",
+      "status": "error",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": "invalid_csv"
+    },
+    {
+      "ticket_id": "T009",
+      "status": "error",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": "invalid_csv"
+    },
+    {
+      "ticket_id": "T010",
+      "status": "error",
+      "category": null,
+      "sentiment": null,
+      "priority": null,
+      "product_feature": null,
+      "error_code": "invalid_csv"
+    }
+  ],
+  "held_out_intent_test_opened": false,
+  "reply_sent": false,
+  "full_suite_passed": 347,
+  "full_suite_seconds": 109.83
+}

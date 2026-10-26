@@ -1,4 +1,4 @@
-"""Local previews and explicit single-ticket structured analysis."""
+"""Local previews, explicit single-ticket analysis and persistent batch orchestration."""
 
 from pathlib import Path
 import hashlib
@@ -11,6 +11,8 @@ from feedback_analyzer.config import CLASSIFIER_MODEL_ID, SENTIMENT_MODEL_ID, lo
 from feedback_analyzer.readiness import inspect_api_config, inspect_device, inspect_model_files
 from feedback_analyzer.sentiment_analysis import SentimentBatch, analyze_sentiments
 from feedback_analyzer.single_ticket_ui import render_single_ticket
+from feedback_analyzer.batch_ui import render_batch_action
+from feedback_analyzer.results_ui import clear_batch_result
 
 
 @st.cache_resource
@@ -34,6 +36,8 @@ def _clear_preview() -> None:
     """Changing the selected file invalidates the previous preview."""
     st.session_state.pop("csv_preview", None)
     st.session_state.pop("csv_preview_source", None)
+    st.session_state.pop("csv_source_hash", None)
+    clear_batch_result()
     _clear_categories()
 
 
@@ -330,9 +334,9 @@ def sentiment_action() -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Feedback Triage AI", page_icon="💬")
+    st.set_page_config(page_title="Feedback Triage AI", page_icon="💬", layout="wide")
     st.title("Feedback Triage AI")
-    st.caption("Customer feedback and support-ticket analysis · Stage 7")
+    st.caption("Review customer feedback, prepare reply drafts and export the results.")
     st.subheader("Upload and preview tickets")
     st.write("Upload a UTF-8 CSV with the columns `ticket_id,message`, or try the included sample.")
     st.caption(
@@ -354,20 +358,26 @@ def main() -> None:
         else:
             st.session_state["csv_preview"] = ingestion.load_ticket_csv(data)
             st.session_state["csv_preview_source"] = "sample_tickets.csv"
+            st.session_state["csv_source_hash"] = hashlib.sha256(data).hexdigest()
     elif validate and uploaded is not None:
-        st.session_state["csv_preview"] = ingestion.load_ticket_csv(uploaded.getvalue())
+        clear_batch_result()
+        data = uploaded.getvalue()
+        st.session_state["csv_preview"] = ingestion.load_ticket_csv(data)
         st.session_state["csv_preview_source"] = uploaded.name
+        st.session_state["csv_source_hash"] = hashlib.sha256(data).hexdigest()
 
     if "csv_preview" in st.session_state:
-        render_preview(st.session_state["csv_preview"])
+        with st.expander("Review input validation", expanded="batch_results" not in st.session_state):
+            render_preview(st.session_state["csv_preview"])
     else:
         st.info("Select a CSV and click Validate CSV, or click Load sample CSV to see a preview.")
 
-    category_action(st.session_state.get("csv_preview"))
-    sentiment_action()
-    render_single_ticket(category_classifier, sentiment_classifier)
-    st.button("Analyze tickets", key="analyze_tickets", disabled=True)
-    st.caption("Batch analysis and storage are later stages. Local category/sentiment buttons make no API calls; the separate single-ticket action uses OpenAI.")
+    render_batch_action(st.session_state.get("csv_preview"), category_classifier, sentiment_classifier)
+    with st.expander("Local model checks and single-ticket analysis"):
+        category_action(st.session_state.get("csv_preview"))
+        sentiment_action()
+        render_single_ticket(category_classifier, sentiment_classifier)
+        st.caption("Local category/sentiment buttons make no API calls. Complete batch and single-ticket actions use OpenAI only for qualifying messages.")
     with st.expander("Model and API setup"):
         render_setup()
 
