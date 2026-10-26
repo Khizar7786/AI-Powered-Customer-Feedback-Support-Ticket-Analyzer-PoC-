@@ -7,7 +7,7 @@ import sqlite3
 from streamlit.delta_generator import DeltaGenerator
 
 from feedback_analyzer import results_ui
-from feedback_analyzer import config as config_module
+from feedback_analyzer import config as config_module, generation
 from feedback_analyzer.exports import ExportError
 from feedback_analyzer.pipeline import analyze_csv
 from feedback_analyzer.results_ui import ProgressStore
@@ -151,3 +151,15 @@ def test_missing_key_and_missing_model_show_actionable_readiness(tmp_path, monke
     app.run()
     assert any("python -m scripts.train_intent" in block.value for block in app.code)
     assert not any(s.calls.values())
+
+
+def test_prompt_version_change_clears_stale_results_without_reanalysis(tmp_path, monkeypatch, batch_setup):
+    s = batch_setup
+    app, _ = setup(tmp_path, monkeypatch, s)
+    app.button("validate_csv").click().run()
+    app.button("analyze_tickets").click().run()
+    before = {key: list(value) for key, value in s.calls.items()}
+    monkeypatch.setattr(generation, "PROMPT_VERSION", "explicit-unit-next-version")
+    app.run()
+    assert not app.exception and "batch_results" not in app.session_state and "batch_exports" not in app.session_state
+    assert s.calls == before and runs(tmp_path) == 1

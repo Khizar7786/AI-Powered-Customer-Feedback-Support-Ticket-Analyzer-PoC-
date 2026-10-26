@@ -1,0 +1,125 @@
+{
+  "authorship": "Assistant-authored acceptance references; assessment expectations are supplied by the assessment. No human sentiment review or accuracy dataset is claimed.",
+  "purpose": "Engineering acceptance fixtures, kept separate from training/validation/held-out test. References fixed before running inference.",
+  "priority_reference_limit": "Mixed-case priorities are a predeclared reading of project policy, not independently established ground truth; report alternative model choices rather than force them.",
+  "assessment": {
+    "expected_counts": {
+      "processed": 2,
+      "ignored": 1,
+      "error": 0
+    },
+    "rows": [
+      {
+        "ordinal": 1,
+        "status": "processed",
+        "category": "Bug Report",
+        "priority": "Urgent",
+        "sentiment": "Negative"
+      },
+      {
+        "ordinal": 2,
+        "status": "processed",
+        "category": "Feature Request",
+        "priority": "Medium",
+        "sentiment": "Positive"
+      },
+      {
+        "ordinal": 3,
+        "status": "ignored",
+        "category": "Non-Qualifying"
+      }
+    ]
+  },
+  "mixed": {
+    "expected_counts": {
+      "processed": 7,
+      "ignored": 2,
+      "error": 5
+    },
+    "rows": [
+      {
+        "ordinal": 1,
+        "status": "processed",
+        "category": "Bug Report",
+        "priority": "Urgent",
+        "sentiment": "Negative"
+      },
+      {
+        "ordinal": 2,
+        "status": "processed",
+        "category": "Feature Request",
+        "priority": "Medium",
+        "sentiment": "Positive"
+      },
+      {
+        "ordinal": 3,
+        "status": "processed",
+        "category": "Billing Issue",
+        "priority": "Medium",
+        "sentiment": "Negative"
+      },
+      {
+        "ordinal": 4,
+        "status": "processed",
+        "category": "General Inquiry",
+        "priority": "Low",
+        "sentiment": "Neutral"
+      },
+      {
+        "ordinal": 5,
+        "status": "processed",
+        "category": "Customer Feedback",
+        "priority": "Low",
+        "sentiment": "Positive"
+      },
+      {
+        "ordinal": 6,
+        "status": "ignored",
+        "category": "Non-Qualifying"
+      },
+      {
+        "ordinal": 7,
+        "status": "ignored"
+      },
+      {
+        "ordinal": 8,
+        "status": "processed",
+        "category": "Bug Report",
+        "priority": "Medium",
+        "sentiment": "Negative"
+      },
+      {
+        "ordinal": 9,
+        "status": "processed",
+        "category": "Bug Report",
+        "priority": "Medium",
+        "sentiment": "Negative"
+      },
+      {
+        "ordinal": 10,
+        "status": "error",
+        "error_stage": "input"
+      },
+      {
+        "ordinal": 11,
+        "status": "error",
+        "error_stage": "input"
+      },
+      {
+        "ordinal": 12,
+        "status": "error",
+        "error_stage": "input"
+      },
+      {
+        "ordinal": 13,
+        "status": "error",
+        "error_stage": "input"
+      },
+      {
+        "ordinal": 14,
+        "status": "error",
+        "error_stage": "generation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "batches": [
+    {
+      "batch": "assessment",
+      "status": "checks_passed",
+      "actual_counts": {
+        "processed": 2,
+        "ignored": 1,
+        "error": 0
+      },
+      "mismatches": [],
+      "run_id": "c76e1ebde7bb4058b0be4e3dc499cb7d"
+    },
+    {
+      "batch": "mixed",
+      "status": "mismatches_or_errors",
+      "actual_counts": {
+        "processed": 7,
+        "ignored": 2,
+        "error": 5
+      },
+      "mismatches": [
+        {
+          "ordinal": 1,
+          "ticket_id": "ACC-M001",
+          "fields": [
+            "priority"
+          ],
+          "engineering_checks": []
+        },
+        {
+          "ordinal": 2,
+          "ticket_id": "ACC-M002",
+          "fields": [
+            "priority"
+          ],
+          "engineering_checks": []
+        },
+        {
+          "ordinal": 3,
+          "ticket_id": "ACC-M003",
+          "fields": [
+            "priority"
+          ],
+          "engineering_checks": []
+        },
+        {
+          "ordinal": 8,
+          "ticket_id": "ACC-M008",
+          "fields": [
+            "priority"
+          ],
+          "engineering_checks": []
+        }
+      ],
+      "run_id": "dd8d4c6d65734a91b4b81b2fd84e2453"
+    }
+  ],
+  "provider_operations": 2,
+  "successful_provider_operations": 2,
+  "known_http_attempts": 2,
+  "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+  "held_out_data_used": false,
+  "reply_sent": false,
+  "limitations": "Visible assistant-authored acceptance references are engineering checks, not independently reviewed accuracy metrics. Automatic reply checks cannot certify complete semantic quality. Sentiment still lacks the user's independent reviewed evaluation set."
+}

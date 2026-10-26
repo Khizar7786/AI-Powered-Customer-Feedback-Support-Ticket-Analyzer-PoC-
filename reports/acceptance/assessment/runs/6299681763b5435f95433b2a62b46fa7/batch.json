@@ -1,0 +1,249 @@
+{
+  "run_id": "6299681763b5435f95433b2a62b46fa7",
+  "source_hash": "d8adc5c01ccc7c919fb66e47e3334917e615967b8ba81d4fffbe114c3fd163e0",
+  "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+  "rows": [
+    {
+      "ordinal": 1,
+      "source_row": 2,
+      "source_line_end": 2,
+      "identity": "8cd9487d89eea24466824b7aed3f64261d3fef76097a2408b0b5bdfa4aed1b8c",
+      "ticket_key": "ticket:T001",
+      "input_hash": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+      "outcome": {
+        "ticket_id": "T001",
+        "original_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+        "normalized_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+        "raw_record": null,
+        "status": "error",
+        "analysis": {
+          "ticket": {
+            "ticket_id": "T001",
+            "message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+          },
+          "status": "error",
+          "category": {
+            "category": "Bug Report",
+            "confidence": 0.5858913064002991,
+            "input_tokens": 23,
+            "used_tokens": 23,
+            "max_length": 128,
+            "truncated": false,
+            "device": "cpu"
+          },
+          "sentiment": {
+            "sentiment": "Negative",
+            "confidence": 0.8985980749130249,
+            "input_tokens": 22,
+            "used_tokens": 22,
+            "max_length": 512,
+            "truncated": false,
+            "device": "cpu",
+            "model_input": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+          },
+          "generated": null,
+          "reason": null,
+          "error": {
+            "stage": "generation",
+            "code": "invalid_output",
+            "message": "OpenAI output did not match the required schema. No replacement result or repair request was made."
+          },
+          "reply_is_draft": true
+        },
+        "failure": null
+      },
+      "reused": false,
+      "persisted": true,
+      "recorded_at": "2026-10-26T10:13:05.300519+00:00"
+    },
+    {
+      "ordinal": 2,
+      "source_row": 3,
+      "source_line_end": 3,
+      "identity": "24b383ca154b6dbfe670fad1577de75b2afc41643906e8cfb3e3aabdec1b3460",
+      "ticket_key": "ticket:T002",
+      "input_hash": "856dec1b4b3d3c55bef0268bc493e7c5dd9ab63e9861608345d1c91fdd92d917",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+      "outcome": {
+        "ticket_id": "T002",
+        "original_message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
+        "normalized_message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
+        "raw_record": null,
+        "status": "processed",
+        "analysis": {
+          "ticket": {
+            "ticket_id": "T002",
+            "message": "Hi team, it would be awesome if you could add a dark mode to the mobile app."
+          },
+          "status": "processed",
+          "category": {
+            "category": "Feature Request",
+            "confidence": 0.525141179561615,
+            "input_tokens": 21,
+            "used_tokens": 21,
+            "max_length": 128,
+            "truncated": false,
+            "device": "cpu"
+          },
+          "sentiment": {
+            "sentiment": "Positive",
+            "confidence": 0.9744122624397278,
+            "input_tokens": 21,
+            "used_tokens": 21,
+            "max_length": 512,
+            "truncated": false,
+            "device": "cpu",
+            "model_input": "Hi team, it would be awesome if you could add a dark mode to the mobile app."
+          },
+          "generated": {
+            "details": {
+              "priority": "Medium",
+              "product_feature": "mobile app",
+              "suggested_reply": "Thanks for the suggestion. Dark mode for the mobile app sounds useful; is there a particular screen or usage scenario where it would help most?"
+            },
+            "receipt": {
+              "provider": "openai",
+              "model": "gpt-5.4-mini",
+              "response_id": "resp_0407f097f6828b72016adf27b399cc87d2bd4efbee91aecb36",
+              "attempts": 1,
+              "duration_seconds": 5.797706500045024,
+              "completed_at_utc": "2026-10-26T10:13:11.349172+00:00",
+              "input_tokens": 516,
+              "output_tokens": 52,
+              "prompt_version": "ticket-details-v2"
+            }
+          },
+          "reason": null,
+          "error": null,
+          "reply_is_draft": true
+        },
+        "failure": null
+      },
+      "reused": false,
+      "persisted": true,
+      "recorded_at": "2026-10-26T10:13:11.351171+00:00"
+    },
+    {
+      "ordinal": 3,
+      "source_row": 4,
+      "source_line_end": 4,
+      "identity": "e3803ebeca6bbd8a8cb4a4d92c4789d321742f9e2ea43aa2493889fdf78831ee",
+      "ticket_key": "ticket:T003",
+      "input_hash": "e871fe9b195fafee66718902bc57a7d2f128ec785444b97c661eb666deb01312",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+      "outcome": {
+        "ticket_id": "T003",
+        "original_message": "Hello, hope you are having a nice day!",
+        "normalized_message": "Hello, hope you are having a nice day!",
+        "raw_record": null,
+        "status": "ignored",
+        "analysis": {
+          "ticket": {
+            "ticket_id": "T003",
+            "message": "Hello, hope you are having a nice day!"
+          },
+          "status": "ignored",
+          "category": {
+            "category": "Non-Qualifying",
+            "confidence": 0.32934120297431946,
+            "input_tokens": 12,
+            "used_tokens": 12,
+            "max_length": 128,
+            "truncated": false,
+            "device": "cpu"
+          },
+          "sentiment": null,
+          "generated": null,
+          "reason": "Category classifier predicted Non-Qualifying.",
+          "error": null,
+          "reply_is_draft": true
+        },
+        "failure": null
+      },
+      "reused": false,
+      "persisted": true,
+      "recorded_at": "2026-10-26T10:13:11.440974+00:00"
+    }
+  ],
+  "file_errors": [],
+  "persistence_errors": [],
+  "started_at": "2026-10-26T10:12:34.768870+00:00",
+  "finished_at": "2026-10-26T10:13:11.454004+00:00",
+  "export_version": "batch-export-v1",
+  "counts": {
+    "processed": 1,
+    "ignored": 1,
+    "error": 1
+  },
+  "total_rows": 3,
+  "fully_processed": 1,
+  "model_metadata": {
+    "pipeline_version": "batch-v1",
+    "device": "cpu",
+    "versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6",
+      "pydantic": "2.14.1",
+      "openai": "2.54.0"
+    },
+    "category": {
+      "base_model": "distilbert/distilbert-base-uncased",
+      "sha256": "a5b8cf4d764103c0cf51725f0c3dffb881771b116b535686179c647b5a2dae7e",
+      "files": {
+        "config.json": "a7c1d8fb45bf3eb8126c53c22dda3d256d181fead51a76a34505ebc313cdd812",
+        "model.safetensors": "993d236aa4473be875c004a9a1c8256271286349b7c929eb67bbb7aa5c087b06",
+        "pytorch_model.bin": null,
+        "tokenizer.json": "79ea220416a57ca8acdf069d71875d5d2ddadef66021aeb6c120a7c546c04344",
+        "tokenizer_config.json": "bc031204730c8133364b75fa720e4fa42d2a50e7f41154da68105a9aad7b3c9b",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+        "vocab.json": null,
+        "merges.txt": null,
+        "label_mappings.json": "05bb78ac63e03178629eb75c0746eec5e584c3586c0208a7fecc4fde99fe52fe",
+        "training_summary.json": "7c2214cb061c33e9458b15afd31e9e40d7b2df9bd6371221bef3a59dc11d4428",
+        "sentiment_source.json": null
+      }
+    },
+    "sentiment": {
+      "base_model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "sha256": "eaa4bb2907f75eb58c30da9d8009fc28e80951ec8d528c6b9965b1562e7b8f44",
+      "files": {
+        "config.json": "d2fba19997da698157196ba16f5fcb30a97a7551cef6845a0f3d743ee19c6129",
+        "model.safetensors": null,
+        "pytorch_model.bin": "4d24a3e32a88ed1c4e5b789fc6644e2e767500554e954b27dccf52a8e762cbae",
+        "tokenizer.json": "727009a8214ddfa5af1deedf1006d4d06e8e51e54aa5f03566263d4e19bfcdce",
+        "tokenizer_config.json": "253e231e9ae9fd6e64762375b14c8f7f266c711b75d2b74a17170e6f3defe729",
+        "special_tokens_map.json": "b72f59af007f804a5b6514f6ed8d59b4723349105471bcc3a881591fd586e2d5",
+        "vocab.txt": null,
+        "vocab.json": "ed19656ea1707df69134c4af35c8ceda2cc9860bf2c3495026153a133670ab5e",
+        "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+        "label_mappings.json": null,
+        "training_summary.json": null,
+        "sentiment_source.json": "5f91496d6de2ba69c33b5173dbb263712ad60e9f066d123728bb256e407a0acf"
+      }
+    },
+    "generation": {
+      "provider": "openai",
+      "model": "gpt-5.4-mini",
+      "timeout_seconds": 20.0,
+      "max_retries": 1,
+      "max_output_tokens": 600
+    },
+    "prompt_version": "ticket-details-v2",
+    "prompt_sha256": "efc8dfacdfeb3524de2443e6d5273a0b0903eeab26fd8a141494dfe21f98c1e2",
+    "schema_sha256": "29ee1a1bf54aa95e807c61da8f5209dbaa04425aa0559c414bdac45539120ea9",
+    "source_sha256": {
+      "filtering.py": "ad0d3a1f815d7da400b453d11dcfc206dbae31ffc2128d64b913850df9890249",
+      "ingestion.py": "aa7cd72099393e7c82273d6982f12ce8aaf4ef4b34c062c79a2dd46ddc52b4ce",
+      "intent.py": "76674defb647b12b8d863f2bece471d75fecbf60b5281979536ca99670a9c3ee",
+      "sentiment.py": "1ffd8c3722e86898c80f8edef437d03d90fd4fa40e035d449ab262e209e6010e",
+      "schemas.py": "b968a8ab61777d39e49d89e8e376d2dee606c187dabad076cdccb45e1577cccb",
+      "batch_contracts.py": "86143c74029317c7e00904b545879059c161f4cb3285437158a3ec0fd6cfcd42",
+      "ticket_analysis.py": "8a289188a634a7f083cd3166c16a5b87cf0580d933d416ddc3f180a211e906e5",
+      "generation.py": "a680df4fd47882397d83ef6f7da7c35d313b09a2e6b19f7d70e8d9c8383ef2fe",
+      "pipeline.py": "5234b8a72676523894c95c53daadd217b6e94cefd935cc598aa78d9de549a0fd"
+    }
+  },
+  "csv_text_policy": "Quoted UTF-8 BOM CSV; apostrophe-prefix formula/control-leading text. JSON preserves originals."
+}

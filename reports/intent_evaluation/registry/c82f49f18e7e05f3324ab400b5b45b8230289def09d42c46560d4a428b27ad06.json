@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-26T10:19:32.201244+00:00",
+  "choices_sha256": "4ebfb94526a76f08988afb4af36578d9de3d5a5ecad6ee9bdf58222e1b53dbef",
+  "output_dir": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\reports\\intent_evaluation",
+  "test_sha256": "c82f49f18e7e05f3324ab400b5b45b8230289def09d42c46560d4a428b27ad06",
+  "test_messages_decoded": true,
+  "completed_at_utc": "2026-10-26T10:19:46.609857+00:00",
+  "prediction_count": 90
+}

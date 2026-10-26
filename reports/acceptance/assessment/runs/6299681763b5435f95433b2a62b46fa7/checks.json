@@ -1,0 +1,229 @@
+{
+  "batch": "assessment",
+  "run_id": "6299681763b5435f95433b2a62b46fa7",
+  "input_sha256": "d8adc5c01ccc7c919fb66e47e3334917e615967b8ba81d4fffbe114c3fd163e0",
+  "expectations_sha256": "5037c6ec4dff18728b6e7e69d1a805cd1fd6c9ef100435e62afbf9e2f7f0d3af",
+  "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+  "duration_seconds": 36.82050909998361,
+  "reused_rows": 0,
+  "comparison": {
+    "expected_counts": {
+      "processed": 2,
+      "ignored": 1,
+      "error": 0
+    },
+    "actual_counts": {
+      "processed": 1,
+      "ignored": 1,
+      "error": 1
+    },
+    "counts_match": false,
+    "row_accounting_reconciles": true,
+    "rows": [
+      {
+        "ordinal": 1,
+        "source_row": 2,
+        "ticket_id": "T001",
+        "expected": {
+          "ordinal": 1,
+          "status": "processed",
+          "category": "Bug Report",
+          "priority": "Urgent",
+          "sentiment": "Negative"
+        },
+        "actual": {
+          "source_row": 2,
+          "source_line_end": 2,
+          "ticket_id": "T001",
+          "original_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+          "normalized_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+          "status": "error",
+          "category": "Bug Report",
+          "priority": null,
+          "sentiment": "Negative",
+          "product_feature": null,
+          "suggested_reply_draft": null,
+          "ignored_reason": null,
+          "error_stage": "generation",
+          "error_code": "invalid_output",
+          "error_message": "OpenAI output did not match the required schema. No replacement result or repair request was made.",
+          "classifier_input_truncated": false,
+          "sentiment_input_truncated": false,
+          "raw_record": null,
+          "input_hash": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
+          "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+          "pipeline_version": null,
+          "prompt_version": null,
+          "api_model": null,
+          "reused": false,
+          "persisted": true,
+          "recorded_at": "2026-10-26T10:13:05.300519+00:00"
+        },
+        "field_matches": {
+          "status": false,
+          "category": true,
+          "priority": false,
+          "sentiment": true
+        },
+        "engineering_checks": {
+          "original_text_preserved": true,
+          "persisted": true,
+          "grounded_feature_or_null": false,
+          "reply_schema_policy": false,
+          "unsent_draft": true
+        },
+        "all_automated_checks_pass": false,
+        "reply_review": "Automated schema/policy checks only; assistant qualitative review is recorded separately."
+      },
+      {
+        "ordinal": 2,
+        "source_row": 3,
+        "ticket_id": "T002",
+        "expected": {
+          "ordinal": 2,
+          "status": "processed",
+          "category": "Feature Request",
+          "priority": "Medium",
+          "sentiment": "Positive"
+        },
+        "actual": {
+          "source_row": 3,
+          "source_line_end": 3,
+          "ticket_id": "T002",
+          "original_message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
+          "normalized_message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
+          "status": "processed",
+          "category": "Feature Request",
+          "priority": "Medium",
+          "sentiment": "Positive",
+          "product_feature": "mobile app",
+          "suggested_reply_draft": "Thanks for the suggestion. Dark mode for the mobile app sounds useful; is there a particular screen or usage scenario where it would help most?",
+          "ignored_reason": null,
+          "error_stage": null,
+          "error_code": null,
+          "error_message": null,
+          "classifier_input_truncated": false,
+          "sentiment_input_truncated": false,
+          "raw_record": null,
+          "input_hash": "856dec1b4b3d3c55bef0268bc493e7c5dd9ab63e9861608345d1c91fdd92d917",
+          "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+          "pipeline_version": null,
+          "prompt_version": "ticket-details-v2",
+          "api_model": "gpt-5.4-mini",
+          "reused": false,
+          "persisted": true,
+          "recorded_at": "2026-10-26T10:13:11.351171+00:00"
+        },
+        "field_matches": {
+          "status": true,
+          "category": true,
+          "priority": true,
+          "sentiment": true
+        },
+        "engineering_checks": {
+          "original_text_preserved": true,
+          "persisted": true,
+          "grounded_feature_or_null": true,
+          "reply_schema_policy": true,
+          "unsent_draft": true
+        },
+        "all_automated_checks_pass": true,
+        "reply_review": "Automated schema/policy checks only; assistant qualitative review is recorded separately."
+      },
+      {
+        "ordinal": 3,
+        "source_row": 4,
+        "ticket_id": "T003",
+        "expected": {
+          "ordinal": 3,
+          "status": "ignored",
+          "category": "Non-Qualifying"
+        },
+        "actual": {
+          "source_row": 4,
+          "source_line_end": 4,
+          "ticket_id": "T003",
+          "original_message": "Hello, hope you are having a nice day!",
+          "normalized_message": "Hello, hope you are having a nice day!",
+          "status": "ignored",
+          "category": "Non-Qualifying",
+          "priority": null,
+          "sentiment": null,
+          "product_feature": null,
+          "suggested_reply_draft": null,
+          "ignored_reason": "Category classifier predicted Non-Qualifying.",
+          "error_stage": null,
+          "error_code": null,
+          "error_message": null,
+          "classifier_input_truncated": false,
+          "sentiment_input_truncated": null,
+          "raw_record": null,
+          "input_hash": "e871fe9b195fafee66718902bc57a7d2f128ec785444b97c661eb666deb01312",
+          "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+          "pipeline_version": null,
+          "prompt_version": null,
+          "api_model": null,
+          "reused": false,
+          "persisted": true,
+          "recorded_at": "2026-10-26T10:13:11.440974+00:00"
+        },
+        "field_matches": {
+          "status": true,
+          "category": true
+        },
+        "engineering_checks": {
+          "original_text_preserved": true,
+          "persisted": true
+        },
+        "all_automated_checks_pass": true,
+        "reply_review": "Automated schema/policy checks only; assistant qualitative review is recorded separately."
+      }
+    ],
+    "mismatches": [
+      {
+        "ordinal": 1,
+        "ticket_id": "T001",
+        "fields": [
+          "status",
+          "priority"
+        ],
+        "engineering_checks": [
+          "grounded_feature_or_null",
+          "reply_schema_policy"
+        ]
+      }
+    ]
+  },
+  "export_checks": {
+    "saved_bytes_equal_shared_exports": true,
+    "manifest_checksums_match": true,
+    "json_originals_preserved": true,
+    "export_row_accounting": true,
+    "processed_csv_rows": 1,
+    "ignored_csv_rows": 1,
+    "error_json_rows": 1
+  },
+  "database_integrity": "ok",
+  "saved_source_rows": 3,
+  "new_provider_events": [
+    {
+      "message_sha256": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
+      "status": "error",
+      "code": "invalid_output",
+      "attempts": 1
+    },
+    {
+      "message_sha256": "856dec1b4b3d3c55bef0268bc493e7c5dd9ab63e9861608345d1c91fdd92d917",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini",
+      "response_id": "resp_0407f097f6828b72016adf27b399cc87d2bd4efbee91aecb36",
+      "duration_seconds": 5.797706500045024
+    }
+  ],
+  "reply_sent": false,
+  "held_out_data_used": false,
+  "reference_authorship": "Assistant-authored acceptance references; assessment expectations are supplied by the assessment. No human sentiment review or accuracy dataset is claimed.",
+  "live_verification_scope": "Default runtime uses real saved CPU category/sentiment models and configured OpenAI. No LLM-only comparison or LLM judge.",
+  "status": "mismatches_or_errors"
+}

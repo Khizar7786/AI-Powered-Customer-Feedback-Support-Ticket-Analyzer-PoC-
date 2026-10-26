@@ -1,0 +1,11 @@
+{
+  "valid_ticket_count": 75,
+  "valid_tickets_incorrectly_ignored_count": 0,
+  "valid_tickets_incorrectly_ignored_rate": 0.0,
+  "valid_tickets_incorrectly_ignored": [],
+  "nonqualifying_incorrectly_accepted_count": 0,
+  "nonqualifying_incorrectly_accepted": [],
+  "inference_errors_count": 0,
+  "inference_errors": [],
+  "qualification_rule": "Exact blank/greeting rules followed by classifier semantic qualification; low confidence alone is not spam."
+}

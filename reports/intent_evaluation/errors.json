@@ -1,0 +1,20 @@
+[
+  {
+    "source_row": 43,
+    "example_id": "TEST0042",
+    "message": "Could the rehearsal calendar display two time zones side by side? Our touring ensemble currently has to switch the whole calendar back and forth to compare the home studio with the venue.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.4249970614910126,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": false
+  }
+]

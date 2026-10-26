@@ -191,6 +191,10 @@ def test_nullable_product_is_valid_and_hallucinated_phrase_is_rejected():
     "Our team has already escalated this.", "We will refund you.", "It will be fixed tomorrow.",
     "We have created a support ticket.", "This is guaranteed to work.",
     "This will finish within two hours.", "Thanks. We can help. Which version?", "   ",
+    "Thanks for the idea. We will pass it along to the team.",
+    "We'll forward your suggestion.", "We’ll share this feedback.",
+    "Our team will take care of it.", "I will make sure this gets reviewed.",
+    "We are going to look into it.", "Our team is going to pass this on.",
 ])
 def test_schema_rejects_false_actions_promises_long_or_blank_replies(reply):
     with pytest.raises(ValidationError):

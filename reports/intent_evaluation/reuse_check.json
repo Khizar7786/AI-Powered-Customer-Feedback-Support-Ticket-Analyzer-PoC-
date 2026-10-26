@@ -1,0 +1,9 @@
+{
+  "verification_kind": "Actual repeated evaluation command with loader guarded; saved metrics reused, no fabricated predictions",
+  "reused_saved_evaluation": true,
+  "new_predictions": 0,
+  "model_loads": 0,
+  "journal_rows": 90,
+  "journal_sha256_unchanged": true,
+  "python_version": "3.12.5"
+}

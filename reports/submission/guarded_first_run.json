@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-10-26T10:55:34.182707+00:00",
+  "process": "fresh Python process with real Streamlit AppTest",
+  "model_mode": "saved real local DistilBERT and Cardiff checkpoints",
+  "api_mode": "configured real OpenAI adapter for qualifying uncached rows; no mocks",
+  "input": "data/sample_tickets.csv",
+  "input_sha256": "6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac",
+  "validation_counts": {
+    "candidate": 6,
+    "ignored": 2,
+    "error": 4
+  },
+  "analysis_counts": {
+    "processed": 0,
+    "ignored": 0,
+    "error": 12
+  },
+  "rows": 12,
+  "reused_rows": 0,
+  "run_id": "218e475e4e574f22a50e6d50ba3695a4",
+  "assessment_statuses": {
+    "T001": {
+      "status": "error",
+      "category": null
+    },
+    "T002": {
+      "status": "error",
+      "category": null
+    },
+    "T003": {
+      "status": "error",
+      "category": null
+    }
+  },
+  "exports_saved": true,
+  "bundle_matches_saved_files": true,
+  "app_exceptions": 0,
+  "prompt_version": "ticket-details-v2",
+  "physical_browser_upload_download": "not tested by AppTest",
+  "actual_api_calls": 0,
+  "result_interpretation": "Existing ticket IDs differed in saved input/configuration; all eight non-input-error rows required explicit reprocessing. No model or paid API work was performed.",
+  "error_stage_codes": {
+    "reprocessing/reprocess_required": 8,
+    "input/invalid_csv": 4
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "dd8d4c6d65734a91b4b81b2fd84e2453",
+  "export_version": "batch-export-v1",
+  "sha256": {
+    "results.csv": "55513954c8ea463afdc3070cb1110533354cbefb04be11f7eab5154ad679a637",
+    "ignored.csv": "4f4520e3cff957c7b9772fde51d17fc2fa790b79c559c5b192d8e7c33f963c52",
+    "errors.json": "7b68dfe90d7ff87b2ca332d5ba2700aba50f2f5afaae0589c3edce715f04e8f3",
+    "batch.json": "b17f23ca6a6fa9f6574ba3c3576429efd35bd60e1df02f758e814acba5d569dc"
+  }
+}

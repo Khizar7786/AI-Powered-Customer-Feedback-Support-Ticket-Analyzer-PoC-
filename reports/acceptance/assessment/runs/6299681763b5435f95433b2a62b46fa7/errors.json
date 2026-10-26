@@ -1,0 +1,62 @@
+{
+  "export_version": "batch-export-v1",
+  "run_id": "6299681763b5435f95433b2a62b46fa7",
+  "file_errors": [],
+  "persistence_errors": [],
+  "rows": [
+    {
+      "ordinal": 1,
+      "source_row": 2,
+      "source_line_end": 2,
+      "identity": "8cd9487d89eea24466824b7aed3f64261d3fef76097a2408b0b5bdfa4aed1b8c",
+      "ticket_key": "ticket:T001",
+      "input_hash": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
+      "outcome": {
+        "ticket_id": "T001",
+        "original_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+        "normalized_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
+        "raw_record": null,
+        "status": "error",
+        "analysis": {
+          "ticket": {
+            "ticket_id": "T001",
+            "message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+          },
+          "status": "error",
+          "category": {
+            "category": "Bug Report",
+            "confidence": 0.5858913064002991,
+            "input_tokens": 23,
+            "used_tokens": 23,
+            "max_length": 128,
+            "truncated": false,
+            "device": "cpu"
+          },
+          "sentiment": {
+            "sentiment": "Negative",
+            "confidence": 0.8985980749130249,
+            "input_tokens": 22,
+            "used_tokens": 22,
+            "max_length": 512,
+            "truncated": false,
+            "device": "cpu",
+            "model_input": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!"
+          },
+          "generated": null,
+          "reason": null,
+          "error": {
+            "stage": "generation",
+            "code": "invalid_output",
+            "message": "OpenAI output did not match the required schema. No replacement result or repair request was made."
+          },
+          "reply_is_draft": true
+        },
+        "failure": null
+      },
+      "reused": false,
+      "persisted": true,
+      "recorded_at": "2026-10-26T10:13:05.300519+00:00"
+    }
+  ]
+}

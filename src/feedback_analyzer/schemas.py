@@ -50,6 +50,10 @@ _TIME_PROMISE = re.compile(
     r"\b(?:within|in)\s+(?:\d+|one|two|three|four|a|an)\s+(?:business\s+)?(?:minutes?|hours?|days?|weeks?)\b|"
     r"\b(?:guarantee(?:d)?|promise(?:d)?)\b", re.IGNORECASE,
 )
+_FIRST_PERSON_COMMITMENT = re.compile(
+    r"\b(?:we|i|our\s+team)(?:'ll|\s+(?:will|shall)|\s+(?:are|am|is)\s+going\s+to)\b",
+    re.IGNORECASE,
+)
 
 
 class GeneratedDetails(BaseModel):
@@ -77,7 +81,7 @@ class GeneratedDetails(BaseModel):
         if "\n" in value or "\r" in value or len(re.findall(r"[.!?]+(?=\s|$)", value)) > 2:
             raise ValueError("The reply draft must be one or two short sentences.")
         normalized = value.replace("’", "'")
-        if _PERFORMED.search(normalized) or _TIME_PROMISE.search(normalized):
+        if _PERFORMED.search(normalized) or _TIME_PROMISE.search(normalized) or _FIRST_PERSON_COMMITMENT.search(normalized):
             raise ValueError("The draft must not claim actions or promise a resolution/time.")
         return value
 

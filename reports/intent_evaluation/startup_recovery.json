@@ -1,0 +1,9 @@
+{
+  "observed_failure": "Stray U+2666 after try: in intent.py during startup import",
+  "failed_startup_test_messages_decoded": false,
+  "failed_startup_prediction_count": 0,
+  "registry_reservations_before_recovery": 0,
+  "mechanical_fix": "Removed exactly one stray character; repaired bytes matched the already frozen intent.py SHA-256",
+  "model_or_prompt_tuning": false,
+  "successful_final_prediction_count": 90
+}

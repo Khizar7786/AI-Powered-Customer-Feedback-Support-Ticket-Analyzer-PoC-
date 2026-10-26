@@ -1,0 +1,76 @@
+{
+  "checked_at_utc": "2026-10-26T10:58:36.061921+00:00",
+  "process": "fresh Python process with real Streamlit AppTest",
+  "model_mode": "saved real local DistilBERT and Cardiff checkpoints",
+  "api_mode": "real OpenAI adapter; passthrough operation instrumentation, no fake responses",
+  "input": "data/sample_tickets.csv",
+  "input_sha256": "6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac",
+  "explicit_reprocess_enabled": true,
+  "analysis_counts": {
+    "processed": 5,
+    "ignored": 3,
+    "error": 4
+  },
+  "rows": 12,
+  "reused_rows": 4,
+  "run_id": "3ba2ddad6afa49f3920769f8c9057231",
+  "assessment_statuses": {
+    "T001": {
+      "status": "processed",
+      "category": "Bug Report",
+      "priority": "Urgent",
+      "sentiment": "Negative"
+    },
+    "T002": {
+      "status": "processed",
+      "category": "Feature Request",
+      "priority": "Low",
+      "sentiment": "Positive"
+    },
+    "T003": {
+      "status": "ignored",
+      "category": "Non-Qualifying",
+      "priority": null,
+      "sentiment": null
+    }
+  },
+  "observed_real_api_operations": 5,
+  "successful_api_operations": 5,
+  "api_events": [
+    {
+      "message_sha256": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "message_sha256": "856dec1b4b3d3c55bef0268bc493e7c5dd9ab63e9861608345d1c91fdd92d917",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "message_sha256": "d9347745e7d5558630a80dd9ad9aed902ad6721eb467c4a1f6caacb6e105a03f",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "message_sha256": "25d822153b0f68af10d70ec142c4162e197f41aa7021087c11987e645c9d945c",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "message_sha256": "5f953023227a8029ec6d175f76f139cae7689719325fb364871b94e1251880b3",
+      "status": "validated",
+      "attempts": 1,
+      "model": "gpt-5.4-mini"
+    }
+  ],
+  "exports_saved": true,
+  "bundle_matches_saved_files": true,
+  "app_exceptions": 0,
+  "prompt_version": "ticket-details-v2",
+  "physical_browser_upload_download": "not tested by AppTest"
+}

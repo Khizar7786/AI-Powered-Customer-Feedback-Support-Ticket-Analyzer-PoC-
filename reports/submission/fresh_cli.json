@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-10-26T11:00:45.005828+00:00",
+  "command": "python -m scripts.analyze --input data/sample_tickets.csv --database outputs/tickets.db --reprocess",
+  "process": "fresh CLI Python process after real Streamlit run",
+  "exit_code": 1,
+  "exit_reason": "four deliberately invalid CSV rows; export succeeded",
+  "run_id": "cdb067a8a8104ce9acf8a6c4693f1924",
+  "rows": 12,
+  "counts": {
+    "processed": 5,
+    "ignored": 3,
+    "error": 4
+  },
+  "reused_rows": 12,
+  "new_model_api_work": 0,
+  "assessment_fields": {
+    "T001": {
+      "status": "processed",
+      "category": "Bug Report",
+      "priority": "Urgent",
+      "sentiment": "Negative"
+    },
+    "T002": {
+      "status": "processed",
+      "category": "Feature Request",
+      "priority": "Low",
+      "sentiment": "Positive"
+    },
+    "T003": {
+      "status": "ignored"
+    }
+  },
+  "original_messages_and_raw_records_preserved": true,
+  "processed_fields_complete": true,
+  "error_rows_have_failures": true,
+  "export_checksum_files": [
+    "results.csv",
+    "ignored.csv",
+    "errors.json",
+    "batch.json"
+  ],
+  "export_counts": {
+    "processed_csv": 5,
+    "ignored_csv": 3,
+    "errors_json": 4,
+    "batch_json": 12
+  },
+  "database_integrity": "ok",
+  "foreign_key_errors": 0,
+  "unresolved_claims": 0,
+  "outcomes_unchanged_on_replay": true,
+  "new_batch_audit_rows": 12
+}

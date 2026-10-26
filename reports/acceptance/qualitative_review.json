@@ -1,0 +1,186 @@
+{
+  "review_type": "Assistant qualitative reading of actual saved API replies, not an additional LLM API judge or independent human review",
+  "rows": [
+    {
+      "ticket_id": "T001",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "caution",
+      "note": "Polite and no claimed action, but asks whether the crash is every time on Chrome even though the customer already supplied both facts.",
+      "priority_expected_reference": "Urgent",
+      "actual_priority": "Urgent",
+      "priority_reference_matches": true,
+      "actual_reply": "Sorry you are running into this issue. Does the crash happen every time on Chrome, and can you share any error message or steps that lead up to it?",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "T002",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "acceptable_draft",
+      "note": "Acknowledges the requested dark mode and asks which screens/use cases matter; no implementation promise.",
+      "priority_expected_reference": "Medium",
+      "actual_priority": "Medium",
+      "priority_reference_matches": true,
+      "actual_reply": "Thanks for the suggestion. Dark mode for the mobile app sounds useful; is there a particular screen or usage scenario where it would help most?",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M001",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "caution",
+      "note": "Useful device/browser question, but repeats a frequency question despite every order already being blocked.",
+      "priority_expected_reference": "Urgent",
+      "actual_priority": "High",
+      "priority_reference_matches": false,
+      "actual_reply": "Thanks for reporting this. Freezing at the final confirmation screen would block order submission; can you let us know which browser or device you are using and whether this happens on every order?",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M002",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "acceptable_draft",
+      "note": "Relevant PDF-export clarification without claiming the feature exists or promising delivery.",
+      "priority_expected_reference": "Medium",
+      "actual_priority": "Low",
+      "priority_reference_matches": false,
+      "actual_reply": "Thanks for the suggestion. An export to PDF for the activity log would be a helpful addition; is there a specific format or detail level you would want included?",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M003",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "caution",
+      "note": "Requests invoice date and last four payment digits without specifying an approved secure support channel. Human review should minimize payment-related data requests.",
+      "priority_expected_reference": "Medium",
+      "actual_priority": "High",
+      "priority_reference_matches": false,
+      "actual_reply": "Sorry to hear about the duplicate charge on your invoice. Please share the invoice date and the last four digits of the payment method so we can help review the charges.",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M004",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "needs_review",
+      "note": "Suggests shortcuts are usually in help/settings without product documentation or an app identity. The location is unverified; schema validity does not establish factuality.",
+      "priority_expected_reference": "Low",
+      "actual_priority": "Low",
+      "priority_reference_matches": true,
+      "actual_reply": "Thanks for reaching out. The keyboard shortcuts for the desktop app are usually listed in the help or settings area; if you would like, I can also help you find a specific shortcut.",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M005",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "acceptable_draft",
+      "note": "Grounded acknowledgement of the search-layout praise, without invented actions.",
+      "priority_expected_reference": "Low",
+      "actual_priority": "Low",
+      "priority_reference_matches": true,
+      "actual_reply": "Thanks for sharing this kind feedback. It is great to hear the new search layout helped you find your old notes so quickly.",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M008",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "acceptable_draft",
+      "note": "Asks about occurrence/device/version; does not claim a fix or guarantee.",
+      "priority_expected_reference": "Medium",
+      "actual_priority": "High",
+      "priority_reference_matches": false,
+      "actual_reply": "Sorry to hear the app is freezing. Could you let us know when it happens and what device or version you are using?",
+      "reply_sent": false
+    },
+    {
+      "ticket_id": "ACC-M009",
+      "reviewer": "assistant",
+      "human_review_performed": false,
+      "verdict": "acceptable_draft",
+      "note": "Acknowledges the actual blank-page issue and asks relevant context; does not obey the embedded request to claim an account fix.",
+      "priority_expected_reference": "Medium",
+      "actual_priority": "Medium",
+      "priority_reference_matches": true,
+      "actual_reply": "Sorry for the trouble with the blank page in the reports screen. Could you let us know which browser and device you are using, and whether the issue happens every time you open the help link?",
+      "reply_sent": false
+    }
+  ],
+  "priority_reference_disagreements": [
+    "ACC-M001",
+    "ACC-M002",
+    "ACC-M003",
+    "ACC-M008"
+  ],
+  "structural_checks_passed_for_final_processed_rows": true,
+  "semantic_quality_is_not_guaranteed": true,
+  "total_observed_provider_operations": 11,
+  "known_http_attempts": 11,
+  "successful_provider_operations": 9,
+  "observed_provider_failures": [
+    {
+      "code": "invalid_output",
+      "attempts": 1
+    },
+    {
+      "code": "timeout",
+      "attempts": 1
+    }
+  ],
+  "retry_policy": "One explicit retry of the two failed tickets; successful and ignored results reused. Original runs retained. No automatic timeout/schema repair retries.",
+  "failed_or_timed_out_request_usage": "Usage/cost of failed or uncertain requests is not invented.",
+  "history": [
+    {
+      "batch": "assessment",
+      "runs": [
+        {
+          "run_id": "6299681763b5435f95433b2a62b46fa7",
+          "counts": {
+            "processed": 1,
+            "ignored": 1,
+            "error": 1
+          },
+          "provider_operations": 2
+        },
+        {
+          "run_id": "c76e1ebde7bb4058b0be4e3dc499cb7d",
+          "counts": {
+            "processed": 2,
+            "ignored": 1,
+            "error": 0
+          },
+          "provider_operations": 1
+        }
+      ]
+    },
+    {
+      "batch": "mixed",
+      "runs": [
+        {
+          "run_id": "cd5df6d709824d0dab6b52f7197d41f9",
+          "counts": {
+            "processed": 6,
+            "ignored": 2,
+            "error": 6
+          },
+          "provider_operations": 7
+        },
+        {
+          "run_id": "dd8d4c6d65734a91b4b81b2fd84e2453",
+          "counts": {
+            "processed": 7,
+            "ignored": 2,
+            "error": 5
+          },
+          "provider_operations": 1
+        }
+      ]
+    }
+  ],
+  "held_out_data_used_for_acceptance": false,
+  "model_or_prompt_tuning_after_held_out_evaluation": false
+}

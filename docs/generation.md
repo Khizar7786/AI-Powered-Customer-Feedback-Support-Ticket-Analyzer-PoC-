@@ -4,6 +4,8 @@ OpenAI is the selected provider. The configurable default is `gpt-5.4-mini`; its
 
 ## Local configuration
 
+Stage 10 fixes the current policy at **ticket-details-v2**. The general guard now rejects first-person future commitments such as promising to pass feedback along, and batch UI results invalidate on prompt-version changes. This was corrected from a known development draft before held-out evaluation; no sample-specific answer rules were added. Actual acceptance errors, retries, priority disagreements and semantic draft concerns are in the [evaluation guide](evaluation.md).
+
 Use the ignored project-root `.env`. It now contains the locally supplied key; `.env.example` has a blank placeholder only. Paste keys into `.env`, never into chat or source control:
 
 ```dotenv

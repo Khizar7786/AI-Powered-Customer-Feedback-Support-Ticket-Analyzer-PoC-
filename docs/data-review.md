@@ -2,11 +2,13 @@
 
 Run commands in PowerShell from the project root using the existing Python 3.12 environment. This workflow performs data checks only. It does not train a model or approve generated labels.
 
-Raw CSVs and original audit notes, review copies/provenance, frozen data splits and data-preparation reports remain local inputs outside this repository. Selected model-training/inference verification reports are included separately. Place your original inputs under `data/raw/`, or pass their paths with `--input` and `--notes`. Tests generate their own fixtures and do not require the local dataset.
+The frozen synthetic train/validation/test CSVs and manifest are included so the classifier can be retrained. Raw drafts, original audit notes, review working copies/provenance and detailed data-preparation reports remain local. To redo review or splitting, transfer those original inputs under `data/raw/` or pass `--input` and `--notes`. Tests generate their own fixtures.
 
 ## Current dataset review origin
 
-On 2026-10-25 the user explicitly delegated the review and splitting work to the assistant, superseding the earlier requirement to wait for manual review for this corpus. All 600 records were read and assessed by the assistant/team. The `reviewed` flags for this version mean **user-authorized assistant review**. No human label validation is claimed. `reports/data_preparation/assistant_review.json`, its per-row records, and the provenance/manifest `review_authorization` identify the method and limitations. Synthetic origin remains recorded. The review corrected 24 labels and conservatively replaced 67 flagged test candidates in a separate authoring context before overlap checking.
+The frozen local version has now received its one final Stage 10 category evaluation. Its split bytes/manifest remain unchanged; the external evaluation registry records test consumption. See [evaluation.md](evaluation.md). Do not use its result to tune/relabel while continuing to describe this test set as unseen.
+
+On 2026-10-25 the user explicitly delegated the review and splitting work to the assistant, superseding the earlier requirement to wait for manual review for this corpus. All 600 records were read and assessed by the assistant/team. The `reviewed` flags for this version mean **user-authorized assistant review**. No human label validation is claimed. The included manifest records this origin; the local `reports/data_preparation/assistant_review.json` retains per-row decisions. Synthetic origin remains recorded. The review corrected 24 labels and conservatively replaced 67 flagged test candidates in a separate authoring context before overlap checking.
 
 The manual procedure below remains available for subsequent corrections. Preserve the review origin when reporting results or preparing a new dataset version.
 

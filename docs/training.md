@@ -1,6 +1,6 @@
 # Train the category classifier (Stage 4)
 
-Run from the project root with the editable package installed. Training is a separate terminal workflow. Stage 5 now connects the saved checkpoint to [partial category analysis](intent-inference.md) in Streamlit; full ticket analysis stays disabled until later dependencies are connected.
+Run from the project root with the editable package installed. Training is a separate terminal workflow. The saved model now serves the complete [batch pipeline](batch.md). Stage 10 evaluated this fixed checkpoint once: 98.89% held-out category accuracy / 0.9889 macro-F1 on the synthetic assistant-reviewed corpus. See the [evaluation guide](evaluation.md); do not retrain/tune against this now-consumed test set while describing it as blind.
 
 ```powershell
 # Check the reviewed/frozen data and available device first.
@@ -8,10 +8,11 @@ Run from the project root with the editable package installed. Training is a sep
 # Small real run: 12 training / 6 validation rows, one epoch, separate artifacts.
 .\.venv\Scripts\python.exe -m scripts.train_intent --smoke
 .\.venv\Scripts\python.exe -m scripts.train_intent --smoke --verify-only
-# Full run: defaults to data/splits/{train,validation}.csv.
-.\.venv\Scripts\python.exe -m scripts.train_intent
+# Full reproduction from the included data/splits/{train,validation}.csv and manifest.
+# Use a new report directory because the original measured report is included.
+.\.venv\Scripts\python.exe -m scripts.train_intent --revision 12040accade4e8a0f71eabdb258fecc2e7e948be --report-dir reports/intent_training_reproduction
 # Run this as a separate command/process after training.
-.\.venv\Scripts\python.exe -m scripts.train_intent --verify-only
+.\.venv\Scripts\python.exe -m scripts.train_intent --verify-only --report-dir reports/intent_training_reproduction
 ```
 
 The first training invocation downloads the public base model to `.cache/huggingface/hub`. To reproduce the recorded experiment, pass `--revision 12040accade4e8a0f71eabdb258fecc2e7e948be`; add `--local-files-only` after that revision is cached. The full run starts from the pretrained encoder again; smoke weights are never reused. `--verify-only` loads the saved tokenizer and model locally on CPU and checks the label mappings and one finite six-score forward pass. It reads no dataset file and makes no API request.

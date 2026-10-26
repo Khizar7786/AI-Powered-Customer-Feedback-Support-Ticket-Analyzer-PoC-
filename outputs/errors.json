@@ -1,6 +1,6 @@
 {
   "export_version": "batch-export-v1",
-  "run_id": "3ad058ba20f7486094648792bfe1eace",
+  "run_id": "ac3247a36cfe4f35898d14ab941cd257",
   "file_errors": [],
   "persistence_errors": [],
   "rows": [
@@ -8,10 +8,10 @@
       "ordinal": 9,
       "source_row": 10,
       "source_line_end": 10,
-      "identity": "106cbd7e3786de3d04140e90f61ef4a8e1d63c2ed8d3a078e1198e183c0656de",
+      "identity": "f50531650dcbfda11af7019b8fabfe3c7d9faf9a1aa385dcff51c62367b03a35",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:10",
       "input_hash": "7df549d4c9cacac28a53ed7af9c970ed0eebf453caa1a36550b4be40905e1867",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": null,
         "original_message": "The subscription amount looks incorrect.",
@@ -27,16 +27,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.387182+00:00"
+      "recorded_at": "2026-10-26T15:05:34.221540+00:00"
     },
     {
       "ordinal": 10,
       "source_row": 11,
       "source_line_end": 11,
-      "identity": "d52f59417ab8d76dfce54a6e027692c2e10e9a889dbaffcaf2db25596515d95a",
+      "identity": "999acde14d9d5241420d8e8291af3925b72378efcc1c2ed60a9246d1bd172b55",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:11",
       "input_hash": "62657e8f950815a11abe949e6403c482f3f45b3089cb496b27cd79c4577db945",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T009",
         "original_message": "The export button is broken.",
@@ -52,16 +52,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.404196+00:00"
+      "recorded_at": "2026-10-26T15:05:34.229767+00:00"
     },
     {
       "ordinal": 11,
       "source_row": 12,
       "source_line_end": 12,
-      "identity": "abf118a160b909d3ea3f7cac870e92d7d68cb8f8fd71baf53a8509d4e26a7580",
+      "identity": "581bc3fc38c654addf11a3ffe1a0de036daf2fcdd4c6b9ffcccbbfe444fa885d",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:12",
       "input_hash": "550c1f627907a3a0f9d9d22a1ce12cbd0a471bae7ab20c3a79405a102a685de8",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T009",
         "original_message": "I cannot download my report.",
@@ -77,16 +77,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.420132+00:00"
+      "recorded_at": "2026-10-26T15:05:34.244175+00:00"
     },
     {
       "ordinal": 12,
       "source_row": 13,
       "source_line_end": 13,
-      "identity": "725a8e5f67b06339443b9118ab3d08a650bf4dc91b12cb121e131a68873ab179",
+      "identity": "0d093f89f68766ec1da9792329f86113e0c3f8293773c78ad79923530509fb54",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:13",
       "input_hash": "cc99f194282fa667db767d9b377525a299044e9476bee7daa2a2be7bbeabb95b",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T010",
         "original_message": "Please check my invoice",
@@ -102,7 +102,7 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.440205+00:00"
+      "recorded_at": "2026-10-26T15:05:34.253317+00:00"
     }
   ]
 }

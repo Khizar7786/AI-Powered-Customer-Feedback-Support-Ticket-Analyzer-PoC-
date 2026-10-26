@@ -1,0 +1,114 @@
+{
+  "checked_at_utc": "2026-10-26T10:38:08.479778+00:00",
+  "frozen_choices_sha256": "4ebfb94526a76f08988afb4af36578d9de3d5a5ecad6ee9bdf58222e1b53dbef",
+  "current_choices_match_freeze": true,
+  "test_sha256": "c82f49f18e7e05f3324ab400b5b45b8230289def09d42c46560d4a428b27ad06",
+  "dataset_sha256": "c8f76e80e95337bdfd874780bcad16483a2db02a9539f05ab44794b8a2ae15bf",
+  "manifest_sha256": "6b3e79b1033de507c26a51e97897a2277189e3f59cf8318d81cd2c5ddfa8de06",
+  "model_weights_sha256": "993d236aa4473be875c004a9a1c8256271286349b7c929eb67bbb7aa5c087b06",
+  "registry_completed_claims": 1,
+  "journal_rows": 90,
+  "journal_sha256": "9ddaae59bda493922deacb0eb3c34f6fc9d58065e3ba246ef935d76ad9e92bd3",
+  "new_held_out_predictions_during_verification": 0,
+  "independent_sentiment_evaluation_rows": 0,
+  "secret_scan_files": 211,
+  "secret_findings": 0,
+  "local_document_links_checked_in": [
+    "README.md",
+    "docs/evaluation.md",
+    "docs/training.md",
+    "docs/data-review.md",
+    "docs/generation.md",
+    "docs/progress.md",
+    "project.md",
+    "data/acceptance/README.md"
+  ],
+  "broken_local_links": [],
+  "staged_changes": [],
+  "pytest": {
+    "passed": 404,
+    "duration_seconds": 106.74
+  },
+  "pip_check": "passed: no broken requirements",
+  "git_diff_check": "passed; line-ending notices only",
+  "post_test_model_or_prompt_tuning": false,
+  "extra_model_training": false,
+  "llm_only_comparison": false,
+  "physical_browser_check": "pending; prior Computer Use browser URL policy verification blocked it",
+  "clean_machine_install": "not performed; current Windows virtual environment was verified",
+  "acceptance_integrity": {
+    "checked_at_utc": "2026-10-26T10:38:49.227184+00:00",
+    "archived_runs": [
+      {
+        "batch": "assessment",
+        "run_id": "6299681763b5435f95433b2a62b46fa7",
+        "counts": {
+          "processed": 1,
+          "ignored": 1,
+          "error": 1
+        },
+        "export_manifest_matches": true,
+        "database_rows_reconcile": true
+      },
+      {
+        "batch": "assessment",
+        "run_id": "c76e1ebde7bb4058b0be4e3dc499cb7d",
+        "counts": {
+          "processed": 2,
+          "ignored": 1,
+          "error": 0
+        },
+        "export_manifest_matches": true,
+        "database_rows_reconcile": true
+      },
+      {
+        "batch": "mixed",
+        "run_id": "cd5df6d709824d0dab6b52f7197d41f9",
+        "counts": {
+          "processed": 6,
+          "ignored": 2,
+          "error": 6
+        },
+        "export_manifest_matches": true,
+        "database_rows_reconcile": true
+      },
+      {
+        "batch": "mixed",
+        "run_id": "dd8d4c6d65734a91b4b81b2fd84e2453",
+        "counts": {
+          "processed": 7,
+          "ignored": 2,
+          "error": 5
+        },
+        "export_manifest_matches": true,
+        "database_rows_reconcile": true
+      }
+    ],
+    "database_integrity": "ok for both isolated databases",
+    "foreign_key_errors": 0,
+    "unresolved_claims": 0,
+    "duplicate_outcome_identities": 0,
+    "observed_provider_operations": 11,
+    "successful_provider_operations": 9,
+    "known_http_attempts": 11,
+    "long_original_message_chars": 14640,
+    "long_input_partial_predictions_and_truncation_preserved": true,
+    "new_api_calls_during_verification": 0,
+    "mixed_priority_reference_mismatches": 4,
+    "reply_cautions": "reports/acceptance/review.md",
+    "failed_usage_or_billing": "unknown; no cost or token total fabricated"
+  },
+  "streamlit": {
+    "startup_preview_rerun": "passed",
+    "api_calls": 0,
+    "model_loads": 0,
+    "new_batch_inserts": 0,
+    "existing_output_bytes_unchanged": true,
+    "startup_report": "reports/intent_evaluation/ui_startup_check.json",
+    "local_server_restarted_from_project_venv": true,
+    "health_http_status": 200,
+    "url": "http://127.0.0.1:8501",
+    "health_checked_at_utc": "2026-10-26T10:38:49+00:00",
+    "physical_browser_upload_download": "pending"
+  }
+}

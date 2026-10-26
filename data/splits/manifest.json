@@ -1,0 +1,4463 @@
+{
+  "version": 1,
+  "created_at_utc": "2026-10-25T17:12:41.943732+00:00",
+  "seed": 42,
+  "dataset_sha256": "c8f76e80e95337bdfd874780bcad16483a2db02a9539f05ab44794b8a2ae15bf",
+  "source_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770",
+  "source_provenance": {
+    "source_path": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\data\\raw\\tickets_600_draft.csv",
+    "source_sha256": "f6627b0bcead4282e14847b8ffdb6187c9d5c069abbe20e2c164280d42b59fc7",
+    "original_pool_by_id": {
+      "DEV0001": "development",
+      "DEV0002": "development",
+      "DEV0003": "development",
+      "DEV0004": "development",
+      "DEV0005": "development",
+      "DEV0006": "development",
+      "DEV0007": "development",
+      "DEV0008": "development",
+      "DEV0009": "development",
+      "DEV0010": "development",
+      "DEV0011": "development",
+      "DEV0012": "development",
+      "DEV0013": "development",
+      "DEV0014": "development",
+      "DEV0015": "development",
+      "DEV0016": "development",
+      "DEV0017": "development",
+      "DEV0018": "development",
+      "DEV0019": "development",
+      "DEV0020": "development",
+      "DEV0021": "development",
+      "DEV0022": "development",
+      "DEV0023": "development",
+      "DEV0024": "development",
+      "DEV0025": "development",
+      "DEV0026": "development",
+      "DEV0027": "development",
+      "DEV0028": "development",
+      "DEV0029": "development",
+      "DEV0030": "development",
+      "DEV0031": "development",
+      "DEV0032": "development",
+      "DEV0033": "development",
+      "DEV0034": "development",
+      "DEV0035": "development",
+      "DEV0036": "development",
+      "DEV0037": "development",
+      "DEV0038": "development",
+      "DEV0039": "development",
+      "DEV0040": "development",
+      "DEV0041": "development",
+      "DEV0042": "development",
+      "DEV0043": "development",
+      "DEV0044": "development",
+      "DEV0045": "development",
+      "DEV0046": "development",
+      "DEV0047": "development",
+      "DEV0048": "development",
+      "DEV0049": "development",
+      "DEV0050": "development",
+      "DEV0051": "development",
+      "DEV0052": "development",
+      "DEV0053": "development",
+      "DEV0054": "development",
+      "DEV0055": "development",
+      "DEV0056": "development",
+      "DEV0057": "development",
+      "DEV0058": "development",
+      "DEV0059": "development",
+      "DEV0060": "development",
+      "DEV0061": "development",
+      "DEV0062": "development",
+      "DEV0063": "development",
+      "DEV0064": "development",
+      "DEV0065": "development",
+      "DEV0066": "development",
+      "DEV0067": "development",
+      "DEV0068": "development",
+      "DEV0069": "development",
+      "DEV0070": "development",
+      "DEV0071": "development",
+      "DEV0072": "development",
+      "DEV0073": "development",
+      "DEV0074": "development",
+      "DEV0075": "development",
+      "DEV0076": "development",
+      "DEV0077": "development",
+      "DEV0078": "development",
+      "DEV0079": "development",
+      "DEV0080": "development",
+      "DEV0081": "development",
+      "DEV0082": "development",
+      "DEV0083": "development",
+      "DEV0084": "development",
+      "DEV0085": "development",
+      "DEV0086": "development",
+      "DEV0087": "development",
+      "DEV0088": "development",
+      "DEV0089": "development",
+      "DEV0090": "development",
+      "DEV0091": "development",
+      "DEV0092": "development",
+      "DEV0093": "development",
+      "DEV0094": "development",
+      "DEV0095": "development",
+      "DEV0096": "development",
+      "DEV0097": "development",
+      "DEV0098": "development",
+      "DEV0099": "development",
+      "DEV0100": "development",
+      "DEV0101": "development",
+      "DEV0102": "development",
+      "DEV0103": "development",
+      "DEV0104": "development",
+      "DEV0105": "development",
+      "DEV0106": "development",
+      "DEV0107": "development",
+      "DEV0108": "development",
+      "DEV0109": "development",
+      "DEV0110": "development",
+      "DEV0111": "development",
+      "DEV0112": "development",
+      "DEV0113": "development",
+      "DEV0114": "development",
+      "DEV0115": "development",
+      "DEV0116": "development",
+      "DEV0117": "development",
+      "DEV0118": "development",
+      "DEV0119": "development",
+      "DEV0120": "development",
+      "DEV0121": "development",
+      "DEV0122": "development",
+      "DEV0123": "development",
+      "DEV0124": "development",
+      "DEV0125": "development",
+      "DEV0126": "development",
+      "DEV0127": "development",
+      "DEV0128": "development",
+      "DEV0129": "development",
+      "DEV0130": "development",
+      "DEV0131": "development",
+      "DEV0132": "development",
+      "DEV0133": "development",
+      "DEV0134": "development",
+      "DEV0135": "development",
+      "DEV0136": "development",
+      "DEV0137": "development",
+      "DEV0138": "development",
+      "DEV0139": "development",
+      "DEV0140": "development",
+      "DEV0141": "development",
+      "DEV0142": "development",
+      "DEV0143": "development",
+      "DEV0144": "development",
+      "DEV0145": "development",
+      "DEV0146": "development",
+      "DEV0147": "development",
+      "DEV0148": "development",
+      "DEV0149": "development",
+      "DEV0150": "development",
+      "DEV0151": "development",
+      "DEV0152": "development",
+      "DEV0153": "development",
+      "DEV0154": "development",
+      "DEV0155": "development",
+      "DEV0156": "development",
+      "DEV0157": "development",
+      "DEV0158": "development",
+      "DEV0159": "development",
+      "DEV0160": "development",
+      "DEV0161": "development",
+      "DEV0162": "development",
+      "DEV0163": "development",
+      "DEV0164": "development",
+      "DEV0165": "development",
+      "DEV0166": "development",
+      "DEV0167": "development",
+      "DEV0168": "development",
+      "DEV0169": "development",
+      "DEV0170": "development",
+      "DEV0171": "development",
+      "DEV0172": "development",
+      "DEV0173": "development",
+      "DEV0174": "development",
+      "DEV0175": "development",
+      "DEV0176": "development",
+      "DEV0177": "development",
+      "DEV0178": "development",
+      "DEV0179": "development",
+      "DEV0180": "development",
+      "DEV0181": "development",
+      "DEV0182": "development",
+      "DEV0183": "development",
+      "DEV0184": "development",
+      "DEV0185": "development",
+      "DEV0186": "development",
+      "DEV0187": "development",
+      "DEV0188": "development",
+      "DEV0189": "development",
+      "DEV0190": "development",
+      "DEV0191": "development",
+      "DEV0192": "development",
+      "DEV0193": "development",
+      "DEV0194": "development",
+      "DEV0195": "development",
+      "DEV0196": "development",
+      "DEV0197": "development",
+      "DEV0198": "development",
+      "DEV0199": "development",
+      "DEV0200": "development",
+      "DEV0201": "development",
+      "DEV0202": "development",
+      "DEV0203": "development",
+      "DEV0204": "development",
+      "DEV0205": "development",
+      "DEV0206": "development",
+      "DEV0207": "development",
+      "DEV0208": "development",
+      "DEV0209": "development",
+      "DEV0210": "development",
+      "DEV0211": "development",
+      "DEV0212": "development",
+      "DEV0213": "development",
+      "DEV0214": "development",
+      "DEV0215": "development",
+      "DEV0216": "development",
+      "DEV0217": "development",
+      "DEV0218": "development",
+      "DEV0219": "development",
+      "DEV0220": "development",
+      "DEV0221": "development",
+      "DEV0222": "development",
+      "DEV0223": "development",
+      "DEV0224": "development",
+      "DEV0225": "development",
+      "DEV0226": "development",
+      "DEV0227": "development",
+      "DEV0228": "development",
+      "DEV0229": "development",
+      "DEV0230": "development",
+      "DEV0231": "development",
+      "DEV0232": "development",
+      "DEV0233": "development",
+      "DEV0234": "development",
+      "DEV0235": "development",
+      "DEV0236": "development",
+      "DEV0237": "development",
+      "DEV0238": "development",
+      "DEV0239": "development",
+      "DEV0240": "development",
+      "DEV0241": "development",
+      "DEV0242": "development",
+      "DEV0243": "development",
+      "DEV0244": "development",
+      "DEV0245": "development",
+      "DEV0246": "development",
+      "DEV0247": "development",
+      "DEV0248": "development",
+      "DEV0249": "development",
+      "DEV0250": "development",
+      "DEV0251": "development",
+      "DEV0252": "development",
+      "DEV0253": "development",
+      "DEV0254": "development",
+      "DEV0255": "development",
+      "DEV0256": "development",
+      "DEV0257": "development",
+      "DEV0258": "development",
+      "DEV0259": "development",
+      "DEV0260": "development",
+      "DEV0261": "development",
+      "DEV0262": "development",
+      "DEV0263": "development",
+      "DEV0264": "development",
+      "DEV0265": "development",
+      "DEV0266": "development",
+      "DEV0267": "development",
+      "DEV0268": "development",
+      "DEV0269": "development",
+      "DEV0270": "development",
+      "DEV0271": "development",
+      "DEV0272": "development",
+      "DEV0273": "development",
+      "DEV0274": "development",
+      "DEV0275": "development",
+      "DEV0276": "development",
+      "DEV0277": "development",
+      "DEV0278": "development",
+      "DEV0279": "development",
+      "DEV0280": "development",
+      "DEV0281": "development",
+      "DEV0282": "development",
+      "DEV0283": "development",
+      "DEV0284": "development",
+      "DEV0285": "development",
+      "DEV0286": "development",
+      "DEV0287": "development",
+      "DEV0288": "development",
+      "DEV0289": "development",
+      "DEV0290": "development",
+      "DEV0291": "development",
+      "DEV0292": "development",
+      "DEV0293": "development",
+      "DEV0294": "development",
+      "DEV0295": "development",
+      "DEV0296": "development",
+      "DEV0297": "development",
+      "DEV0298": "development",
+      "DEV0299": "development",
+      "DEV0300": "development",
+      "DEV0301": "development",
+      "DEV0302": "development",
+      "DEV0303": "development",
+      "DEV0304": "development",
+      "DEV0305": "development",
+      "DEV0306": "development",
+      "DEV0307": "development",
+      "DEV0308": "development",
+      "DEV0309": "development",
+      "DEV0310": "development",
+      "DEV0311": "development",
+      "DEV0312": "development",
+      "DEV0313": "development",
+      "DEV0314": "development",
+      "DEV0315": "development",
+      "DEV0316": "development",
+      "DEV0317": "development",
+      "DEV0318": "development",
+      "DEV0319": "development",
+      "DEV0320": "development",
+      "DEV0321": "development",
+      "DEV0322": "development",
+      "DEV0323": "development",
+      "DEV0324": "development",
+      "DEV0325": "development",
+      "DEV0326": "development",
+      "DEV0327": "development",
+      "DEV0328": "development",
+      "DEV0329": "development",
+      "DEV0330": "development",
+      "DEV0331": "development",
+      "DEV0332": "development",
+      "DEV0333": "development",
+      "DEV0334": "development",
+      "DEV0335": "development",
+      "DEV0336": "development",
+      "DEV0337": "development",
+      "DEV0338": "development",
+      "DEV0339": "development",
+      "DEV0340": "development",
+      "DEV0341": "development",
+      "DEV0342": "development",
+      "DEV0343": "development",
+      "DEV0344": "development",
+      "DEV0345": "development",
+      "DEV0346": "development",
+      "DEV0347": "development",
+      "DEV0348": "development",
+      "DEV0349": "development",
+      "DEV0350": "development",
+      "DEV0351": "development",
+      "DEV0352": "development",
+      "DEV0353": "development",
+      "DEV0354": "development",
+      "DEV0355": "development",
+      "DEV0356": "development",
+      "DEV0357": "development",
+      "DEV0358": "development",
+      "DEV0359": "development",
+      "DEV0360": "development",
+      "DEV0361": "development",
+      "DEV0362": "development",
+      "DEV0363": "development",
+      "DEV0364": "development",
+      "DEV0365": "development",
+      "DEV0366": "development",
+      "DEV0367": "development",
+      "DEV0368": "development",
+      "DEV0369": "development",
+      "DEV0370": "development",
+      "DEV0371": "development",
+      "DEV0372": "development",
+      "DEV0373": "development",
+      "DEV0374": "development",
+      "DEV0375": "development",
+      "DEV0376": "development",
+      "DEV0377": "development",
+      "DEV0378": "development",
+      "DEV0379": "development",
+      "DEV0380": "development",
+      "DEV0381": "development",
+      "DEV0382": "development",
+      "DEV0383": "development",
+      "DEV0384": "development",
+      "DEV0385": "development",
+      "DEV0386": "development",
+      "DEV0387": "development",
+      "DEV0388": "development",
+      "DEV0389": "development",
+      "DEV0390": "development",
+      "DEV0391": "development",
+      "DEV0392": "development",
+      "DEV0393": "development",
+      "DEV0394": "development",
+      "DEV0395": "development",
+      "DEV0396": "development",
+      "DEV0397": "development",
+      "DEV0398": "development",
+      "DEV0399": "development",
+      "DEV0400": "development",
+      "DEV0401": "development",
+      "DEV0402": "development",
+      "DEV0403": "development",
+      "DEV0404": "development",
+      "DEV0405": "development",
+      "DEV0406": "development",
+      "DEV0407": "development",
+      "DEV0408": "development",
+      "DEV0409": "development",
+      "DEV0410": "development",
+      "DEV0411": "development",
+      "DEV0412": "development",
+      "DEV0413": "development",
+      "DEV0414": "development",
+      "DEV0415": "development",
+      "DEV0416": "development",
+      "DEV0417": "development",
+      "DEV0418": "development",
+      "DEV0419": "development",
+      "DEV0420": "development",
+      "DEV0421": "development",
+      "DEV0422": "development",
+      "DEV0423": "development",
+      "DEV0424": "development",
+      "DEV0425": "development",
+      "DEV0426": "development",
+      "DEV0427": "development",
+      "DEV0428": "development",
+      "DEV0429": "development",
+      "DEV0430": "development",
+      "DEV0431": "development",
+      "DEV0432": "development",
+      "DEV0433": "development",
+      "DEV0434": "development",
+      "DEV0435": "development",
+      "DEV0436": "development",
+      "DEV0437": "development",
+      "DEV0438": "development",
+      "DEV0439": "development",
+      "DEV0440": "development",
+      "DEV0441": "development",
+      "DEV0442": "development",
+      "DEV0443": "development",
+      "DEV0444": "development",
+      "DEV0445": "development",
+      "DEV0446": "development",
+      "DEV0447": "development",
+      "DEV0448": "development",
+      "DEV0449": "development",
+      "DEV0450": "development",
+      "DEV0451": "development",
+      "DEV0452": "development",
+      "DEV0453": "development",
+      "DEV0454": "development",
+      "DEV0455": "development",
+      "DEV0456": "development",
+      "DEV0457": "development",
+      "DEV0458": "development",
+      "DEV0459": "development",
+      "DEV0460": "development",
+      "DEV0461": "development",
+      "DEV0462": "development",
+      "DEV0463": "development",
+      "DEV0464": "development",
+      "DEV0465": "development",
+      "DEV0466": "development",
+      "DEV0467": "development",
+      "DEV0468": "development",
+      "DEV0469": "development",
+      "DEV0470": "development",
+      "DEV0471": "development",
+      "DEV0472": "development",
+      "DEV0473": "development",
+      "DEV0474": "development",
+      "DEV0475": "development",
+      "DEV0476": "development",
+      "DEV0477": "development",
+      "DEV0478": "development",
+      "DEV0479": "development",
+      "DEV0480": "development",
+      "DEV0481": "development",
+      "DEV0482": "development",
+      "DEV0483": "development",
+      "DEV0484": "development",
+      "DEV0485": "development",
+      "DEV0486": "development",
+      "DEV0487": "development",
+      "DEV0488": "development",
+      "DEV0489": "development",
+      "DEV0490": "development",
+      "DEV0491": "development",
+      "DEV0492": "development",
+      "DEV0493": "development",
+      "DEV0494": "development",
+      "DEV0495": "development",
+      "DEV0496": "development",
+      "DEV0497": "development",
+      "DEV0498": "development",
+      "DEV0499": "development",
+      "DEV0500": "development",
+      "DEV0501": "development",
+      "DEV0502": "development",
+      "DEV0503": "development",
+      "DEV0504": "development",
+      "DEV0505": "development",
+      "DEV0506": "development",
+      "DEV0507": "development",
+      "DEV0508": "development",
+      "DEV0509": "development",
+      "DEV0510": "development",
+      "TEST0001": "test",
+      "TEST0002": "test",
+      "TEST0003": "test",
+      "TEST0004": "test",
+      "TEST0005": "test",
+      "TEST0006": "test",
+      "TEST0007": "test",
+      "TEST0008": "test",
+      "TEST0009": "test",
+      "TEST0010": "test",
+      "TEST0011": "test",
+      "TEST0012": "test",
+      "TEST0013": "test",
+      "TEST0014": "test",
+      "TEST0015": "test",
+      "TEST0016": "test",
+      "TEST0017": "test",
+      "TEST0018": "test",
+      "TEST0019": "test",
+      "TEST0020": "test",
+      "TEST0021": "test",
+      "TEST0022": "test",
+      "TEST0023": "test",
+      "TEST0024": "test",
+      "TEST0025": "test",
+      "TEST0026": "test",
+      "TEST0027": "test",
+      "TEST0028": "test",
+      "TEST0029": "test",
+      "TEST0030": "test",
+      "TEST0031": "test",
+      "TEST0032": "test",
+      "TEST0033": "test",
+      "TEST0034": "test",
+      "TEST0035": "test",
+      "TEST0036": "test",
+      "TEST0037": "test",
+      "TEST0038": "test",
+      "TEST0039": "test",
+      "TEST0040": "test",
+      "TEST0041": "test",
+      "TEST0042": "test",
+      "TEST0043": "test",
+      "TEST0044": "test",
+      "TEST0045": "test",
+      "TEST0046": "test",
+      "TEST0047": "test",
+      "TEST0048": "test",
+      "TEST0049": "test",
+      "TEST0050": "test",
+      "TEST0051": "test",
+      "TEST0052": "test",
+      "TEST0053": "test",
+      "TEST0054": "test",
+      "TEST0055": "test",
+      "TEST0056": "test",
+      "TEST0057": "test",
+      "TEST0058": "test",
+      "TEST0059": "test",
+      "TEST0060": "test",
+      "TEST0061": "test",
+      "TEST0062": "test",
+      "TEST0063": "test",
+      "TEST0064": "test",
+      "TEST0065": "test",
+      "TEST0066": "test",
+      "TEST0067": "test",
+      "TEST0068": "test",
+      "TEST0069": "test",
+      "TEST0070": "test",
+      "TEST0071": "test",
+      "TEST0072": "test",
+      "TEST0073": "test",
+      "TEST0074": "test",
+      "TEST0075": "test",
+      "TEST0076": "test",
+      "TEST0077": "test",
+      "TEST0078": "test",
+      "TEST0079": "test",
+      "TEST0080": "test",
+      "TEST0081": "test",
+      "TEST0082": "test",
+      "TEST0083": "test",
+      "TEST0084": "test",
+      "TEST0085": "test",
+      "TEST0086": "test",
+      "TEST0087": "test",
+      "TEST0088": "test",
+      "TEST0089": "test",
+      "TEST0090": "test"
+    },
+    "prior_notes": {
+      "path": "C:\\Users\\mkhiz\\OneDrive\\Desktop\\Technical Assesment\\data\\raw\\dataset_audit.md",
+      "sha256": "f904cd4fa0b99c67bef99b7c318ecfb3d9f9066c438a646af24fdf41a242cbd1",
+      "imported_findings": 90
+    },
+    "policy": "Rows/statuses copied unchanged; only a reported legacy ID header is canonicalized. No human approval implied.",
+    "review_authorization": {
+      "method": "assistant_user_authorized",
+      "review_date": "2026-10-25",
+      "human_review_performed": false,
+      "row_count": 600,
+      "review_report": "reports/data_preparation/assistant_review.json",
+      "review_report_sha256": "5259f138f0310c7fb14a1e70819d1c462ed7c5ea017c64ccda04d6ab4c6180c0",
+      "synthetic": true,
+      "authorization": "Explicit user delegation to review, correct, mark reviewed and split."
+    }
+  },
+  "reviewed_field_changes": {
+    "DEV0001": [
+      "review_status"
+    ],
+    "DEV0002": [
+      "review_status"
+    ],
+    "DEV0003": [
+      "review_status"
+    ],
+    "DEV0004": [
+      "review_status"
+    ],
+    "DEV0005": [
+      "review_status"
+    ],
+    "DEV0006": [
+      "review_status"
+    ],
+    "DEV0007": [
+      "review_status"
+    ],
+    "DEV0008": [
+      "review_status"
+    ],
+    "DEV0009": [
+      "review_status"
+    ],
+    "DEV0010": [
+      "review_status"
+    ],
+    "DEV0011": [
+      "review_status"
+    ],
+    "DEV0012": [
+      "review_status"
+    ],
+    "DEV0013": [
+      "review_status"
+    ],
+    "DEV0014": [
+      "review_status"
+    ],
+    "DEV0015": [
+      "review_status"
+    ],
+    "DEV0016": [
+      "review_status"
+    ],
+    "DEV0017": [
+      "review_status"
+    ],
+    "DEV0018": [
+      "review_status"
+    ],
+    "DEV0019": [
+      "review_status"
+    ],
+    "DEV0020": [
+      "review_status"
+    ],
+    "DEV0021": [
+      "review_status"
+    ],
+    "DEV0022": [
+      "review_status"
+    ],
+    "DEV0023": [
+      "review_status"
+    ],
+    "DEV0024": [
+      "review_status"
+    ],
+    "DEV0025": [
+      "review_status"
+    ],
+    "DEV0026": [
+      "review_status"
+    ],
+    "DEV0027": [
+      "review_status"
+    ],
+    "DEV0028": [
+      "review_status"
+    ],
+    "DEV0029": [
+      "review_status"
+    ],
+    "DEV0030": [
+      "review_status"
+    ],
+    "DEV0031": [
+      "review_status"
+    ],
+    "DEV0032": [
+      "review_status"
+    ],
+    "DEV0033": [
+      "review_status"
+    ],
+    "DEV0034": [
+      "review_status"
+    ],
+    "DEV0035": [
+      "review_status"
+    ],
+    "DEV0036": [
+      "review_status"
+    ],
+    "DEV0037": [
+      "review_status"
+    ],
+    "DEV0038": [
+      "review_status"
+    ],
+    "DEV0039": [
+      "review_status"
+    ],
+    "DEV0040": [
+      "review_status"
+    ],
+    "DEV0041": [
+      "review_status"
+    ],
+    "DEV0042": [
+      "review_status"
+    ],
+    "DEV0043": [
+      "review_status"
+    ],
+    "DEV0044": [
+      "review_status"
+    ],
+    "DEV0045": [
+      "review_status"
+    ],
+    "DEV0046": [
+      "review_status"
+    ],
+    "DEV0047": [
+      "review_status"
+    ],
+    "DEV0048": [
+      "review_status"
+    ],
+    "DEV0049": [
+      "review_status"
+    ],
+    "DEV0050": [
+      "review_status"
+    ],
+    "DEV0051": [
+      "review_status"
+    ],
+    "DEV0052": [
+      "review_status"
+    ],
+    "DEV0053": [
+      "review_status"
+    ],
+    "DEV0054": [
+      "review_status"
+    ],
+    "DEV0055": [
+      "review_status"
+    ],
+    "DEV0056": [
+      "review_status"
+    ],
+    "DEV0057": [
+      "review_status"
+    ],
+    "DEV0058": [
+      "review_status"
+    ],
+    "DEV0059": [
+      "review_status"
+    ],
+    "DEV0060": [
+      "review_status"
+    ],
+    "DEV0061": [
+      "review_status"
+    ],
+    "DEV0062": [
+      "review_status"
+    ],
+    "DEV0063": [
+      "review_status"
+    ],
+    "DEV0064": [
+      "review_status"
+    ],
+    "DEV0065": [
+      "review_status"
+    ],
+    "DEV0066": [
+      "review_status"
+    ],
+    "DEV0067": [
+      "review_status"
+    ],
+    "DEV0068": [
+      "review_status"
+    ],
+    "DEV0069": [
+      "review_status"
+    ],
+    "DEV0070": [
+      "review_status"
+    ],
+    "DEV0071": [
+      "review_status"
+    ],
+    "DEV0072": [
+      "review_status"
+    ],
+    "DEV0073": [
+      "review_status"
+    ],
+    "DEV0074": [
+      "review_status"
+    ],
+    "DEV0075": [
+      "review_status"
+    ],
+    "DEV0076": [
+      "review_status"
+    ],
+    "DEV0077": [
+      "review_status"
+    ],
+    "DEV0078": [
+      "review_status"
+    ],
+    "DEV0079": [
+      "review_status"
+    ],
+    "DEV0080": [
+      "review_status"
+    ],
+    "DEV0081": [
+      "review_status"
+    ],
+    "DEV0082": [
+      "review_status"
+    ],
+    "DEV0083": [
+      "review_status"
+    ],
+    "DEV0084": [
+      "review_status"
+    ],
+    "DEV0085": [
+      "review_status"
+    ],
+    "DEV0086": [
+      "review_status"
+    ],
+    "DEV0087": [
+      "review_status"
+    ],
+    "DEV0088": [
+      "review_status"
+    ],
+    "DEV0089": [
+      "review_status"
+    ],
+    "DEV0090": [
+      "review_status"
+    ],
+    "DEV0091": [
+      "review_status"
+    ],
+    "DEV0092": [
+      "review_status"
+    ],
+    "DEV0093": [
+      "review_status"
+    ],
+    "DEV0094": [
+      "review_status"
+    ],
+    "DEV0095": [
+      "review_status"
+    ],
+    "DEV0096": [
+      "review_status"
+    ],
+    "DEV0097": [
+      "review_status"
+    ],
+    "DEV0098": [
+      "review_status"
+    ],
+    "DEV0099": [
+      "review_status"
+    ],
+    "DEV0100": [
+      "review_status"
+    ],
+    "DEV0101": [
+      "review_status"
+    ],
+    "DEV0102": [
+      "review_status"
+    ],
+    "DEV0103": [
+      "review_status"
+    ],
+    "DEV0104": [
+      "review_status"
+    ],
+    "DEV0105": [
+      "review_status"
+    ],
+    "DEV0106": [
+      "review_status"
+    ],
+    "DEV0107": [
+      "review_status"
+    ],
+    "DEV0108": [
+      "review_status"
+    ],
+    "DEV0109": [
+      "review_status"
+    ],
+    "DEV0110": [
+      "review_status"
+    ],
+    "DEV0111": [
+      "review_status"
+    ],
+    "DEV0112": [
+      "review_status"
+    ],
+    "DEV0113": [
+      "review_status"
+    ],
+    "DEV0114": [
+      "review_status"
+    ],
+    "DEV0115": [
+      "review_status"
+    ],
+    "DEV0116": [
+      "review_status"
+    ],
+    "DEV0117": [
+      "review_status"
+    ],
+    "DEV0118": [
+      "review_status"
+    ],
+    "DEV0119": [
+      "review_status"
+    ],
+    "DEV0120": [
+      "review_status"
+    ],
+    "DEV0121": [
+      "review_status"
+    ],
+    "DEV0122": [
+      "review_status"
+    ],
+    "DEV0123": [
+      "review_status"
+    ],
+    "DEV0124": [
+      "review_status"
+    ],
+    "DEV0125": [
+      "review_status"
+    ],
+    "DEV0126": [
+      "review_status"
+    ],
+    "DEV0127": [
+      "review_status"
+    ],
+    "DEV0128": [
+      "review_status"
+    ],
+    "DEV0129": [
+      "review_status"
+    ],
+    "DEV0130": [
+      "review_status"
+    ],
+    "DEV0131": [
+      "review_status"
+    ],
+    "DEV0132": [
+      "review_status"
+    ],
+    "DEV0133": [
+      "review_status"
+    ],
+    "DEV0134": [
+      "review_status"
+    ],
+    "DEV0135": [
+      "review_status"
+    ],
+    "DEV0136": [
+      "review_status"
+    ],
+    "DEV0137": [
+      "review_status"
+    ],
+    "DEV0138": [
+      "review_status"
+    ],
+    "DEV0139": [
+      "review_status"
+    ],
+    "DEV0140": [
+      "review_status"
+    ],
+    "DEV0141": [
+      "review_status"
+    ],
+    "DEV0142": [
+      "review_status"
+    ],
+    "DEV0143": [
+      "review_status"
+    ],
+    "DEV0144": [
+      "review_status"
+    ],
+    "DEV0145": [
+      "review_status"
+    ],
+    "DEV0146": [
+      "review_status"
+    ],
+    "DEV0147": [
+      "review_status"
+    ],
+    "DEV0148": [
+      "review_status"
+    ],
+    "DEV0149": [
+      "review_status"
+    ],
+    "DEV0150": [
+      "review_status"
+    ],
+    "DEV0151": [
+      "review_status"
+    ],
+    "DEV0152": [
+      "review_status"
+    ],
+    "DEV0153": [
+      "review_status"
+    ],
+    "DEV0154": [
+      "review_status"
+    ],
+    "DEV0155": [
+      "review_status"
+    ],
+    "DEV0156": [
+      "review_status"
+    ],
+    "DEV0157": [
+      "review_status"
+    ],
+    "DEV0158": [
+      "review_status"
+    ],
+    "DEV0159": [
+      "review_status"
+    ],
+    "DEV0160": [
+      "review_status"
+    ],
+    "DEV0161": [
+      "review_status"
+    ],
+    "DEV0162": [
+      "review_status"
+    ],
+    "DEV0163": [
+      "review_status"
+    ],
+    "DEV0164": [
+      "review_status"
+    ],
+    "DEV0165": [
+      "review_status"
+    ],
+    "DEV0166": [
+      "review_status"
+    ],
+    "DEV0167": [
+      "review_status"
+    ],
+    "DEV0168": [
+      "review_status"
+    ],
+    "DEV0169": [
+      "review_status"
+    ],
+    "DEV0170": [
+      "review_status"
+    ],
+    "DEV0171": [
+      "review_status"
+    ],
+    "DEV0172": [
+      "review_status"
+    ],
+    "DEV0173": [
+      "review_status"
+    ],
+    "DEV0174": [
+      "review_status"
+    ],
+    "DEV0175": [
+      "review_status"
+    ],
+    "DEV0176": [
+      "review_status"
+    ],
+    "DEV0177": [
+      "review_status"
+    ],
+    "DEV0178": [
+      "review_status"
+    ],
+    "DEV0179": [
+      "review_status"
+    ],
+    "DEV0180": [
+      "review_status"
+    ],
+    "DEV0181": [
+      "review_status"
+    ],
+    "DEV0182": [
+      "review_status"
+    ],
+    "DEV0183": [
+      "review_status"
+    ],
+    "DEV0184": [
+      "review_status"
+    ],
+    "DEV0185": [
+      "review_status"
+    ],
+    "DEV0186": [
+      "review_status"
+    ],
+    "DEV0187": [
+      "review_status"
+    ],
+    "DEV0188": [
+      "review_status"
+    ],
+    "DEV0189": [
+      "review_status"
+    ],
+    "DEV0190": [
+      "review_status"
+    ],
+    "DEV0191": [
+      "review_status"
+    ],
+    "DEV0192": [
+      "review_status"
+    ],
+    "DEV0193": [
+      "review_status"
+    ],
+    "DEV0194": [
+      "review_status"
+    ],
+    "DEV0195": [
+      "review_status"
+    ],
+    "DEV0196": [
+      "review_status"
+    ],
+    "DEV0197": [
+      "review_status"
+    ],
+    "DEV0198": [
+      "review_status"
+    ],
+    "DEV0199": [
+      "review_status"
+    ],
+    "DEV0200": [
+      "review_status"
+    ],
+    "DEV0201": [
+      "review_status"
+    ],
+    "DEV0202": [
+      "review_status"
+    ],
+    "DEV0203": [
+      "review_status"
+    ],
+    "DEV0204": [
+      "review_status"
+    ],
+    "DEV0205": [
+      "review_status"
+    ],
+    "DEV0206": [
+      "review_status"
+    ],
+    "DEV0207": [
+      "review_status"
+    ],
+    "DEV0208": [
+      "review_status"
+    ],
+    "DEV0209": [
+      "review_status"
+    ],
+    "DEV0210": [
+      "review_status"
+    ],
+    "DEV0211": [
+      "review_status"
+    ],
+    "DEV0212": [
+      "review_status"
+    ],
+    "DEV0213": [
+      "review_status"
+    ],
+    "DEV0214": [
+      "review_status"
+    ],
+    "DEV0215": [
+      "review_status"
+    ],
+    "DEV0216": [
+      "review_status"
+    ],
+    "DEV0217": [
+      "review_status"
+    ],
+    "DEV0218": [
+      "review_status"
+    ],
+    "DEV0219": [
+      "review_status"
+    ],
+    "DEV0220": [
+      "review_status"
+    ],
+    "DEV0221": [
+      "review_status"
+    ],
+    "DEV0222": [
+      "review_status"
+    ],
+    "DEV0223": [
+      "review_status"
+    ],
+    "DEV0224": [
+      "review_status"
+    ],
+    "DEV0225": [
+      "review_status"
+    ],
+    "DEV0226": [
+      "review_status"
+    ],
+    "DEV0227": [
+      "review_status"
+    ],
+    "DEV0228": [
+      "review_status"
+    ],
+    "DEV0229": [
+      "review_status"
+    ],
+    "DEV0230": [
+      "review_status"
+    ],
+    "DEV0231": [
+      "review_status"
+    ],
+    "DEV0232": [
+      "review_status"
+    ],
+    "DEV0233": [
+      "review_status"
+    ],
+    "DEV0234": [
+      "review_status"
+    ],
+    "DEV0235": [
+      "review_status"
+    ],
+    "DEV0236": [
+      "review_status"
+    ],
+    "DEV0237": [
+      "review_status"
+    ],
+    "DEV0238": [
+      "review_status"
+    ],
+    "DEV0239": [
+      "review_status"
+    ],
+    "DEV0240": [
+      "review_status"
+    ],
+    "DEV0241": [
+      "review_status"
+    ],
+    "DEV0242": [
+      "review_status"
+    ],
+    "DEV0243": [
+      "review_status"
+    ],
+    "DEV0244": [
+      "review_status"
+    ],
+    "DEV0245": [
+      "review_status"
+    ],
+    "DEV0246": [
+      "review_status"
+    ],
+    "DEV0247": [
+      "review_status"
+    ],
+    "DEV0248": [
+      "review_status"
+    ],
+    "DEV0249": [
+      "review_status"
+    ],
+    "DEV0250": [
+      "review_status"
+    ],
+    "DEV0251": [
+      "review_status"
+    ],
+    "DEV0252": [
+      "review_status"
+    ],
+    "DEV0253": [
+      "review_status"
+    ],
+    "DEV0254": [
+      "review_status"
+    ],
+    "DEV0255": [
+      "review_status"
+    ],
+    "DEV0256": [
+      "review_status"
+    ],
+    "DEV0257": [
+      "label",
+      "review_status"
+    ],
+    "DEV0258": [
+      "label",
+      "review_status"
+    ],
+    "DEV0259": [
+      "review_status"
+    ],
+    "DEV0260": [
+      "review_status"
+    ],
+    "DEV0261": [
+      "review_status"
+    ],
+    "DEV0262": [
+      "review_status"
+    ],
+    "DEV0263": [
+      "review_status"
+    ],
+    "DEV0264": [
+      "review_status"
+    ],
+    "DEV0265": [
+      "review_status"
+    ],
+    "DEV0266": [
+      "review_status"
+    ],
+    "DEV0267": [
+      "label",
+      "review_status"
+    ],
+    "DEV0268": [
+      "review_status"
+    ],
+    "DEV0269": [
+      "review_status"
+    ],
+    "DEV0270": [
+      "review_status"
+    ],
+    "DEV0271": [
+      "review_status"
+    ],
+    "DEV0272": [
+      "review_status"
+    ],
+    "DEV0273": [
+      "review_status"
+    ],
+    "DEV0274": [
+      "review_status"
+    ],
+    "DEV0275": [
+      "review_status"
+    ],
+    "DEV0276": [
+      "review_status"
+    ],
+    "DEV0277": [
+      "review_status"
+    ],
+    "DEV0278": [
+      "review_status"
+    ],
+    "DEV0279": [
+      "review_status"
+    ],
+    "DEV0280": [
+      "review_status"
+    ],
+    "DEV0281": [
+      "review_status"
+    ],
+    "DEV0282": [
+      "label",
+      "review_status"
+    ],
+    "DEV0283": [
+      "review_status"
+    ],
+    "DEV0284": [
+      "label",
+      "review_status"
+    ],
+    "DEV0285": [
+      "review_status"
+    ],
+    "DEV0286": [
+      "review_status"
+    ],
+    "DEV0287": [
+      "review_status"
+    ],
+    "DEV0288": [
+      "review_status"
+    ],
+    "DEV0289": [
+      "review_status"
+    ],
+    "DEV0290": [
+      "review_status"
+    ],
+    "DEV0291": [
+      "review_status"
+    ],
+    "DEV0292": [
+      "review_status"
+    ],
+    "DEV0293": [
+      "review_status"
+    ],
+    "DEV0294": [
+      "review_status"
+    ],
+    "DEV0295": [
+      "review_status"
+    ],
+    "DEV0296": [
+      "review_status"
+    ],
+    "DEV0297": [
+      "review_status"
+    ],
+    "DEV0298": [
+      "review_status"
+    ],
+    "DEV0299": [
+      "review_status"
+    ],
+    "DEV0300": [
+      "review_status"
+    ],
+    "DEV0301": [
+      "review_status"
+    ],
+    "DEV0302": [
+      "review_status"
+    ],
+    "DEV0303": [
+      "review_status"
+    ],
+    "DEV0304": [
+      "review_status"
+    ],
+    "DEV0305": [
+      "review_status"
+    ],
+    "DEV0306": [
+      "review_status"
+    ],
+    "DEV0307": [
+      "review_status"
+    ],
+    "DEV0308": [
+      "review_status"
+    ],
+    "DEV0309": [
+      "review_status"
+    ],
+    "DEV0310": [
+      "review_status"
+    ],
+    "DEV0311": [
+      "review_status"
+    ],
+    "DEV0312": [
+      "review_status"
+    ],
+    "DEV0313": [
+      "review_status"
+    ],
+    "DEV0314": [
+      "review_status"
+    ],
+    "DEV0315": [
+      "review_status"
+    ],
+    "DEV0316": [
+      "review_status"
+    ],
+    "DEV0317": [
+      "review_status"
+    ],
+    "DEV0318": [
+      "review_status"
+    ],
+    "DEV0319": [
+      "review_status"
+    ],
+    "DEV0320": [
+      "review_status"
+    ],
+    "DEV0321": [
+      "review_status"
+    ],
+    "DEV0322": [
+      "review_status"
+    ],
+    "DEV0323": [
+      "review_status"
+    ],
+    "DEV0324": [
+      "label",
+      "review_status"
+    ],
+    "DEV0325": [
+      "review_status"
+    ],
+    "DEV0326": [
+      "review_status"
+    ],
+    "DEV0327": [
+      "review_status"
+    ],
+    "DEV0328": [
+      "review_status"
+    ],
+    "DEV0329": [
+      "review_status"
+    ],
+    "DEV0330": [
+      "review_status"
+    ],
+    "DEV0331": [
+      "review_status"
+    ],
+    "DEV0332": [
+      "review_status"
+    ],
+    "DEV0333": [
+      "review_status"
+    ],
+    "DEV0334": [
+      "review_status"
+    ],
+    "DEV0335": [
+      "review_status"
+    ],
+    "DEV0336": [
+      "review_status"
+    ],
+    "DEV0337": [
+      "label",
+      "review_status"
+    ],
+    "DEV0338": [
+      "review_status"
+    ],
+    "DEV0339": [
+      "review_status"
+    ],
+    "DEV0340": [
+      "review_status"
+    ],
+    "DEV0341": [
+      "review_status"
+    ],
+    "DEV0342": [
+      "review_status"
+    ],
+    "DEV0343": [
+      "review_status"
+    ],
+    "DEV0344": [
+      "review_status"
+    ],
+    "DEV0345": [
+      "review_status"
+    ],
+    "DEV0346": [
+      "review_status"
+    ],
+    "DEV0347": [
+      "review_status"
+    ],
+    "DEV0348": [
+      "label",
+      "review_status"
+    ],
+    "DEV0349": [
+      "review_status"
+    ],
+    "DEV0350": [
+      "review_status"
+    ],
+    "DEV0351": [
+      "label",
+      "review_status"
+    ],
+    "DEV0352": [
+      "review_status"
+    ],
+    "DEV0353": [
+      "review_status"
+    ],
+    "DEV0354": [
+      "review_status"
+    ],
+    "DEV0355": [
+      "review_status"
+    ],
+    "DEV0356": [
+      "review_status"
+    ],
+    "DEV0357": [
+      "review_status"
+    ],
+    "DEV0358": [
+      "review_status"
+    ],
+    "DEV0359": [
+      "review_status"
+    ],
+    "DEV0360": [
+      "review_status"
+    ],
+    "DEV0361": [
+      "review_status"
+    ],
+    "DEV0362": [
+      "review_status"
+    ],
+    "DEV0363": [
+      "review_status"
+    ],
+    "DEV0364": [
+      "review_status"
+    ],
+    "DEV0365": [
+      "review_status"
+    ],
+    "DEV0366": [
+      "review_status"
+    ],
+    "DEV0367": [
+      "review_status"
+    ],
+    "DEV0368": [
+      "review_status"
+    ],
+    "DEV0369": [
+      "review_status"
+    ],
+    "DEV0370": [
+      "label",
+      "review_status"
+    ],
+    "DEV0371": [
+      "label",
+      "review_status"
+    ],
+    "DEV0372": [
+      "review_status"
+    ],
+    "DEV0373": [
+      "review_status"
+    ],
+    "DEV0374": [
+      "label",
+      "review_status"
+    ],
+    "DEV0375": [
+      "review_status"
+    ],
+    "DEV0376": [
+      "review_status"
+    ],
+    "DEV0377": [
+      "review_status"
+    ],
+    "DEV0378": [
+      "label",
+      "review_status"
+    ],
+    "DEV0379": [
+      "review_status"
+    ],
+    "DEV0380": [
+      "review_status"
+    ],
+    "DEV0381": [
+      "review_status"
+    ],
+    "DEV0382": [
+      "review_status"
+    ],
+    "DEV0383": [
+      "review_status"
+    ],
+    "DEV0384": [
+      "review_status"
+    ],
+    "DEV0385": [
+      "review_status"
+    ],
+    "DEV0386": [
+      "review_status"
+    ],
+    "DEV0387": [
+      "review_status"
+    ],
+    "DEV0388": [
+      "label",
+      "review_status"
+    ],
+    "DEV0389": [
+      "review_status"
+    ],
+    "DEV0390": [
+      "review_status"
+    ],
+    "DEV0391": [
+      "review_status"
+    ],
+    "DEV0392": [
+      "review_status"
+    ],
+    "DEV0393": [
+      "review_status"
+    ],
+    "DEV0394": [
+      "review_status"
+    ],
+    "DEV0395": [
+      "review_status"
+    ],
+    "DEV0396": [
+      "review_status"
+    ],
+    "DEV0397": [
+      "review_status"
+    ],
+    "DEV0398": [
+      "review_status"
+    ],
+    "DEV0399": [
+      "review_status"
+    ],
+    "DEV0400": [
+      "review_status"
+    ],
+    "DEV0401": [
+      "review_status"
+    ],
+    "DEV0402": [
+      "review_status"
+    ],
+    "DEV0403": [
+      "review_status"
+    ],
+    "DEV0404": [
+      "review_status"
+    ],
+    "DEV0405": [
+      "review_status"
+    ],
+    "DEV0406": [
+      "review_status"
+    ],
+    "DEV0407": [
+      "review_status"
+    ],
+    "DEV0408": [
+      "review_status"
+    ],
+    "DEV0409": [
+      "label",
+      "review_status"
+    ],
+    "DEV0410": [
+      "review_status"
+    ],
+    "DEV0411": [
+      "review_status"
+    ],
+    "DEV0412": [
+      "review_status"
+    ],
+    "DEV0413": [
+      "review_status"
+    ],
+    "DEV0414": [
+      "review_status"
+    ],
+    "DEV0415": [
+      "review_status"
+    ],
+    "DEV0416": [
+      "review_status"
+    ],
+    "DEV0417": [
+      "review_status"
+    ],
+    "DEV0418": [
+      "review_status"
+    ],
+    "DEV0419": [
+      "review_status"
+    ],
+    "DEV0420": [
+      "review_status"
+    ],
+    "DEV0421": [
+      "review_status"
+    ],
+    "DEV0422": [
+      "review_status"
+    ],
+    "DEV0423": [
+      "review_status"
+    ],
+    "DEV0424": [
+      "review_status"
+    ],
+    "DEV0425": [
+      "review_status"
+    ],
+    "DEV0426": [
+      "review_status"
+    ],
+    "DEV0427": [
+      "review_status"
+    ],
+    "DEV0428": [
+      "label",
+      "review_status"
+    ],
+    "DEV0429": [
+      "review_status"
+    ],
+    "DEV0430": [
+      "label",
+      "review_status"
+    ],
+    "DEV0431": [
+      "review_status"
+    ],
+    "DEV0432": [
+      "review_status"
+    ],
+    "DEV0433": [
+      "review_status"
+    ],
+    "DEV0434": [
+      "review_status"
+    ],
+    "DEV0435": [
+      "review_status"
+    ],
+    "DEV0436": [
+      "review_status"
+    ],
+    "DEV0437": [
+      "review_status"
+    ],
+    "DEV0438": [
+      "review_status"
+    ],
+    "DEV0439": [
+      "review_status"
+    ],
+    "DEV0440": [
+      "review_status"
+    ],
+    "DEV0441": [
+      "review_status"
+    ],
+    "DEV0442": [
+      "review_status"
+    ],
+    "DEV0443": [
+      "review_status"
+    ],
+    "DEV0444": [
+      "review_status"
+    ],
+    "DEV0445": [
+      "review_status"
+    ],
+    "DEV0446": [
+      "review_status"
+    ],
+    "DEV0447": [
+      "label",
+      "review_status"
+    ],
+    "DEV0448": [
+      "review_status"
+    ],
+    "DEV0449": [
+      "review_status"
+    ],
+    "DEV0450": [
+      "review_status"
+    ],
+    "DEV0451": [
+      "review_status"
+    ],
+    "DEV0452": [
+      "review_status"
+    ],
+    "DEV0453": [
+      "review_status"
+    ],
+    "DEV0454": [
+      "review_status"
+    ],
+    "DEV0455": [
+      "review_status"
+    ],
+    "DEV0456": [
+      "review_status"
+    ],
+    "DEV0457": [
+      "review_status"
+    ],
+    "DEV0458": [
+      "review_status"
+    ],
+    "DEV0459": [
+      "review_status"
+    ],
+    "DEV0460": [
+      "review_status"
+    ],
+    "DEV0461": [
+      "review_status"
+    ],
+    "DEV0462": [
+      "review_status"
+    ],
+    "DEV0463": [
+      "review_status"
+    ],
+    "DEV0464": [
+      "review_status"
+    ],
+    "DEV0465": [
+      "label",
+      "review_status"
+    ],
+    "DEV0466": [
+      "label",
+      "review_status"
+    ],
+    "DEV0467": [
+      "review_status"
+    ],
+    "DEV0468": [
+      "review_status"
+    ],
+    "DEV0469": [
+      "review_status"
+    ],
+    "DEV0470": [
+      "review_status"
+    ],
+    "DEV0471": [
+      "review_status"
+    ],
+    "DEV0472": [
+      "label",
+      "review_status"
+    ],
+    "DEV0473": [
+      "review_status"
+    ],
+    "DEV0474": [
+      "review_status"
+    ],
+    "DEV0475": [
+      "review_status"
+    ],
+    "DEV0476": [
+      "review_status"
+    ],
+    "DEV0477": [
+      "review_status"
+    ],
+    "DEV0478": [
+      "review_status"
+    ],
+    "DEV0479": [
+      "review_status"
+    ],
+    "DEV0480": [
+      "review_status"
+    ],
+    "DEV0481": [
+      "review_status"
+    ],
+    "DEV0482": [
+      "review_status"
+    ],
+    "DEV0483": [
+      "review_status"
+    ],
+    "DEV0484": [
+      "label",
+      "review_status"
+    ],
+    "DEV0485": [
+      "review_status"
+    ],
+    "DEV0486": [
+      "review_status"
+    ],
+    "DEV0487": [
+      "review_status"
+    ],
+    "DEV0488": [
+      "review_status"
+    ],
+    "DEV0489": [
+      "review_status"
+    ],
+    "DEV0490": [
+      "review_status"
+    ],
+    "DEV0491": [
+      "review_status"
+    ],
+    "DEV0492": [
+      "review_status"
+    ],
+    "DEV0493": [
+      "review_status"
+    ],
+    "DEV0494": [
+      "review_status"
+    ],
+    "DEV0495": [
+      "label",
+      "review_status"
+    ],
+    "DEV0496": [
+      "label",
+      "review_status"
+    ],
+    "DEV0497": [
+      "review_status"
+    ],
+    "DEV0498": [
+      "review_status"
+    ],
+    "DEV0499": [
+      "review_status"
+    ],
+    "DEV0500": [
+      "review_status"
+    ],
+    "DEV0501": [
+      "review_status"
+    ],
+    "DEV0502": [
+      "review_status"
+    ],
+    "DEV0503": [
+      "review_status"
+    ],
+    "DEV0504": [
+      "review_status"
+    ],
+    "DEV0505": [
+      "review_status"
+    ],
+    "DEV0506": [
+      "review_status"
+    ],
+    "DEV0507": [
+      "review_status"
+    ],
+    "DEV0508": [
+      "review_status"
+    ],
+    "DEV0509": [
+      "review_status"
+    ],
+    "DEV0510": [
+      "review_status"
+    ],
+    "TEST0001": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0002": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0003": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0004": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0005": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0006": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0007": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0008": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0009": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0010": [
+      "review_status"
+    ],
+    "TEST0011": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0012": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0013": [
+      "review_status"
+    ],
+    "TEST0014": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0015": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0016": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0017": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0018": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0019": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0020": [
+      "review_status"
+    ],
+    "TEST0021": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0022": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0023": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0024": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0025": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0026": [
+      "review_status"
+    ],
+    "TEST0027": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0028": [
+      "review_status"
+    ],
+    "TEST0029": [
+      "review_status"
+    ],
+    "TEST0030": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0031": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0032": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0033": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0034": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0035": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0036": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0037": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0038": [
+      "review_status"
+    ],
+    "TEST0039": [
+      "review_status"
+    ],
+    "TEST0040": [
+      "review_status"
+    ],
+    "TEST0041": [
+      "review_status"
+    ],
+    "TEST0042": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0043": [
+      "review_status"
+    ],
+    "TEST0044": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0045": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0046": [
+      "review_status"
+    ],
+    "TEST0047": [
+      "review_status"
+    ],
+    "TEST0048": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0049": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0050": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0051": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0052": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0053": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0054": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0055": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0056": [
+      "review_status"
+    ],
+    "TEST0057": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0058": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0059": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0060": [
+      "review_status"
+    ],
+    "TEST0061": [
+      "review_status"
+    ],
+    "TEST0062": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0063": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0064": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0065": [
+      "review_status"
+    ],
+    "TEST0066": [
+      "review_status"
+    ],
+    "TEST0067": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0068": [
+      "review_status"
+    ],
+    "TEST0069": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0070": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0071": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0072": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0073": [
+      "review_status"
+    ],
+    "TEST0074": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0075": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0076": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0077": [
+      "review_status"
+    ],
+    "TEST0078": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0079": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0080": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0081": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0082": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0083": [
+      "review_status"
+    ],
+    "TEST0084": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0085": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0086": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0087": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0088": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0089": [
+      "message",
+      "source",
+      "scenario_group",
+      "review_status"
+    ],
+    "TEST0090": [
+      "review_status"
+    ]
+  },
+  "decisions_sha256": "0514762aa65ad4c0c849b54acd9b3eb7c48a738e337b15542dfa4c5429628c1b",
+  "applied_decisions": [
+    {
+      "issue_id": "prior_audit_pair-67b0a101bd96",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0005:independent_test_v2_recipe_timer_background_freezes differs from development cases DEV0115:storage_text_conversion_accents_lost. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-4d1921951ced",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0050:independent_test_v2_greenhouse_temperature_unit_conversion_error differs from development cases DEV0001:checkout_payment_screen_crash. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-c617290a4a27",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0001:independent_test_v2_print_bureau_blank_reverse_sides_invoiced differs from development cases DEV0123:invoice_paid_but_collection_notice. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-d1c2f6c7c870",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0006:independent_test_v2_purchase_charged_to_wrong_restricted_wallet differs from development cases DEV0054:subscription_renewal_after_cancellation. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-dd6f086073c3",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0008:independent_test_v2_art_sale_commission_includes_shipping_incorrectly differs from development cases DEV0018:invoice_wrong_business_name. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-7ec36ee3578b",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0011:independent_test_v2_domestic_payment_unwarranted_currency_handling_fee differs from development cases DEV0006:shopping_invoice_tax_exemption. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-e2a9366948a4",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0025:independent_test_v2_sponsored_tuition_opposite_share_collected differs from development cases DEV0010:productivity_removed_seat_still_billed. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-887b2902e09e",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0027:independent_test_v2_archive_credit_purchase_missing_balance differs from development cases DEV0065:shopping_refund_wrong_payment_method. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-6b55686c4176",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0030:independent_test_v2_translation_minimum_applied_per_file_instead_of_order differs from development cases DEV0089:shopping_wallet_balance_not_applied. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-4a4bcb98043d",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0034:independent_test_v2_specimen_label_volume_price_tiers_ignored differs from development cases DEV0097:shopping_accepted_coupon_missing_invoice. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-e4baee060b9f",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0037:independent_test_v2_transcription_fractional_rate_rounded_before_total differs from development cases DEV0136:shopping_charge_wrong_currency. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-be8905202617",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0051:independent_test_v2_restoration_escrow_released_without_milestone_approval differs from development cases DEV0085:shopping_expired_card_authorization_hold. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-fbd7b6ae8160",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0057:independent_test_v2_campaign_payout_wrongly_held_below_threshold differs from development cases DEV0021:shopping_duplicate_settled_charge. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-f2c174fe74fe",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0080:independent_test_v2_royalty_advance_recoupment_carryforward_reset differs from development cases DEV0204:subscription_promised_pause_still_charged. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-d86219c4b11f",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0042:independent_test_v2_touring_ensemble_parallel_timezones_calendar differs from development cases DEV0219:shopping_filter_exclude_material. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-b640b51cdea0",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0049:independent_test_v2_nursery_graft_parent_relationship_fields differs from development cases DEV0009:storage_link_download_limit. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-2bf841f7c47b",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0087:independent_test_v2_venue_directory_sign_language_clips differs from development cases DEV0079:productivity_task_dependencies. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-22e19b83035f",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0009:independent_test_v2_rhythm_game_percussion_sound_praise differs from development cases DEV0151:shopping_unboxing_filler_waste_opinion. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-1d156d7f06ff",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0024:independent_test_v2_neighbourhood_cleanup_public_notice differs from development cases DEV0038:spam_prize_claim_link. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-654394cfd10d",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0086:independent_test_v2_unrelated_village_cricket_results_announcement differs from development cases DEV0012:unsolicited_bulk_messaging_ad. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-a31a0c6b1186",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0088:independent_test_v2_public_stargazing_fair_announcement differs from development cases DEV0099:unsolicited_course_promotion. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-aa820708385a",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0003:independent_test_v2_clinic_scheduler_drag_wrong_time differs from development cases DEV0109:shopping_cart_quantity_reverts. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-cfcc764151b7",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0007:independent_test_v2_book_scanner_export_rotation_mismatch differs from development cases DEV0024:productivity_restore_document_version. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-006508b0321d",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0012:independent_test_v2_seed_inventory_decimal_quantity_rounding differs from development cases DEV0043:mobile_enable_existing_offline_reading. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-15c0437a89c1",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0015:independent_test_v2_sky_chart_selected_date_resets differs from development cases DEV0225:mobile_photo_save_wrong_orientation; DEV0480:mobile_receipt_scan_bottom_cropped. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-12045d5360fb",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0017:independent_test_v2_fish_farm_offline_observation_capture differs from development cases DEV0401:mobile_navigation_haptic_turn_cues. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-4ded3262a85a",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0022:independent_test_v2_ferry_pass_transfer_policy_question differs from development cases DEV0105:storage_trash_retention_policy; DEV0176:storage_version_history_quota. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-d57f2af078a2",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0035:independent_test_v2_diagram_connector_label_disappears_on_move differs from development cases DEV0095:calendar_recurring_event_exceptions; DEV0147:calendar_recurring_event_exceptions. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-6089b97554fc",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0048:independent_test_v2_beehive_inspection_duplication_mutates_original_identifier differs from development cases DEV0013:marketing_optout_not_honored; DEV0253:mobile_dark_mode_preference_resets. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-26769dbae984",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0063:independent_test_v2_embroidery_pattern_print_missing_column differs from development cases DEV0177:mobile_workout_distance_reset; DEV0306:productivity_time_tracker_sleep_double_count. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-90594c9add7a",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0067:independent_test_v2_podcast_volume_dialog_keyboard_focus_trap differs from development cases DEV0036:calendar_event_time_shifts; DEV0124:messaging_scheduled_send. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-8122e07b4104",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0069:independent_test_v2_sailing_log_export_timezone_date_shift differs from development cases DEV0056:messaging_existing_read_receipt_setting; DEV0291:mobile_hidden_notification_content_exposed. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-b66c5f6ff240",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0070:independent_test_v2_kiln_scheduler_compatible_firing_batch_suggestions differs from development cases DEV0052:messaging_scheduled_send; DEV0124:messaging_scheduled_send. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-c1368ed22014",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0074:independent_test_v2_replacement_card_payment_rejection differs from development cases DEV0010:productivity_removed_seat_still_billed; DEV0170:subscription_unrequested_paid_addon. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-1c1ee207cf9c",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0082:independent_test_v2_bridge_toll_settlement_decimal_shift_overcharge differs from development cases DEV0207:subscription_usage_meter_counts_internal_tests; DEV0415:subscription_included_support_call_charge. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-9a8de7c54d90",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0084:independent_test_v2_tool_rental_invoice_extra_days differs from development cases DEV0023:subscription_price_mismatch; DEV0070:subscription_downgrade_credit_calculation; DEV0479:subscription_student_discount_not_applied. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-a251f290d0de",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0081:independent_test_v2_library_hold_cancellation_does_not_persist differs from development cases DEV0014:storage_existing_readonly_sharing; DEV0227:account_deleted_member_can_edit. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-d7b69ada98dd",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0014:independent_test_v2_field_recorder_archive_voice_notes_howto differs from development cases DEV0094:productivity_copy_item_contents; DEV0251:productivity_copy_item_contents. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-7ea3d4917113",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0032:independent_test_v2_photo_gallery_single_album_sharing_howto differs from development cases DEV0080:shopping_size_chart_measurement_method; DEV0268:shopping_assembled_dimensions_information. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-3cb84edfdc25",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0031:independent_test_v2_textile_import_supported_file_formats differs from development cases DEV0131:subscription_family_member_separate_charge; DEV0183:account_invitation_acceptance_error. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-1440c6ebff44",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0044:independent_test_v2_filter_subscription_dispatch_schedule differs from development cases DEV0144:shopping_product_care_symbol. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-f13132282c9c",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0054:independent_test_v2_virtual_staging_room_scan_size_requirements differs from development cases DEV0147:calendar_recurring_event_exceptions; DEV0399:productivity_recurring_task_business_days. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-cc5d249ade20",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0059:independent_test_v2_notebook_export_handwritten_annotations_scope differs from development cases DEV0043:mobile_enable_existing_offline_reading; DEV0475:mobile_existing_cache_clear_downloads. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-b9a58306cf23",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0062:independent_test_v2_survey_revision_history_navigation differs from development cases DEV0035:account_change_email_procedure; DEV0498:account_sensitive_action_reauthentication. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-8cbacd82d417",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0071:independent_test_v2_offline_phrasebook_pronunciation_languages differs from development cases DEV0039:account_per_workspace_language; DEV0404:account_language_switch_overlapping_labels. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-571bce6ee278",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0072:independent_test_v2_course_certificate_download_location differs from development cases DEV0152:messaging_existing_channel_mute_scope; DEV0426:messaging_existing_channel_mute_scope. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-4b603db0b0be",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0002:independent_test_v2_orchard_guide_reassuring_voice differs from development cases DEV0058:mobile_onboarding_tone_criticism; DEV0395:productivity_dashboard_motivation_tone_criticism. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-480c77f7bf4c",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0004:independent_test_v2_trail_map_visual_density_opinion differs from development cases DEV0270:account_onboarding_data_explanation_praise; DEV0463:account_privacy_summary_visual_design. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-e24535f3cb88",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0023:independent_test_v2_insurance_quote_plain_language_praise differs from development cases DEV0274:productivity_dense_sidebar_opinion; DEV0342:productivity_time_report_density_criticism. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-5512fb451a51",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0033:independent_test_v2_poetry_workshop_welcoming_atmosphere differs from development cases DEV0058:mobile_onboarding_tone_criticism; DEV0433:shopping_basket_recommendations_opinion. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-12ac9f9ae029",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0036:independent_test_v2_cycling_weekly_summary_motivation differs from development cases DEV0117:support_patient_explanation_praise. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-f794c5e092b9",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0055:independent_test_v2_music_score_page_animation_opinion differs from development cases DEV0013:marketing_optout_not_honored; DEV0031:marketing_find_email_optout. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-c22e3b8aaad8",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0076:independent_test_v2_digital_collection_gallery_palette_praise differs from development cases DEV0501:account_public_profile_personality_praise. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-83120ce2434e",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0078:independent_test_v2_pottery_glaze_photography_praise differs from development cases DEV0040:subscription_box_selection_opinion. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-be0488d7899d",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0085:independent_test_v2_budgeting_app_mascot_tone_opinion differs from development cases DEV0059:messaging_sticker_pack_praise; DEV0196:messaging_emoji_selection_opinion. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-066c3b502a8f",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0018:independent_test_v2_unsolicited_bulk_freight_promotion differs from development cases DEV0416:irrelevant_birdwatching_tally. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-f301e7f9bab4",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0019:independent_test_v2_unsolicited_backlink_package_sales differs from development cases DEV0033:broadcast_storage_sale. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-e966617dec7f",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0021:independent_test_v2_irrelevant_fictional_council_excerpt differs from development cases DEV0168:irrelevant_packing_list; DEV0457:irrelevant_telescope_observation_notes. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-5dc648fca489",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0052:independent_test_v2_unrelated_public_rally_slogan differs from development cases DEV0312:broadcast_theatre_rehearsal_notice. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-8f9645e55062",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0053:independent_test_v2_wholesale_flower_catalog_broadcast differs from development cases DEV0061:unsolicited_invoice_service_ad. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-cc542b4f3a29",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0064:independent_test_v2_misdirected_household_cooking_note differs from development cases DEV0467:irrelevant_match_commentary. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-d2ea5b53e3fe",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0075:independent_test_v2_unrelated_short_rain_poem differs from development cases DEV0060:broadcast_stationery_promotion; DEV0414:broadcast_table_lamp_collection. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-88ad28a15654",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0079:independent_test_v2_unrelated_roasted_oat_recipe_instructions differs from development cases DEV0093:irrelevant_paper_boat_instructions; DEV0221:irrelevant_gardening_rhyme. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-0e73690090db",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0089:independent_test_v2_unsolicited_handmade_pot_trade_offer differs from development cases DEV0168:irrelevant_packing_list; DEV0456:irrelevant_dinner_menu_brainstorm. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-1e62493a55d1",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0016:independent_test_v2_unrelated_theatre_rehearsal_notes differs from development cases DEV0016:greeting_evening_only; DEV0048:greeting_casual_only. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_pair-2c3b2e960d6d",
+      "decision": "distinct",
+      "notes": "User-delegated assistant review. Prior note described old test text, now preserved in raw/backup. Current independently authored test case TEST0045:independent_test_v2_unrelated_used_exercise_mat_classified differs from development cases DEV0016:greeting_evening_only; DEV0048:greeting_casual_only. Full-message and scenario-neighbor review is recorded in replacement_overlap_review.json; retained boundary contrasts and AI-review limitations remain explicit, without a claim of human validation.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-f04043ad8ad6",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks which bank-transfer reference to use before paying; no missing, disputed, or misallocated payment is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-6aac05fc829d",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks prospectively whether the store or card provider levies currency-conversion fees; no actual incorrect charge is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-aa51dc3a9e27",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks where to find the existing renewal date for budgeting, without a renewal or charge dispute. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-4f3935613c85",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks the prospective effective date of cancellation under the existing paid-plan terms; does not report failed cancellation or an incorrect charge. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-7ffdd693df53",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks hypothetically how a future full refund would be allocated between gift and debit cards; no incorrect refund is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-5bb70124b0f0",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks how to obtain an existing tax receipt for records; no malformed invoice, amount error, or failed download is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-06110567e625",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks normal refund-processing policy and explicitly says no refund has been requested, so this is not a delayed-refund complaint. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-165c2232e6d4",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks how to update the renewal payment card; no failed payment, charge dispute, or account malfunction is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-6952418c61a4",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks about prospective monthly-to-annual credit policy before changing plans, rather than reporting an incorrect collected charge. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-f8bee2e454e3",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether future invoices can use a different issue date; it is a payment-policy/capability inquiry without an actual billing error or explicit missing-feature assertion. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-cc0ca1415e2b",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether a paused subscription has a retention fee before deciding to pause; no erroneous fee is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-000c2ab077f8",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks how installment cancellation and repayment work for a possible return; no failed or incorrect refund is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-ea8e5eaeab57",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether split invoice payments are allowed before making the first transfer, so this is policy information. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-0c3ae4342969",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether plan pricing is per workspace or per member while comparing options; no incorrect charge is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-d1184a96e3c3",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks how receipt delivery currently works; no missing promised receipt or billing discrepancy is asserted. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-5629091fd3d0",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks about trial authorization and release timing before providing card details; no unreleased hold has occurred. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-15c7b4761d7a",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks about the sales-tax component of a full-refund policy, without reporting an actual refund shortfall. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-c3ef21680931",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether existing orders can share one invoice or require separate documents; no feature is explicitly asserted missing and no invoice is disputed. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-f54880a21396",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks how to use an existing billing reference field and its future scope, which is a how-to inquiry. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-d037110ed02f",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether bank transfer is an accepted annual-payment method before renewal; no payment failure or charge dispute is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-8f1a646253e8",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks the gift-card expiry policy before a recipient uses the balance; no wrongful expiry is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-d9adf41617a9",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks whether one transfer can settle multiple invoices and how to reference allocations; this is procedural information. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-21f00f69f8e9",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks the policy for unused credit when transferring a prepaid subscription; no missing credit is reported. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_label-13c5badce0d2",
+      "decision": "confirmed",
+      "notes": "User-delegated assistant review: Asks about potential return fees before ordering; no unexpected restocking fee has been charged. Final label: General Inquiry. Not human-validated.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    },
+    {
+      "issue_id": "prior_audit_notes-8c0227f9395d",
+      "decision": "acknowledged",
+      "notes": "User-delegated assistant review of source audit: corrected24 information-only billing labels; conservatively replaced67 flagged test candidates including the normalized duplicate; retained13 whole development scenario families; checked replacements and unchanged23 test messages. Independent author did not access existing datasets. Borderline distinctions and all review limits are recorded in assistant_review.json. No human review, model training or test-based tuning is claimed.",
+      "dataset_sha256": "23f5fd5fd765b33eb86f7bc86953321a5d9a26b97fa368b7b9d4c88f00492770"
+    }
+  ],
+  "splits": {
+    "train": {
+      "count": 420,
+      "labels": {
+        "Bug Report": 70,
+        "Customer Feedback": 70,
+        "Feature Request": 70,
+        "General Inquiry": 90,
+        "Billing Issue": 50,
+        "Non-Qualifying": 70
+      },
+      "sha256": "a084e2fc5d0dedd6299bbfa480464f7ec05537df8f385f0a53ce7e1997e0caa8",
+      "example_ids": [
+        "DEV0001",
+        "DEV0002",
+        "DEV0003",
+        "DEV0004",
+        "DEV0005",
+        "DEV0006",
+        "DEV0007",
+        "DEV0009",
+        "DEV0010",
+        "DEV0011",
+        "DEV0012",
+        "DEV0013",
+        "DEV0014",
+        "DEV0015",
+        "DEV0018",
+        "DEV0019",
+        "DEV0020",
+        "DEV0022",
+        "DEV0023",
+        "DEV0024",
+        "DEV0025",
+        "DEV0027",
+        "DEV0028",
+        "DEV0029",
+        "DEV0030",
+        "DEV0031",
+        "DEV0032",
+        "DEV0033",
+        "DEV0034",
+        "DEV0035",
+        "DEV0036",
+        "DEV0038",
+        "DEV0040",
+        "DEV0041",
+        "DEV0042",
+        "DEV0043",
+        "DEV0044",
+        "DEV0045",
+        "DEV0046",
+        "DEV0047",
+        "DEV0048",
+        "DEV0049",
+        "DEV0050",
+        "DEV0051",
+        "DEV0054",
+        "DEV0055",
+        "DEV0057",
+        "DEV0058",
+        "DEV0059",
+        "DEV0060",
+        "DEV0061",
+        "DEV0062",
+        "DEV0063",
+        "DEV0064",
+        "DEV0065",
+        "DEV0066",
+        "DEV0067",
+        "DEV0068",
+        "DEV0069",
+        "DEV0070",
+        "DEV0071",
+        "DEV0072",
+        "DEV0074",
+        "DEV0075",
+        "DEV0076",
+        "DEV0077",
+        "DEV0079",
+        "DEV0080",
+        "DEV0081",
+        "DEV0083",
+        "DEV0084",
+        "DEV0085",
+        "DEV0086",
+        "DEV0087",
+        "DEV0088",
+        "DEV0089",
+        "DEV0092",
+        "DEV0096",
+        "DEV0097",
+        "DEV0098",
+        "DEV0099",
+        "DEV0100",
+        "DEV0102",
+        "DEV0103",
+        "DEV0104",
+        "DEV0105",
+        "DEV0106",
+        "DEV0107",
+        "DEV0109",
+        "DEV0110",
+        "DEV0111",
+        "DEV0112",
+        "DEV0113",
+        "DEV0114",
+        "DEV0115",
+        "DEV0116",
+        "DEV0118",
+        "DEV0120",
+        "DEV0122",
+        "DEV0123",
+        "DEV0125",
+        "DEV0126",
+        "DEV0127",
+        "DEV0128",
+        "DEV0129",
+        "DEV0130",
+        "DEV0131",
+        "DEV0132",
+        "DEV0133",
+        "DEV0135",
+        "DEV0136",
+        "DEV0138",
+        "DEV0139",
+        "DEV0140",
+        "DEV0141",
+        "DEV0143",
+        "DEV0144",
+        "DEV0145",
+        "DEV0148",
+        "DEV0149",
+        "DEV0150",
+        "DEV0153",
+        "DEV0154",
+        "DEV0155",
+        "DEV0156",
+        "DEV0157",
+        "DEV0159",
+        "DEV0160",
+        "DEV0161",
+        "DEV0162",
+        "DEV0163",
+        "DEV0164",
+        "DEV0165",
+        "DEV0166",
+        "DEV0167",
+        "DEV0168",
+        "DEV0169",
+        "DEV0170",
+        "DEV0171",
+        "DEV0172",
+        "DEV0173",
+        "DEV0174",
+        "DEV0175",
+        "DEV0176",
+        "DEV0177",
+        "DEV0178",
+        "DEV0180",
+        "DEV0181",
+        "DEV0182",
+        "DEV0183",
+        "DEV0184",
+        "DEV0186",
+        "DEV0187",
+        "DEV0188",
+        "DEV0189",
+        "DEV0190",
+        "DEV0191",
+        "DEV0193",
+        "DEV0194",
+        "DEV0195",
+        "DEV0196",
+        "DEV0197",
+        "DEV0200",
+        "DEV0201",
+        "DEV0202",
+        "DEV0203",
+        "DEV0205",
+        "DEV0206",
+        "DEV0207",
+        "DEV0208",
+        "DEV0209",
+        "DEV0210",
+        "DEV0211",
+        "DEV0212",
+        "DEV0213",
+        "DEV0215",
+        "DEV0216",
+        "DEV0218",
+        "DEV0220",
+        "DEV0221",
+        "DEV0222",
+        "DEV0223",
+        "DEV0224",
+        "DEV0225",
+        "DEV0226",
+        "DEV0227",
+        "DEV0230",
+        "DEV0231",
+        "DEV0232",
+        "DEV0233",
+        "DEV0234",
+        "DEV0235",
+        "DEV0237",
+        "DEV0238",
+        "DEV0239",
+        "DEV0240",
+        "DEV0241",
+        "DEV0242",
+        "DEV0243",
+        "DEV0244",
+        "DEV0245",
+        "DEV0246",
+        "DEV0247",
+        "DEV0248",
+        "DEV0250",
+        "DEV0252",
+        "DEV0254",
+        "DEV0256",
+        "DEV0260",
+        "DEV0261",
+        "DEV0262",
+        "DEV0263",
+        "DEV0264",
+        "DEV0265",
+        "DEV0266",
+        "DEV0267",
+        "DEV0268",
+        "DEV0269",
+        "DEV0270",
+        "DEV0271",
+        "DEV0272",
+        "DEV0273",
+        "DEV0274",
+        "DEV0275",
+        "DEV0276",
+        "DEV0277",
+        "DEV0278",
+        "DEV0280",
+        "DEV0282",
+        "DEV0283",
+        "DEV0284",
+        "DEV0285",
+        "DEV0286",
+        "DEV0287",
+        "DEV0288",
+        "DEV0289",
+        "DEV0290",
+        "DEV0291",
+        "DEV0292",
+        "DEV0293",
+        "DEV0295",
+        "DEV0296",
+        "DEV0297",
+        "DEV0298",
+        "DEV0299",
+        "DEV0300",
+        "DEV0301",
+        "DEV0302",
+        "DEV0303",
+        "DEV0304",
+        "DEV0305",
+        "DEV0306",
+        "DEV0307",
+        "DEV0308",
+        "DEV0309",
+        "DEV0313",
+        "DEV0314",
+        "DEV0315",
+        "DEV0316",
+        "DEV0317",
+        "DEV0318",
+        "DEV0319",
+        "DEV0321",
+        "DEV0323",
+        "DEV0324",
+        "DEV0325",
+        "DEV0326",
+        "DEV0329",
+        "DEV0330",
+        "DEV0331",
+        "DEV0332",
+        "DEV0333",
+        "DEV0334",
+        "DEV0335",
+        "DEV0336",
+        "DEV0337",
+        "DEV0340",
+        "DEV0341",
+        "DEV0344",
+        "DEV0345",
+        "DEV0346",
+        "DEV0347",
+        "DEV0348",
+        "DEV0349",
+        "DEV0350",
+        "DEV0351",
+        "DEV0353",
+        "DEV0354",
+        "DEV0355",
+        "DEV0356",
+        "DEV0357",
+        "DEV0358",
+        "DEV0359",
+        "DEV0360",
+        "DEV0361",
+        "DEV0362",
+        "DEV0364",
+        "DEV0365",
+        "DEV0366",
+        "DEV0367",
+        "DEV0368",
+        "DEV0370",
+        "DEV0371",
+        "DEV0372",
+        "DEV0373",
+        "DEV0374",
+        "DEV0375",
+        "DEV0376",
+        "DEV0377",
+        "DEV0378",
+        "DEV0379",
+        "DEV0380",
+        "DEV0381",
+        "DEV0382",
+        "DEV0383",
+        "DEV0384",
+        "DEV0385",
+        "DEV0387",
+        "DEV0388",
+        "DEV0389",
+        "DEV0390",
+        "DEV0391",
+        "DEV0392",
+        "DEV0393",
+        "DEV0394",
+        "DEV0395",
+        "DEV0396",
+        "DEV0397",
+        "DEV0399",
+        "DEV0400",
+        "DEV0401",
+        "DEV0402",
+        "DEV0404",
+        "DEV0406",
+        "DEV0407",
+        "DEV0408",
+        "DEV0409",
+        "DEV0410",
+        "DEV0411",
+        "DEV0412",
+        "DEV0413",
+        "DEV0414",
+        "DEV0415",
+        "DEV0416",
+        "DEV0417",
+        "DEV0418",
+        "DEV0419",
+        "DEV0420",
+        "DEV0421",
+        "DEV0422",
+        "DEV0423",
+        "DEV0424",
+        "DEV0425",
+        "DEV0427",
+        "DEV0428",
+        "DEV0429",
+        "DEV0430",
+        "DEV0431",
+        "DEV0432",
+        "DEV0433",
+        "DEV0434",
+        "DEV0436",
+        "DEV0437",
+        "DEV0438",
+        "DEV0441",
+        "DEV0442",
+        "DEV0443",
+        "DEV0444",
+        "DEV0446",
+        "DEV0447",
+        "DEV0448",
+        "DEV0449",
+        "DEV0450",
+        "DEV0451",
+        "DEV0452",
+        "DEV0453",
+        "DEV0455",
+        "DEV0457",
+        "DEV0458",
+        "DEV0459",
+        "DEV0461",
+        "DEV0462",
+        "DEV0463",
+        "DEV0464",
+        "DEV0466",
+        "DEV0467",
+        "DEV0468",
+        "DEV0469",
+        "DEV0470",
+        "DEV0471",
+        "DEV0472",
+        "DEV0474",
+        "DEV0475",
+        "DEV0476",
+        "DEV0478",
+        "DEV0479",
+        "DEV0480",
+        "DEV0481",
+        "DEV0482",
+        "DEV0484",
+        "DEV0486",
+        "DEV0487",
+        "DEV0488",
+        "DEV0489",
+        "DEV0490",
+        "DEV0491",
+        "DEV0493",
+        "DEV0495",
+        "DEV0496",
+        "DEV0497",
+        "DEV0498",
+        "DEV0501",
+        "DEV0502",
+        "DEV0503",
+        "DEV0504",
+        "DEV0506",
+        "DEV0507",
+        "DEV0508",
+        "DEV0509",
+        "DEV0510"
+      ],
+      "scenario_groups": [
+        "account_authenticator_valid_codes_rejected",
+        "account_avatar_choice_opinion",
+        "account_biometric_login_closes_app",
+        "account_change_email_procedure",
+        "account_confirmation_screen_praise",
+        "account_delegated_recovery_contact",
+        "account_deleted_member_can_edit",
+        "account_existing_activity_log_download",
+        "account_existing_display_name_scope",
+        "account_existing_profile_export_visibility",
+        "account_existing_username_change_links",
+        "account_invitation_acceptance_error",
+        "account_language_switch_overlapping_labels",
+        "account_login_redirect_loop",
+        "account_logout_back_button_restores_session",
+        "account_machine_readable_data_export",
+        "account_onboarding_data_explanation_praise",
+        "account_otp_autofill_truncates_code",
+        "account_passkey_security_key_not_detected",
+        "account_password_reset_link_invalid",
+        "account_password_visibility_wrong_field",
+        "account_preferences_layout_praise",
+        "account_privacy_summary_visual_design",
+        "account_profile_photo_cross_device_reverts",
+        "account_public_profile_personality_praise",
+        "account_recovery_code_expiry_reminders",
+        "account_remote_session_revocation",
+        "account_secondary_verification_email",
+        "account_sensitive_action_reauthentication",
+        "account_separate_personal_work_profiles",
+        "account_settings_wording_criticism",
+        "account_setup_reassurance_praise",
+        "account_signin_aliases",
+        "account_temporary_privacy_mode",
+        "account_workspace_owner_transfer_steps",
+        "billing_automatic_receipt_delivery",
+        "billing_consolidated_order_invoice_request",
+        "billing_download_tax_receipt_steps",
+        "billing_gift_card_expiry_policy",
+        "billing_invoice_date_change_policy",
+        "billing_partial_invoice_payment_policy",
+        "billing_payment_allocated_wrong_invoice",
+        "billing_single_transfer_multiple_invoices",
+        "broadcast_accounting_webinar",
+        "broadcast_board_game_night",
+        "broadcast_book_club_invitation",
+        "broadcast_ceramics_discount",
+        "broadcast_community_radio_schedule",
+        "broadcast_dance_workshop_notice",
+        "broadcast_fundraising_appeal",
+        "broadcast_language_exchange_event",
+        "broadcast_mobile_game_launch",
+        "broadcast_orchard_juice_launch",
+        "broadcast_pet_grooming_ad",
+        "broadcast_photography_walk",
+        "broadcast_poetry_reading_notice",
+        "broadcast_remote_job_ad",
+        "broadcast_rooftop_film_evening",
+        "broadcast_secondhand_bicycle_sale",
+        "broadcast_sleepwear_sale",
+        "broadcast_stationery_promotion",
+        "broadcast_stationery_swap_event",
+        "broadcast_storage_sale",
+        "broadcast_table_lamp_collection",
+        "broadcast_van_rental_ad",
+        "broadcast_vintage_camera_sale",
+        "calendar_attendee_removed_on_room_change",
+        "calendar_event_time_shifts",
+        "catalog_search_freezes",
+        "checkout_payment_screen_crash",
+        "greeting_casual_only",
+        "invoice_bank_transfer_overpayment",
+        "invoice_download_blank_pdf",
+        "invoice_duplicate_service_period",
+        "invoice_missing_required_tax_identifier",
+        "invoice_paid_but_collection_notice",
+        "invoice_payment_terms_wrong_due_date",
+        "invoice_quantity_exceeds_confirmed_order",
+        "invoice_visual_design_opinion",
+        "invoice_wrong_business_name",
+        "irrelevant_birdwatching_tally",
+        "irrelevant_colour_palette_notes",
+        "irrelevant_costume_brainstorm",
+        "irrelevant_crossword_clue_discussion",
+        "irrelevant_dream_description",
+        "irrelevant_fantasy_map_notes",
+        "irrelevant_fictional_train_dialogue",
+        "irrelevant_gardening_rhyme",
+        "irrelevant_horoscope_broadcast",
+        "irrelevant_household_reminder",
+        "irrelevant_match_commentary",
+        "irrelevant_museum_caption_draft",
+        "irrelevant_neighbour_note",
+        "irrelevant_packing_list",
+        "irrelevant_rhyming_observation",
+        "irrelevant_sculpture_material_notes",
+        "irrelevant_stage_directions",
+        "irrelevant_telescope_observation_notes",
+        "irrelevant_umbrella_inventory",
+        "irrelevant_voice_transcription_note",
+        "irrelevant_weather_observation",
+        "irrelevant_word_association",
+        "marketing_find_email_optout",
+        "marketing_optout_not_honored",
+        "messaging_conversation_date_markers_praise",
+        "messaging_desktop_contact_block_ineffective",
+        "messaging_edit_history_for_posts",
+        "messaging_emoji_selection_opinion",
+        "messaging_enter_key_double_send",
+        "messaging_existing_delete_for_everyone_limit",
+        "messaging_existing_draft_device_sync",
+        "messaging_existing_edit_time_limit",
+        "messaging_existing_history_for_new_members",
+        "messaging_existing_message_pin",
+        "messaging_existing_pinned_post_permissions",
+        "messaging_existing_reaction_notification_scope",
+        "messaging_existing_saved_posts_location",
+        "messaging_existing_voice_note_download",
+        "messaging_group_member_limit",
+        "messaging_large_group_social_feel",
+        "messaging_mention_text_corrupted",
+        "messaging_phonetic_contact_search",
+        "messaging_poll_multiple_choices",
+        "messaging_prevent_channel_post_forwarding",
+        "messaging_private_contact_nicknames",
+        "messaging_quote_multiple_posts",
+        "messaging_quote_wrong_author",
+        "messaging_search_highlight_opinion",
+        "messaging_sticker_pack_praise",
+        "messaging_supported_audio_formats",
+        "messaging_temporary_guest_channel",
+        "messaging_thread_reply_lands_main_chat",
+        "messaging_thread_title_editing",
+        "messaging_turn_message_into_task",
+        "messaging_voice_note_noise_reduction_praise",
+        "messaging_voice_playback_silent",
+        "mobile_alarm_snooze_dismisses",
+        "mobile_audio_chapter_repeat_boundary",
+        "mobile_breathing_exercise_voice_opinion",
+        "mobile_camera_permission_prompt_repeats",
+        "mobile_enable_existing_offline_reading",
+        "mobile_existing_cache_clear_downloads",
+        "mobile_existing_download_quality",
+        "mobile_existing_offline_dictionary_update",
+        "mobile_existing_quiet_hours_setup",
+        "mobile_existing_sleep_timer_action",
+        "mobile_existing_step_goal_change",
+        "mobile_habit_chart_judgmental_tone",
+        "mobile_hidden_notification_content_exposed",
+        "mobile_landscape_buttons_clipped",
+        "mobile_locate_existing_text_size_control",
+        "mobile_location_permission_explanation",
+        "mobile_map_location_jumps_ocean",
+        "mobile_maps_offline_routes",
+        "mobile_metronome_visual_design_opinion",
+        "mobile_narration_playback_speed",
+        "mobile_navigation_haptic_turn_cues",
+        "mobile_navigation_icon_style_praise",
+        "mobile_onboarding_tone_criticism",
+        "mobile_photo_save_wrong_orientation",
+        "mobile_player_visual_design_opinion",
+        "mobile_progress_badges_opinion",
+        "mobile_qr_scan_upside_down",
+        "mobile_reader_bookmark_wrong_chapter",
+        "mobile_receipt_scan_bottom_cropped",
+        "mobile_recipe_font_style_opinion",
+        "mobile_recipe_scale_servings",
+        "mobile_running_audio_cues",
+        "mobile_save_custom_interval_sessions",
+        "mobile_shared_live_grocery_list",
+        "mobile_unread_badge_stuck",
+        "mobile_video_playback_screen_sleeps",
+        "mobile_voice_navigation_without_screen",
+        "mobile_weather_illustration_praise",
+        "mobile_widget_water_tracking",
+        "mobile_workout_distance_reset",
+        "notes_saved_draft_disappears",
+        "productivity_alert_priority_personalisation",
+        "productivity_animation_restrained_praise",
+        "productivity_board_layout_praise",
+        "productivity_board_move_wrong_column",
+        "productivity_bulk_task_assignment",
+        "productivity_calendar_capacity_view",
+        "productivity_clipboard_paste_failure",
+        "productivity_collaborative_undo_erases_other_user",
+        "productivity_completion_confetti_opinion",
+        "productivity_csv_import_decimal_values",
+        "productivity_custom_keyboard_shortcuts",
+        "productivity_custom_status_names",
+        "productivity_dashboard_motivation_tone_criticism",
+        "productivity_default_document_spacing_opinion",
+        "productivity_dense_sidebar_opinion",
+        "productivity_due_date_language_opinion",
+        "productivity_existing_board_guest_invite",
+        "productivity_existing_board_sort_scope",
+        "productivity_existing_calendar_colour_legend",
+        "productivity_existing_csv_import",
+        "productivity_existing_export_location",
+        "productivity_existing_focus_mode",
+        "productivity_existing_formula_reference_mode",
+        "productivity_existing_guest_role",
+        "productivity_existing_shortcut_reference",
+        "productivity_existing_table_row_lock",
+        "productivity_existing_task_assignee_notifications",
+        "productivity_existing_task_completion_permissions",
+        "productivity_existing_timezone_for_deadlines",
+        "productivity_export_date_day_month_swap",
+        "productivity_formula_field_support",
+        "productivity_long_form_note_reading_experience",
+        "productivity_meeting_action_owner_reminders",
+        "productivity_meeting_notes_spacious_design",
+        "productivity_notification_opens_wrong_task",
+        "productivity_overdue_filter_wrong_results",
+        "productivity_personal_dashboard_sections",
+        "productivity_plain_interface_praise",
+        "productivity_print_chart_legend_missing",
+        "productivity_private_notes_on_shared_tasks",
+        "productivity_project_archive_visibility",
+        "productivity_public_calendar_feed",
+        "productivity_recurring_task_business_days",
+        "productivity_removed_seat_still_billed",
+        "productivity_restore_document_version",
+        "productivity_reusable_project_checklists",
+        "productivity_rule_based_task_routing",
+        "productivity_scheduled_report_exports",
+        "productivity_screen_reader_checkbox_state",
+        "productivity_search_result_presentation_praise",
+        "productivity_status_colour_opinion",
+        "productivity_table_sum_omits_hidden_rows",
+        "productivity_task_cost_estimate_fields",
+        "productivity_task_dependencies",
+        "productivity_time_tracker_sleep_double_count",
+        "productivity_timeline_keyboard_navigation",
+        "productivity_timer_negative_duration",
+        "productivity_tutorial_pacing_opinion",
+        "productivity_weekly_digest_balance",
+        "productivity_whiteboard_version_comparison",
+        "productivity_whole_word_replace_ignores_boundary",
+        "productivity_word_export_equations_missing",
+        "refund_credit_note_recorded_as_debit",
+        "refund_installment_purchase_policy",
+        "refund_multiple_cards_allocation",
+        "refund_processing_time_information",
+        "refund_restocking_fee_policy",
+        "refund_sales_tax_repayment_policy",
+        "rental_security_deposit_unreturned",
+        "shopping_accepted_coupon_missing_invoice",
+        "shopping_accessory_in_box_information",
+        "shopping_address_unit_overwritten",
+        "shopping_assembled_dimensions_information",
+        "shopping_basket_recommendations_opinion",
+        "shopping_branch_stock_visibility",
+        "shopping_bulk_reorder_from_history",
+        "shopping_cancelled_line_item_charged",
+        "shopping_candle_scent_opinion",
+        "shopping_cart_quantity_reverts",
+        "shopping_catalog_pagination_repeats_first_page",
+        "shopping_charge_wrong_currency",
+        "shopping_clothing_origin_information",
+        "shopping_collection_authorisation",
+        "shopping_colour_blind_safe_swatch_labels",
+        "shopping_courier_manner_criticism",
+        "shopping_delivery_region_availability",
+        "shopping_exchange_price_difference_missing",
+        "shopping_expedited_delivery_surcharge_unselected",
+        "shopping_expired_card_authorization_hold",
+        "shopping_filter_accessory_compatibility",
+        "shopping_filter_repairable_products",
+        "shopping_free_delivery_threshold_ignored",
+        "shopping_free_replacement_charged_handling",
+        "shopping_furniture_assembly_service_information",
+        "shopping_gift_wrap_receipt_policy",
+        "shopping_gift_wrap_service_charge_refund",
+        "shopping_handwritten_note_praise",
+        "shopping_ingredient_description_trust",
+        "shopping_installation_appointment_presence",
+        "shopping_installment_interest_dispute",
+        "shopping_installment_plan_full_collection",
+        "shopping_invoice_tax_exemption",
+        "shopping_item_price_history",
+        "shopping_mattress_trial_collection_steps",
+        "shopping_notebook_binding_praise",
+        "shopping_optional_donation_charged",
+        "shopping_order_material_samples",
+        "shopping_order_tracking_status_meaning",
+        "shopping_partial_refund_shortfall",
+        "shopping_payment_method_selection_resets",
+        "shopping_photo_attachments_in_reviews",
+        "shopping_pickup_slot_selection",
+        "shopping_preorder_dispatch_policy",
+        "shopping_price_sort_incorrect",
+        "shopping_product_care_symbol",
+        "shopping_product_comparison_table",
+        "shopping_product_description_praise",
+        "shopping_product_photography_criticism",
+        "shopping_product_video_pacing_criticism",
+        "shopping_range_selection_criticism",
+        "shopping_recycled_material_percentage",
+        "shopping_refund_expired_card_routing",
+        "shopping_refund_wrong_payment_method",
+        "shopping_repair_parts_selection_praise",
+        "shopping_return_packaging_convenience",
+        "shopping_return_postage_promise_dispute",
+        "shopping_review_rating_not_saved",
+        "shopping_saved_address_selection",
+        "shopping_saved_measurement_profiles",
+        "shopping_shareable_wishlist",
+        "shopping_size_chart_measurement_method",
+        "shopping_size_filter_ignores_selection",
+        "shopping_unapproved_redelivery_fee",
+        "shopping_unit_price_decimal_display",
+        "shopping_variant_image_wrong_item",
+        "shopping_wallet_balance_not_applied",
+        "shopping_wishlist_stock_alerts",
+        "spam_coin_scheme_promotion",
+        "spam_generic_password_scare",
+        "spam_miracle_product_ad",
+        "spam_paid_survey_recruitment",
+        "spam_prize_claim_link",
+        "spam_unrequested_review_swap",
+        "storage_activity_feed_summary_opinion",
+        "storage_audio_preview_timestamp_comments",
+        "storage_bandwidth_schedule",
+        "storage_cancelled_overage_assessment",
+        "storage_copy_folder_path",
+        "storage_different_retention_per_folder",
+        "storage_duplicate_file_finder",
+        "storage_exclude_subfolders_from_sync",
+        "storage_existing_file_lock_timeout",
+        "storage_existing_link_expiration_timezone",
+        "storage_existing_owner_exit_policy",
+        "storage_existing_readonly_sharing",
+        "storage_existing_restore_deleted_folder_structure",
+        "storage_existing_share_permission_inheritance",
+        "storage_existing_shortcut_target_deletion",
+        "storage_file_details_readability",
+        "storage_file_tagging",
+        "storage_filename_search_accent_normalization",
+        "storage_folder_experience_opinion",
+        "storage_folder_move_breadcrumb_stale",
+        "storage_link_download_limit",
+        "storage_link_recipient_signin_requirement",
+        "storage_mobile_browser_consistency_praise",
+        "storage_offline_folder_changes_lost",
+        "storage_password_protected_pdf_support",
+        "storage_read_access_audit_log",
+        "storage_resumed_upload_corrupt_archive",
+        "storage_revoked_link_still_opens",
+        "storage_search_within_selected_file_types",
+        "storage_shared_drive_onboarding_story",
+        "storage_shared_folder_owner_quota",
+        "storage_small_pdf_upload_fails",
+        "storage_text_conversion_accents_lost",
+        "storage_three_dimensional_model_preview",
+        "storage_thumbnail_other_users_image",
+        "storage_trash_retention_policy",
+        "storage_version_history_quota",
+        "storage_zip_export_empty_directories",
+        "subscription_annual_prepayment_bank_transfer",
+        "subscription_audio_drama_editorial_criticism",
+        "subscription_balance_carried_forward_twice",
+        "subscription_box_content_preferences",
+        "subscription_box_selection_opinion",
+        "subscription_cancellation_effective_date",
+        "subscription_comics_curation_praise",
+        "subscription_declined_payment_retry_fee",
+        "subscription_downgrade_credit_calculation",
+        "subscription_family_member_separate_charge",
+        "subscription_included_support_call_charge",
+        "subscription_invoice_rounding_overcharge",
+        "subscription_language_lessons_value",
+        "subscription_magazine_editorial_opinion",
+        "subscription_monthly_to_annual_credit_policy",
+        "subscription_music_discovery_criticism",
+        "subscription_pause_retention_charges",
+        "subscription_per_user_or_workspace_pricing",
+        "subscription_prepaid_credit_expiry_dispute",
+        "subscription_price_lock_not_honored",
+        "subscription_price_mismatch",
+        "subscription_promised_credit_missing",
+        "subscription_puzzle_difficulty_opinion",
+        "subscription_renewal_after_cancellation",
+        "subscription_renewal_date_information",
+        "subscription_renewal_without_required_notice",
+        "subscription_seed_box_variety_criticism",
+        "subscription_student_discount_not_applied",
+        "subscription_transfer_unused_credit_policy",
+        "subscription_trial_card_authorization_policy",
+        "subscription_trial_charged_early",
+        "subscription_unjustified_late_fee",
+        "subscription_unrequested_paid_addon",
+        "subscription_update_renewal_payment_card",
+        "subscription_upgrade_proration_full_month",
+        "subscription_usage_meter_counts_internal_tests",
+        "subscription_usage_spend_cap_exceeded",
+        "support_agent_plain_language_praise",
+        "support_followup_praise",
+        "support_handoff_experience_criticism",
+        "support_help_article_tone_criticism",
+        "support_repeated_name_usage_opinion",
+        "support_reply_tone_criticism",
+        "support_waiting_music_opinion",
+        "unsolicited_affiliate_recruitment",
+        "unsolicited_bulk_messaging_ad",
+        "unsolicited_business_award_entry_sales",
+        "unsolicited_commercial_cleaning_pitch",
+        "unsolicited_course_promotion",
+        "unsolicited_domain_purchase_offer",
+        "unsolicited_equipment_insurance_ad",
+        "unsolicited_invoice_service_ad",
+        "unsolicited_livestream_sponsorship_sales",
+        "unsolicited_logo_design_offer",
+        "unsolicited_marketing_seo_services",
+        "unsolicited_office_plant_service_pitch",
+        "unsolicited_packaging_supplier_pitch",
+        "unsolicited_paid_followers_offer",
+        "unsolicited_recruitment_service_pitch",
+        "unsolicited_translation_service_offer",
+        "unsolicited_video_editing_service_offer",
+        "unsolicited_warehouse_space_offer"
+      ]
+    },
+    "validation": {
+      "count": 90,
+      "labels": {
+        "General Inquiry": 19,
+        "Non-Qualifying": 15,
+        "Billing Issue": 11,
+        "Feature Request": 15,
+        "Customer Feedback": 15,
+        "Bug Report": 15
+      },
+      "sha256": "41df09c2ac47e3d1a8149d8c75b265bfafbf74d961c359eef7d3b996918af20e",
+      "example_ids": [
+        "DEV0008",
+        "DEV0016",
+        "DEV0017",
+        "DEV0021",
+        "DEV0026",
+        "DEV0037",
+        "DEV0039",
+        "DEV0052",
+        "DEV0053",
+        "DEV0056",
+        "DEV0073",
+        "DEV0078",
+        "DEV0082",
+        "DEV0090",
+        "DEV0091",
+        "DEV0093",
+        "DEV0094",
+        "DEV0095",
+        "DEV0101",
+        "DEV0108",
+        "DEV0117",
+        "DEV0119",
+        "DEV0121",
+        "DEV0124",
+        "DEV0134",
+        "DEV0137",
+        "DEV0142",
+        "DEV0146",
+        "DEV0147",
+        "DEV0151",
+        "DEV0152",
+        "DEV0158",
+        "DEV0179",
+        "DEV0185",
+        "DEV0192",
+        "DEV0198",
+        "DEV0199",
+        "DEV0204",
+        "DEV0214",
+        "DEV0217",
+        "DEV0219",
+        "DEV0228",
+        "DEV0229",
+        "DEV0236",
+        "DEV0249",
+        "DEV0251",
+        "DEV0253",
+        "DEV0255",
+        "DEV0257",
+        "DEV0258",
+        "DEV0259",
+        "DEV0279",
+        "DEV0281",
+        "DEV0294",
+        "DEV0310",
+        "DEV0311",
+        "DEV0312",
+        "DEV0320",
+        "DEV0322",
+        "DEV0327",
+        "DEV0328",
+        "DEV0338",
+        "DEV0339",
+        "DEV0342",
+        "DEV0343",
+        "DEV0352",
+        "DEV0363",
+        "DEV0369",
+        "DEV0386",
+        "DEV0398",
+        "DEV0403",
+        "DEV0405",
+        "DEV0426",
+        "DEV0435",
+        "DEV0439",
+        "DEV0440",
+        "DEV0445",
+        "DEV0454",
+        "DEV0456",
+        "DEV0460",
+        "DEV0465",
+        "DEV0473",
+        "DEV0477",
+        "DEV0483",
+        "DEV0485",
+        "DEV0492",
+        "DEV0494",
+        "DEV0499",
+        "DEV0500",
+        "DEV0505"
+      ],
+      "scenario_groups": [
+        "account_existing_profile_discovery_visibility",
+        "account_passkey_device_support",
+        "account_per_workspace_language",
+        "account_recovery_code_storage",
+        "account_security_summary_praise",
+        "billing_currency_conversion_fee_information",
+        "billing_invoice_payment_reference",
+        "billing_invoice_purchase_order_reference_steps",
+        "booking_vendor_cancellation_refund_missing",
+        "broadcast_cooking_class_notice",
+        "broadcast_local_history_exhibition",
+        "broadcast_market_event_notice",
+        "broadcast_theatre_rehearsal_notice",
+        "calendar_ics_export_recurrence_end_missing",
+        "calendar_recurring_event_exceptions",
+        "cancellation_fee_terms_dispute",
+        "document_content_search",
+        "greeting_evening_only",
+        "invoice_tax_applied_twice",
+        "irrelevant_chess_move_commentary",
+        "irrelevant_dinner_menu_brainstorm",
+        "irrelevant_knitting_count",
+        "irrelevant_paper_boat_instructions",
+        "messaging_admin_remove_bot_no_effect",
+        "messaging_default_sounds_opinion",
+        "messaging_existing_channel_archive_search",
+        "messaging_existing_channel_mute_scope",
+        "messaging_existing_read_receipt_setting",
+        "messaging_existing_search_date_syntax",
+        "messaging_reaction_removed_wrong_message",
+        "messaging_scheduled_send",
+        "messaging_thread_navigation_opinion",
+        "messaging_translate_selected_message",
+        "mobile_calendar_widget",
+        "mobile_dark_mode_preference_resets",
+        "mobile_existing_units_selection",
+        "mobile_podcast_transcripts",
+        "nontext_content_accessibility",
+        "productivity_comment_edit_loses_attachment",
+        "productivity_copy_item_contents",
+        "productivity_numbered_list_undo_corrupts_order",
+        "productivity_time_report_density_criticism",
+        "productivity_whiteboard_eraser_other_page",
+        "shopping_backpack_pocket_layout_praise",
+        "shopping_build_your_own_bundle",
+        "shopping_delivery_date_selector_disabled_valid_dates",
+        "shopping_duplicate_settled_charge",
+        "shopping_filter_exclude_material",
+        "shopping_gift_card_balance_deducted_without_order",
+        "shopping_locker_delivery_coverage",
+        "shopping_order_progress_timeline",
+        "shopping_protective_packaging_praise",
+        "shopping_stock_count_negative",
+        "shopping_tea_aroma_praise",
+        "shopping_tip_amount_changed",
+        "shopping_unboxing_filler_waste_opinion",
+        "spam_chain_forwarding",
+        "spam_fake_invoice_broadcast",
+        "spam_search_term_stuffing",
+        "storage_bulk_rename_extension_removed",
+        "storage_file_request_recipient_behavior",
+        "storage_incoming_upload_size_limit",
+        "storage_persistent_upload_queue",
+        "storage_preview_watermark",
+        "storage_supporting_documentation_clarity",
+        "storage_tooltip_language_criticism",
+        "storage_transfer_progress_clarity",
+        "storage_upload_completion_sound_opinion",
+        "storage_upload_file_checksums",
+        "subscription_film_curation_praise",
+        "subscription_promised_pause_still_charged",
+        "subscription_renewal_period_overlap",
+        "subscription_wrong_billing_term",
+        "support_patient_explanation_praise",
+        "unsolicited_menu_printing_offer",
+        "unsolicited_podcast_guest_pitch",
+        "unsolicited_shipping_aggregator_pitch"
+      ]
+    },
+    "test": {
+      "count": 90,
+      "labels": {
+        "Billing Issue": 15,
+        "Customer Feedback": 15,
+        "Bug Report": 15,
+        "Feature Request": 15,
+        "General Inquiry": 15,
+        "Non-Qualifying": 15
+      },
+      "sha256": "c82f49f18e7e05f3324ab400b5b45b8230289def09d42c46560d4a428b27ad06",
+      "example_ids": [
+        "TEST0001",
+        "TEST0002",
+        "TEST0003",
+        "TEST0004",
+        "TEST0005",
+        "TEST0006",
+        "TEST0007",
+        "TEST0008",
+        "TEST0009",
+        "TEST0010",
+        "TEST0011",
+        "TEST0012",
+        "TEST0013",
+        "TEST0014",
+        "TEST0015",
+        "TEST0016",
+        "TEST0017",
+        "TEST0018",
+        "TEST0019",
+        "TEST0020",
+        "TEST0021",
+        "TEST0022",
+        "TEST0023",
+        "TEST0024",
+        "TEST0025",
+        "TEST0026",
+        "TEST0027",
+        "TEST0028",
+        "TEST0029",
+        "TEST0030",
+        "TEST0031",
+        "TEST0032",
+        "TEST0033",
+        "TEST0034",
+        "TEST0035",
+        "TEST0036",
+        "TEST0037",
+        "TEST0038",
+        "TEST0039",
+        "TEST0040",
+        "TEST0041",
+        "TEST0042",
+        "TEST0043",
+        "TEST0044",
+        "TEST0045",
+        "TEST0046",
+        "TEST0047",
+        "TEST0048",
+        "TEST0049",
+        "TEST0050",
+        "TEST0051",
+        "TEST0052",
+        "TEST0053",
+        "TEST0054",
+        "TEST0055",
+        "TEST0056",
+        "TEST0057",
+        "TEST0058",
+        "TEST0059",
+        "TEST0060",
+        "TEST0061",
+        "TEST0062",
+        "TEST0063",
+        "TEST0064",
+        "TEST0065",
+        "TEST0066",
+        "TEST0067",
+        "TEST0068",
+        "TEST0069",
+        "TEST0070",
+        "TEST0071",
+        "TEST0072",
+        "TEST0073",
+        "TEST0074",
+        "TEST0075",
+        "TEST0076",
+        "TEST0077",
+        "TEST0078",
+        "TEST0079",
+        "TEST0080",
+        "TEST0081",
+        "TEST0082",
+        "TEST0083",
+        "TEST0084",
+        "TEST0085",
+        "TEST0086",
+        "TEST0087",
+        "TEST0088",
+        "TEST0089",
+        "TEST0090"
+      ],
+      "scenario_groups": [
+        "independent_test_v2_archive_credit_purchase_missing_balance",
+        "independent_test_v2_art_sale_commission_includes_shipping_incorrectly",
+        "independent_test_v2_beehive_inspection_duplication_mutates_original_identifier",
+        "independent_test_v2_book_scanner_export_rotation_mismatch",
+        "independent_test_v2_bridge_toll_settlement_decimal_shift_overcharge",
+        "independent_test_v2_budgeting_app_mascot_tone_opinion",
+        "independent_test_v2_campaign_payout_wrongly_held_below_threshold",
+        "independent_test_v2_clinic_scheduler_drag_wrong_time",
+        "independent_test_v2_course_certificate_download_location",
+        "independent_test_v2_cycling_weekly_summary_motivation",
+        "independent_test_v2_diagram_connector_label_disappears_on_move",
+        "independent_test_v2_digital_collection_gallery_palette_praise",
+        "independent_test_v2_domestic_payment_unwarranted_currency_handling_fee",
+        "independent_test_v2_embroidery_pattern_print_missing_column",
+        "independent_test_v2_ferry_pass_transfer_policy_question",
+        "independent_test_v2_field_recorder_archive_voice_notes_howto",
+        "independent_test_v2_filter_subscription_dispatch_schedule",
+        "independent_test_v2_fish_farm_offline_observation_capture",
+        "independent_test_v2_greenhouse_temperature_unit_conversion_error",
+        "independent_test_v2_insurance_quote_plain_language_praise",
+        "independent_test_v2_irrelevant_fictional_council_excerpt",
+        "independent_test_v2_kiln_scheduler_compatible_firing_batch_suggestions",
+        "independent_test_v2_library_hold_cancellation_does_not_persist",
+        "independent_test_v2_misdirected_household_cooking_note",
+        "independent_test_v2_music_score_page_animation_opinion",
+        "independent_test_v2_neighbourhood_cleanup_public_notice",
+        "independent_test_v2_notebook_export_handwritten_annotations_scope",
+        "independent_test_v2_nursery_graft_parent_relationship_fields",
+        "independent_test_v2_offline_phrasebook_pronunciation_languages",
+        "independent_test_v2_orchard_guide_reassuring_voice",
+        "independent_test_v2_photo_gallery_single_album_sharing_howto",
+        "independent_test_v2_podcast_volume_dialog_keyboard_focus_trap",
+        "independent_test_v2_poetry_workshop_welcoming_atmosphere",
+        "independent_test_v2_pottery_glaze_photography_praise",
+        "independent_test_v2_print_bureau_blank_reverse_sides_invoiced",
+        "independent_test_v2_public_stargazing_fair_announcement",
+        "independent_test_v2_purchase_charged_to_wrong_restricted_wallet",
+        "independent_test_v2_recipe_timer_background_freezes",
+        "independent_test_v2_replacement_card_payment_rejection",
+        "independent_test_v2_restoration_escrow_released_without_milestone_approval",
+        "independent_test_v2_rhythm_game_percussion_sound_praise",
+        "independent_test_v2_royalty_advance_recoupment_carryforward_reset",
+        "independent_test_v2_sailing_log_export_timezone_date_shift",
+        "independent_test_v2_seed_inventory_decimal_quantity_rounding",
+        "independent_test_v2_sky_chart_selected_date_resets",
+        "independent_test_v2_specimen_label_volume_price_tiers_ignored",
+        "independent_test_v2_sponsored_tuition_opposite_share_collected",
+        "independent_test_v2_survey_revision_history_navigation",
+        "independent_test_v2_textile_import_supported_file_formats",
+        "independent_test_v2_tool_rental_invoice_extra_days",
+        "independent_test_v2_touring_ensemble_parallel_timezones_calendar",
+        "independent_test_v2_trail_map_visual_density_opinion",
+        "independent_test_v2_transcription_fractional_rate_rounded_before_total",
+        "independent_test_v2_translation_minimum_applied_per_file_instead_of_order",
+        "independent_test_v2_unrelated_chess_game_transcript",
+        "independent_test_v2_unrelated_public_rally_slogan",
+        "independent_test_v2_unrelated_roasted_oat_recipe_instructions",
+        "independent_test_v2_unrelated_short_rain_poem",
+        "independent_test_v2_unrelated_theatre_rehearsal_notes",
+        "independent_test_v2_unrelated_used_exercise_mat_classified",
+        "independent_test_v2_unrelated_village_cricket_results_announcement",
+        "independent_test_v2_unsolicited_backlink_package_sales",
+        "independent_test_v2_unsolicited_bulk_freight_promotion",
+        "independent_test_v2_unsolicited_handmade_pot_trade_offer",
+        "independent_test_v2_venue_directory_sign_language_clips",
+        "independent_test_v2_virtual_staging_room_scan_size_requirements",
+        "independent_test_v2_wholesale_flower_catalog_broadcast",
+        "test_audio_editorial_quality",
+        "test_basket_pickup_scheduling",
+        "test_bulk_sort_undo",
+        "test_chat_export_media_selection",
+        "test_chat_poll_revote",
+        "test_cloud_status_icon_meaning",
+        "test_file_search_relevance",
+        "test_folder_document_checklist",
+        "test_headset_guide_controls",
+        "test_household_listening_queues",
+        "test_mobile_route_layout_praise",
+        "test_nonadjacent_note_comment",
+        "test_offer_digest_option",
+        "test_offline_audio_retention",
+        "test_one_handed_navigation",
+        "test_pickup_locker_dropdown",
+        "test_pickup_reschedule_instructions",
+        "test_pinned_chats_disappear",
+        "test_reminder_copy_tone",
+        "test_scarf_colour_preference",
+        "test_seasonal_subscription_pause",
+        "test_slow_playback_caption_drift",
+        "test_trusted_device_nicknames"
+      ]
+    }
+  },
+  "targets": {
+    "train": 420,
+    "validation": 90,
+    "test": 90
+  },
+  "algorithm": "seeded whole-group class/count balancing; related groups remain together",
+  "model_input": [
+    "message"
+  ],
+  "target": "label",
+  "evaluation_run": false,
+  "review_origin": {
+    "method": "assistant_user_authorized",
+    "review_date": "2026-10-25",
+    "human_review_performed": false,
+    "row_count": 600,
+    "review_report": "reports/data_preparation/assistant_review.json",
+    "review_report_sha256": "5259f138f0310c7fb14a1e70819d1c462ed7c5ea017c64ccda04d6ab4c6180c0",
+    "synthetic": true,
+    "authorization": "Explicit user delegation to review, correct, mark reviewed and split."
+  }
+}

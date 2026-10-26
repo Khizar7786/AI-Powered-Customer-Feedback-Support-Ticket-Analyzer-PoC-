@@ -1,0 +1,61 @@
+{
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      15
+    ]
+  ],
+  "matrix_labels": [
+    "Bug Report",
+    "Feature Request",
+    "Billing Issue",
+    "General Inquiry",
+    "Customer Feedback",
+    "Non-Qualifying"
+  ],
+  "matrix_orientation": "rows=true labels, columns=predicted labels"
+}

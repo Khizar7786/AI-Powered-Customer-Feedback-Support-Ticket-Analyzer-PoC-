@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-26T10:36:49.266546+00:00",
+  "kind": "Actual Streamlit AppTest on current project configuration; API/model/storage mutation guards",
+  "startup": "passed",
+  "sample_preview_rows": 12,
+  "preview_rerun": "passed",
+  "exceptions": 0,
+  "category_model_loads": 0,
+  "sentiment_model_loads": 0,
+  "api_calls": 0,
+  "new_batch_inserts": 0,
+  "existing_output_bytes_unchanged": true,
+  "prompt_version": "ticket-details-v2",
+  "physical_browser_download_check": "pending; previously blocked by Computer Use URL-policy verification",
+  "nonfatal_sandbox_temp_cleanup_warning_at_interpreter_exit": true
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-26T11:02:51.3459893Z",
+  "launch": "fresh project virtual-environment Streamlit process bound to 127.0.0.1:8501",
+  "health_http_status": 200,
+  "health_body": "ok",
+  "verification_process_id": 30432,
+  "verification_process_stopped": true,
+  "other_listener_addresses_left_untouched": [
+    "::"
+  ],
+  "physical_browser_upload_download": "not verified",
+  "handoff_stop": {
+    "checked_at_utc": "2026-10-26T11:09:02.664125+00:00",
+    "other_verified_project_streamlit_process_stopped": 12072,
+    "port_8501_listeners_remaining": 0
+  }
+}

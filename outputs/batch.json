@@ -1,16 +1,16 @@
 {
-  "run_id": "3ad058ba20f7486094648792bfe1eace",
+  "run_id": "ac3247a36cfe4f35898d14ab941cd257",
   "source_hash": "6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac",
-  "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+  "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
   "rows": [
     {
       "ordinal": 1,
       "source_row": 2,
       "source_line_end": 2,
-      "identity": "551a72858ef9d3dd503f1e86803deb6bd81a81b8a784e52b012344c9133423de",
+      "identity": "8cd9487d89eea24466824b7aed3f64261d3fef76097a2408b0b5bdfa4aed1b8c",
       "ticket_key": "ticket:T001",
       "input_hash": "1532174748485996ac3f82106c9750b44dfe54f0a4b23c917fd16640c6b5ee62",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T001",
         "original_message": "The payment page crashes every time I click 'Checkout' on Chrome. Please fix this ASAP!",
@@ -45,19 +45,19 @@
           "generated": {
             "details": {
               "priority": "Urgent",
-              "product_feature": "Checkout",
-              "suggested_reply": "I am sorry you are running into this crash on Chrome when you click Checkout. Could you share any error message you see and whether this happens in an incognito window as well?"
+              "product_feature": "payment page",
+              "suggested_reply": "Thanks for reporting this. A crash on the payment page during checkout is important; could you share any error message or steps that reliably reproduce it on Chrome?"
             },
             "receipt": {
               "provider": "openai",
               "model": "gpt-5.4-mini",
-              "response_id": "resp_0f90c893b1a4d002016adf055ea8c487d2ab4c39755a9e913b",
+              "response_id": "resp_0a2c453d314ec134016adf324a564887d2a16e6bdee1852a68",
               "attempts": 1,
-              "duration_seconds": 3.795082199969329,
-              "completed_at_utc": "2026-10-26T07:46:40.106894+00:00",
-              "input_tokens": 471,
-              "output_tokens": 60,
-              "prompt_version": "ticket-details-v1"
+              "duration_seconds": 4.4649163000285625,
+              "completed_at_utc": "2026-10-26T10:58:19.902628+00:00",
+              "input_tokens": 516,
+              "output_tokens": 56,
+              "prompt_version": "ticket-details-v2"
             }
           },
           "reason": null,
@@ -68,16 +68,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.224779+00:00"
+      "recorded_at": "2026-10-26T15:05:34.137148+00:00"
     },
     {
       "ordinal": 2,
       "source_row": 3,
       "source_line_end": 3,
-      "identity": "eddd4287f3f26b53ce459b0d8694980f6bd7d17bf771abb0b704b60630f56cc1",
+      "identity": "24b383ca154b6dbfe670fad1577de75b2afc41643906e8cfb3e3aabdec1b3460",
       "ticket_key": "ticket:T002",
       "input_hash": "856dec1b4b3d3c55bef0268bc493e7c5dd9ab63e9861608345d1c91fdd92d917",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T002",
         "original_message": "Hi team, it would be awesome if you could add a dark mode to the mobile app.",
@@ -111,20 +111,20 @@
           },
           "generated": {
             "details": {
-              "priority": "Medium",
+              "priority": "Low",
               "product_feature": "mobile app",
-              "suggested_reply": "Thanks for the suggestion. We appreciate the idea of adding a dark mode to the mobile app and will pass it along to the team for review."
+              "suggested_reply": "Thanks for the suggestion. Dark mode for the mobile app sounds useful, and it is helpful to know this would improve the experience for you."
             },
             "receipt": {
               "provider": "openai",
               "model": "gpt-5.4-mini",
-              "response_id": "resp_0f9c441f9c4ed8fa016adf056167ac87d29cd4ae43e6f28ec7",
+              "response_id": "resp_07200a929c6fff2b016adf324ce28087d2ae3ca8b19b6793a1",
               "attempts": 1,
-              "duration_seconds": 2.0473976000212133,
-              "completed_at_utc": "2026-10-26T07:46:42.205790+00:00",
-              "input_tokens": 471,
-              "output_tokens": 53,
-              "prompt_version": "ticket-details-v1"
+              "duration_seconds": 3.202591000008397,
+              "completed_at_utc": "2026-10-26T10:58:23.178709+00:00",
+              "input_tokens": 516,
+              "output_tokens": 52,
+              "prompt_version": "ticket-details-v2"
             }
           },
           "reason": null,
@@ -135,16 +135,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.248384+00:00"
+      "recorded_at": "2026-10-26T15:05:34.147264+00:00"
     },
     {
       "ordinal": 3,
       "source_row": 4,
       "source_line_end": 4,
-      "identity": "9ff1ce7eacadfa6c40abf4bdddeef64c54a273d4dedffe19a2e2e40b486f1c1c",
+      "identity": "e3803ebeca6bbd8a8cb4a4d92c4789d321742f9e2ea43aa2493889fdf78831ee",
       "ticket_key": "ticket:T003",
       "input_hash": "e871fe9b195fafee66718902bc57a7d2f128ec785444b97c661eb666deb01312",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T003",
         "original_message": "Hello, hope you are having a nice day!",
@@ -176,16 +176,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.269144+00:00"
+      "recorded_at": "2026-10-26T15:05:34.157231+00:00"
     },
     {
       "ordinal": 4,
       "source_row": 5,
       "source_line_end": 5,
-      "identity": "aa0f16267c3332346fb63fa9790b82fcaf836cb098031113318646c762a6fa88",
+      "identity": "2a2b24864af28bb30e851dd3caca7c1ea8f2f1bd1a8d0f81f35090ed3a4bf5ef",
       "ticket_key": "ticket:T004",
       "input_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T004",
         "original_message": "Hello!",
@@ -209,16 +209,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.288893+00:00"
+      "recorded_at": "2026-10-26T15:05:34.169881+00:00"
     },
     {
       "ordinal": 5,
       "source_row": 6,
       "source_line_end": 6,
-      "identity": "3adc4facf1ae631856ee0885696c270d2e01faadb06f264f36536b9dc9110ba5",
+      "identity": "6adf139d06779caef156f6b0bdcf6be132519e1c47ea7a6490732830d6374ce0",
       "ticket_key": "ticket:T005",
       "input_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T005",
         "original_message": "",
@@ -242,16 +242,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.308556+00:00"
+      "recorded_at": "2026-10-26T15:05:34.177109+00:00"
     },
     {
       "ordinal": 6,
       "source_row": 7,
       "source_line_end": 7,
-      "identity": "a2a3327729bbdaa04be61757ed04548bdccde0ccb7591318db6c4b648677693c",
+      "identity": "425d30535e4976bf9fe6d6c35a39205df2cab97a5aae2b8f9cc5cebad045a15c",
       "ticket_key": "ticket:T006",
       "input_hash": "d9347745e7d5558630a80dd9ad9aed902ad6721eb467c4a1f6caacb6e105a03f",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T006",
         "original_message": "Hi, checkout crashes.",
@@ -287,18 +287,18 @@
             "details": {
               "priority": "Urgent",
               "product_feature": "checkout",
-              "suggested_reply": "Sorry about the checkout crash. Could you share what device, browser, or app version you are using so we can help investigate?"
+              "suggested_reply": "Thanks for reporting this. Checkout crashing is a serious issue; could you share what device or browser you are using and any error message you see?"
             },
             "receipt": {
               "provider": "openai",
               "model": "gpt-5.4-mini",
-              "response_id": "resp_07bb4b78e25b57a4016adf0563998087d2bafb941d4eae6e42",
+              "response_id": "resp_00d92661af152292016adf3250ada087d28b7f0599de2b5c50",
               "attempts": 1,
-              "duration_seconds": 2.6000562999979593,
-              "completed_at_utc": "2026-10-26T07:46:44.948067+00:00",
-              "input_tokens": 457,
-              "output_tokens": 50,
-              "prompt_version": "ticket-details-v1"
+              "duration_seconds": 2.61816800001543,
+              "completed_at_utc": "2026-10-26T10:58:25.956120+00:00",
+              "input_tokens": 502,
+              "output_tokens": 53,
+              "prompt_version": "ticket-details-v2"
             }
           },
           "reason": null,
@@ -309,16 +309,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.328662+00:00"
+      "recorded_at": "2026-10-26T15:05:34.190602+00:00"
     },
     {
       "ordinal": 7,
       "source_row": 8,
       "source_line_end": 8,
-      "identity": "f783d54b30d1ca37f85c25ff84fb97fae50345d192ec96196a9b53849506bac1",
+      "identity": "cfd2b4c9529339ed4b494e79a44358044e023fb7add2bbcd08569fed295f84f6",
       "ticket_key": "ticket:T007",
       "input_hash": "25d822153b0f68af10d70ec142c4162e197f41aa7021087c11987e645c9d945c",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T007",
         "original_message": "App crashes",
@@ -354,18 +354,18 @@
             "details": {
               "priority": "High",
               "product_feature": "App",
-              "suggested_reply": "Sorry to hear the app is crashing. Could you share what you were doing when it happened and any error message or steps to reproduce it?"
+              "suggested_reply": "Thanks for reporting this. Sorry to hear the app is crashing; can you share what you were doing right before it happened and your device or operating system version?"
             },
             "receipt": {
               "provider": "openai",
               "model": "gpt-5.4-mini",
-              "response_id": "resp_07907f959c6b6aa9016adf056631f087d28429d2c1766b7982",
+              "response_id": "resp_0fedbf10ba1032a0016adf3252aae887d2a19325d9bf53120c",
               "attempts": 1,
-              "duration_seconds": 2.145791699993424,
-              "completed_at_utc": "2026-10-26T07:46:47.242180+00:00",
-              "input_tokens": 455,
-              "output_tokens": 51,
-              "prompt_version": "ticket-details-v1"
+              "duration_seconds": 1.9301075999974273,
+              "completed_at_utc": "2026-10-26T10:58:27.969675+00:00",
+              "input_tokens": 500,
+              "output_tokens": 55,
+              "prompt_version": "ticket-details-v2"
             }
           },
           "reason": null,
@@ -376,16 +376,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.338659+00:00"
+      "recorded_at": "2026-10-26T15:05:34.203291+00:00"
     },
     {
       "ordinal": 8,
       "source_row": 9,
       "source_line_end": 9,
-      "identity": "a09c433a8ac953b1a21e17458e0efa37f44c66a506784f7a8023b0929d3c52ff",
+      "identity": "113b8309425a5a8eb13675f9f643781991e1cac8687712cc5e8196f086ee2414",
       "ticket_key": "ticket:T008",
       "input_hash": "5f953023227a8029ec6d175f76f139cae7689719325fb364871b94e1251880b3",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T008",
         "original_message": "My invoice at https://example.com/invoice will not open.",
@@ -421,18 +421,18 @@
             "details": {
               "priority": "Medium",
               "product_feature": "invoice",
-              "suggested_reply": "I am sorry you cannot open your invoice. Please try reloading the page or opening it in a different browser, and let us know if the issue continues."
+              "suggested_reply": "Sorry to hear the invoice will not open. Could you try opening it in a different browser or downloading it, and let us know if you see any error message?"
             },
             "receipt": {
               "provider": "openai",
               "model": "gpt-5.4-mini",
-              "response_id": "resp_071f20aec37283bd016adf0569e01087d0a77120b53f1f99bb",
+              "response_id": "resp_059a55df7e4ff29e016adf3258b92487d0ba13c2bb241228d4",
               "attempts": 1,
-              "duration_seconds": 4.418257799989078,
-              "completed_at_utc": "2026-10-26T07:46:51.912649+00:00",
-              "input_tokens": 465,
-              "output_tokens": 55,
-              "prompt_version": "ticket-details-v1"
+              "duration_seconds": 7.639005400007591,
+              "completed_at_utc": "2026-10-26T10:58:35.702462+00:00",
+              "input_tokens": 510,
+              "output_tokens": 56,
+              "prompt_version": "ticket-details-v2"
             }
           },
           "reason": null,
@@ -443,16 +443,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.367584+00:00"
+      "recorded_at": "2026-10-26T15:05:34.207348+00:00"
     },
     {
       "ordinal": 9,
       "source_row": 10,
       "source_line_end": 10,
-      "identity": "106cbd7e3786de3d04140e90f61ef4a8e1d63c2ed8d3a078e1198e183c0656de",
+      "identity": "f50531650dcbfda11af7019b8fabfe3c7d9faf9a1aa385dcff51c62367b03a35",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:10",
       "input_hash": "7df549d4c9cacac28a53ed7af9c970ed0eebf453caa1a36550b4be40905e1867",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": null,
         "original_message": "The subscription amount looks incorrect.",
@@ -468,16 +468,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.387182+00:00"
+      "recorded_at": "2026-10-26T15:05:34.221540+00:00"
     },
     {
       "ordinal": 10,
       "source_row": 11,
       "source_line_end": 11,
-      "identity": "d52f59417ab8d76dfce54a6e027692c2e10e9a889dbaffcaf2db25596515d95a",
+      "identity": "999acde14d9d5241420d8e8291af3925b72378efcc1c2ed60a9246d1bd172b55",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:11",
       "input_hash": "62657e8f950815a11abe949e6403c482f3f45b3089cb496b27cd79c4577db945",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T009",
         "original_message": "The export button is broken.",
@@ -493,16 +493,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.404196+00:00"
+      "recorded_at": "2026-10-26T15:05:34.229767+00:00"
     },
     {
       "ordinal": 11,
       "source_row": 12,
       "source_line_end": 12,
-      "identity": "abf118a160b909d3ea3f7cac870e92d7d68cb8f8fd71baf53a8509d4e26a7580",
+      "identity": "581bc3fc38c654addf11a3ffe1a0de036daf2fcdd4c6b9ffcccbbfe444fa885d",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:12",
       "input_hash": "550c1f627907a3a0f9d9d22a1ce12cbd0a471bae7ab20c3a79405a102a685de8",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T009",
         "original_message": "I cannot download my report.",
@@ -518,16 +518,16 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.420132+00:00"
+      "recorded_at": "2026-10-26T15:05:34.244175+00:00"
     },
     {
       "ordinal": 12,
       "source_row": 13,
       "source_line_end": 13,
-      "identity": "725a8e5f67b06339443b9118ab3d08a650bf4dc91b12cb121e131a68873ab179",
+      "identity": "0d093f89f68766ec1da9792329f86113e0c3f8293773c78ad79923530509fb54",
       "ticket_key": "invalid:6005de012ac8fb47487ae06ad8251b6a9f568274650f69e1a3c8af949e26aaac:13",
       "input_hash": "cc99f194282fa667db767d9b377525a299044e9476bee7daa2a2be7bbeabb95b",
-      "config_hash": "35544a2b6aabff017e18f37aee6da00bc89447e2ae06e1c6627d1b104fa1ff71",
+      "config_hash": "0cdfc648d397e43f6c2d9ddf1854f8e9f1bc19f531c9c28c3978839c999ea414",
       "outcome": {
         "ticket_id": "T010",
         "original_message": "Please check my invoice",
@@ -543,13 +543,13 @@
       },
       "reused": true,
       "persisted": true,
-      "recorded_at": "2026-10-26T09:28:19.440205+00:00"
+      "recorded_at": "2026-10-26T15:05:34.253317+00:00"
     }
   ],
   "file_errors": [],
   "persistence_errors": [],
-  "started_at": "2026-10-26T09:28:19.198622+00:00",
-  "finished_at": "2026-10-26T09:28:19.452461+00:00",
+  "started_at": "2026-10-26T15:05:34.121228+00:00",
+  "finished_at": "2026-10-26T15:05:34.257094+00:00",
   "export_version": "batch-export-v1",
   "counts": {
     "processed": 5,
@@ -610,18 +610,18 @@
       "max_retries": 1,
       "max_output_tokens": 600
     },
-    "prompt_version": "ticket-details-v1",
-    "prompt_sha256": "d0acf6c4d0502ece47cb1623f143bcb5a8233c285e9430ab7de96f29aebb9f08",
+    "prompt_version": "ticket-details-v2",
+    "prompt_sha256": "efc8dfacdfeb3524de2443e6d5273a0b0903eeab26fd8a141494dfe21f98c1e2",
     "schema_sha256": "29ee1a1bf54aa95e807c61da8f5209dbaa04425aa0559c414bdac45539120ea9",
     "source_sha256": {
       "filtering.py": "ad0d3a1f815d7da400b453d11dcfc206dbae31ffc2128d64b913850df9890249",
       "ingestion.py": "aa7cd72099393e7c82273d6982f12ce8aaf4ef4b34c062c79a2dd46ddc52b4ce",
       "intent.py": "76674defb647b12b8d863f2bece471d75fecbf60b5281979536ca99670a9c3ee",
       "sentiment.py": "1ffd8c3722e86898c80f8edef437d03d90fd4fa40e035d449ab262e209e6010e",
-      "schemas.py": "39acd82a26a640150d1f89422dd30f8a7322ee480e62a7bccab937408ca1cf55",
+      "schemas.py": "b968a8ab61777d39e49d89e8e376d2dee606c187dabad076cdccb45e1577cccb",
       "batch_contracts.py": "86143c74029317c7e00904b545879059c161f4cb3285437158a3ec0fd6cfcd42",
       "ticket_analysis.py": "8a289188a634a7f083cd3166c16a5b87cf0580d933d416ddc3f180a211e906e5",
-      "generation.py": "e083e646dd8ad579fd61cb90df15c9297751173c59b8875c5d9f684f53c2ecdd",
+      "generation.py": "a680df4fd47882397d83ef6f7da7c35d313b09a2e6b19f7d70e8d9c8383ef2fe",
       "pipeline.py": "5234b8a72676523894c95c53daadd217b6e94cefd935cc598aa78d9de549a0fd"
     }
   },

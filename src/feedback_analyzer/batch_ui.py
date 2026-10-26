@@ -23,7 +23,7 @@ def render_batch_action(preview, category_loader, sentiment_loader):
         options = generation.load_generation_options(config.project_root).model_dump(mode="json")
     except generation.GenerationError as error:
         options, option_error = None, str(error)
-    stamp = hashlib.sha256(json.dumps([category_signature, sentiment_signature, options], sort_keys=True).encode()).hexdigest()
+    stamp = hashlib.sha256(json.dumps([category_signature, sentiment_signature, options, generation.PROMPT_VERSION], sort_keys=True).encode()).hexdigest()
     if st.session_state.get("batch_setup_stamp") != stamp:
         clear_batch_result()
         st.session_state["batch_setup_stamp"] = stamp

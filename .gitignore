@@ -24,6 +24,19 @@ models/
 .idea/
 .vscode/
 
+# Local draft/review working files; the small frozen splits are published for reproduction.
+/data/raw/
+/data/review_work/
+/data/reviewed_messages.csv
+/data/reviewed_messages.csv.provenance.json
+/data/review_decisions.csv
+/reports/submission/prior_default_outputs/
+/reports/submission/live_streamlit_exports/
+/reports/submission/pre_publication_outputs/
+/reports/data_preparation/
+/reports/intent_smoke/
+/outputs/five_messages.csv
+
 # Local database sidecars; keep required sample outputs reviewable later
 *.db-journal
 *.db-shm

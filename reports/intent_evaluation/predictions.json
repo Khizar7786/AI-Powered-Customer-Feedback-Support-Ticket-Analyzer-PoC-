@@ -1,0 +1,1622 @@
+[
+  {
+    "source_row": 2,
+    "example_id": "TEST0001",
+    "message": "Our print bureau contract charges per printed side. This invoice also bills the blank reverse sides of single-sided pages. Please remove those unprinted sides from the amount due.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6193515658378601,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 3,
+    "example_id": "TEST0002",
+    "message": "The orchard planning guide has such a calm, reassuring voice. I finished reading it feeling much more confident about my little patch of trees.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6582587957382202,
+      "input_tokens": 29,
+      "used_tokens": 29,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 4,
+    "example_id": "TEST0003",
+    "message": "Hi, moving a consultation from 10:00 to 11:30 in the appointment calendar saves it at 11:00 instead. The slot under the pointer says 11:30 before I release it. Typing the time directly works.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7572848796844482,
+      "input_tokens": 47,
+      "used_tokens": 47,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 5,
+    "example_id": "TEST0004",
+    "message": "The new trail map styling feels visually crowded to me. I preferred the quieter appearance of the previous design, though I can still read the routes.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.683219313621521,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 6,
+    "example_id": "TEST0005",
+    "message": "The recipe timer freezes at whatever number is showing when I switch to another app. Coming back twenty minutes later resumes that same countdown, so it never rings at the intended time.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7540125846862793,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 7,
+    "example_id": "TEST0006",
+    "message": "My studio purchase was taken from the restricted exhibition wallet although I selected my personal wallet. The receipt confirms the exhibition balance was used. Please move this expense to the payment source I selected.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6327071785926819,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 8,
+    "example_id": "TEST0007",
+    "message": "Pages look upright in the book scanning preview, but every second page is upside down in the exported PDF. Rotating those pages in the editor before exporting produces the same result.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7391878962516785,
+      "input_tokens": 37,
+      "used_tokens": 37,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 9,
+    "example_id": "TEST0008",
+    "message": "Your art marketplace seller fee is based on the artwork price only. My statement also includes buyer-paid shipping in that calculation, increasing the fee deducted from my sale. Please correct the deduction.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.592716634273529,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 10,
+    "example_id": "TEST0009",
+    "message": "The wooden percussion sounds in this rhythm game are wonderfully satisfying. Even the short practice sessions feel musical instead of like drills.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.7015852332115173,
+      "input_tokens": 27,
+      "used_tokens": 27,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 11,
+    "example_id": "TEST0010",
+    "message": "It would be handy to let people change their vote in a chat poll. Plans move around, and right now the only workaround is making a completely new poll.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5707016587257385,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 12,
+    "example_id": "TEST0011",
+    "message": "My purchase was invoiced and paid in local currency through a domestic card. Your statement added a foreign-currency handling fee even though no conversion occurred. Please remove that fee.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6455535888671875,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 13,
+    "example_id": "TEST0012",
+    "message": "Our seed inventory lets me enter 0.25 kilograms and shows that value until I save. Reopening the record shows 25 kilograms. This happens for each quantity with two decimal places.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.6996362805366516,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 14,
+    "example_id": "TEST0013",
+    "message": "The wording of your task reminders is considerate. They sound like a helpful nudge rather than a reprimand when I've had a busy week.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6801264882087708,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 15,
+    "example_id": "TEST0014",
+    "message": "What are the steps for moving downloaded voice notes into a dated archive folder in the field recorder app? I would like to keep the recordings arranged by expedition.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7369935512542725,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 16,
+    "example_id": "TEST0015",
+    "message": "I set the sky chart to the date of last winter's observation and save the session. When I reopen that saved session, the chart switches to today even though the session title still has the old date.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7456459999084473,
+      "input_tokens": 45,
+      "used_tokens": 45,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 17,
+    "example_id": "TEST0016",
+    "message": "Rehearsal notes: the cardboard moon enters after the second drumbeat. Everyone freezes until the curtain rope drops. Leave the silver hats backstage.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.3571086823940277,
+      "input_tokens": 30,
+      "used_tokens": 30,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 18,
+    "example_id": "TEST0017",
+    "message": "Our fish farm has no signal beside the outer ponds. Could you add an offline mode that stores new water readings and uploads them when coverage returns? Currently, creating a reading requires a connection.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5845561623573303,
+      "input_tokens": 43,
+      "used_tokens": 43,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 19,
+    "example_id": "TEST0018",
+    "message": "Attention importers: we have spare freight capacity for the winter season. Bulk pallet discounts available this week only. Request our commercial rate card at example.com/freight-offer.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.6372074484825134,
+      "input_tokens": 40,
+      "used_tokens": 40,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 20,
+    "example_id": "TEST0019",
+    "message": "Grow your website authority with our premium backlink packages! We place promotional articles across hundreds of blogs. Reply with your marketing budget for a quote.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.6260366439819336,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 21,
+    "example_id": "TEST0020",
+    "message": "Captions line up at normal speed, but at 0.75 speed they gradually run ahead of the audio. Restarting the lesson fixes it for about a minute.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7129042744636536,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 22,
+    "example_id": "TEST0021",
+    "message": "The imaginary council of umbrellas voted to replace Tuesday with a small blue staircase. Only the teapot abstained, citing insufficient marmalade.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.34926077723503113,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 23,
+    "example_id": "TEST0022",
+    "message": "Can an unused commuter ferry pass be transferred to another adult, or must the person named at purchase use every trip? I am checking the policy before buying one.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7779185175895691,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 24,
+    "example_id": "TEST0023",
+    "message": "I appreciated how plainly the insurance quote explained each part of the price. The wording felt respectful and easy to follow.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6870157718658447,
+      "input_tokens": 26,
+      "used_tokens": 26,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 25,
+    "example_id": "TEST0024",
+    "message": "Community notice: the riverbank cleanup starts at nine on Saturday. Volunteers should bring gloves and meet beside the footbridge. Everyone in the neighbourhood is welcome.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.6062508821487427,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 26,
+    "example_id": "TEST0025",
+    "message": "My conservation course award covers 75% of tuition. The invoice calculated my 25% share correctly, then charged the card for the sponsor's 75% instead. Please reverse the incorrect amount and collect my stated share.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6454252004623413,
+      "input_tokens": 47,
+      "used_tokens": 47,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 27,
+    "example_id": "TEST0026",
+    "message": "The household audio subscription would work better with a separate listening queue for each person. We have individual profiles already, but the queue is still shared.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5909993648529053,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 28,
+    "example_id": "TEST0027",
+    "message": "I paid for 200 genealogy archive credits yesterday. The card payment has settled and I have a purchase receipt, but my account still has a zero credit balance. Please apply the purchase or return the money.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6498451828956604,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 29,
+    "example_id": "TEST0028",
+    "message": "What does the grey cloud with a small clock mean next to a file? I'd like to know whether it indicates a scheduled sync or an archived item.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.784869372844696,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 30,
+    "example_id": "TEST0029",
+    "message": "For the audio subscription, how long can an episode I've downloaded stay available without an internet connection? I'm planning a trip with patchy reception.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7986612915992737,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 31,
+    "example_id": "TEST0030",
+    "message": "Our translation service agreement sets a 500-word minimum per order. My single order contained three short files, but the invoice applies the minimum separately to each file. Please correct this bill.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6181286573410034,
+      "input_tokens": 41,
+      "used_tokens": 41,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 32,
+    "example_id": "TEST0031",
+    "message": "Which file formats can the textile pattern importer read, and is there a maximum file size for each pattern? I am preparing files for my first upload.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.8123854994773865,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 33,
+    "example_id": "TEST0032",
+    "message": "How do I share one album from my private photo gallery with a viewing link? Please point me to the existing sharing steps.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7763715982437134,
+      "input_tokens": 27,
+      "used_tokens": 27,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 34,
+    "example_id": "TEST0033",
+    "message": "The poetry workshop felt welcoming from the first minute. The facilitator gave everyone room to speak, and I left feeling encouraged about my writing.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6478089690208435,
+      "input_tokens": 32,
+      "used_tokens": 32,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 35,
+    "example_id": "TEST0034",
+    "message": "The lab catalogue charges $3 each for the first ten specimen labels and $1 each after that. My 25-label order was invoiced at $75 instead of $45. Please apply the published volume tiers.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6199228167533875,
+      "input_tokens": 48,
+      "used_tokens": 48,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 36,
+    "example_id": "TEST0035",
+    "message": "I like how quickly the diagram editor opens, but moving a connector makes its text label disappear. Undo brings the label back. Saving after the move leaves the exported diagram without that text too.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7258142232894897,
+      "input_tokens": 40,
+      "used_tokens": 40,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 37,
+    "example_id": "TEST0036",
+    "message": "Seeing my weekly cycling distance laid out in the summary is unexpectedly motivating. It gives the rides a nice sense of continuity without making them feel competitive.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.7074527740478516,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 38,
+    "example_id": "TEST0037",
+    "message": "Our transcription invoice rounds each second's $0.004 rate to $0.01 before adding it up. That makes 600 seconds cost $6 instead of $2.40. The contract requires rounding only the final total. Please correct it.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.5326371788978577,
+      "input_tokens": 55,
+      "used_tokens": 55,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 39,
+    "example_id": "TEST0038",
+    "message": "Where do I go to reschedule an existing shop pickup? The confirmation mentions a reschedule option, but I'm not sure whether it's in my account or in the email.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7753340601921082,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 40,
+    "example_id": "TEST0039",
+    "message": "Please add a seasonal pause for the seed subscription. I'd like to choose the months my garden is active rather than cancelling and signing up again every winter.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.506514847278595,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 41,
+    "example_id": "TEST0040",
+    "message": "The new route summary is easy to glance at while I'm walking. The spacing and big turn symbols make the mobile app feel much calmer.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6433066725730896,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 42,
+    "example_id": "TEST0041",
+    "message": "A document checklist attached to a storage folder would help with applications. I'd like it to show which required files are present without having to keep a separate note.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.6000311970710754,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 43,
+    "example_id": "TEST0042",
+    "message": "Could the rehearsal calendar display two time zones side by side? Our touring ensemble currently has to switch the whole calendar back and forth to compare the home studio with the venue.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.4249970614910126,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": false
+  },
+  {
+    "source_row": 44,
+    "example_id": "TEST0043",
+    "message": "When I use the existing conversation export, where can I select whether to include photos? I only need the written messages for my archive.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7514556050300598,
+      "input_tokens": 29,
+      "used_tokens": 29,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 45,
+    "example_id": "TEST0044",
+    "message": "On the filter replacement subscription, are dispatch dates tied to the day I sign up or to fixed dates each quarter? I am planning storage space before starting a subscription.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.8177555203437805,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 46,
+    "example_id": "TEST0045",
+    "message": "For sale: twelve interlocking foam exercise mats, cleaned and boxed, collection only. Selling the whole bundle after clearing our spare room. Message with an offer if interested.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.48525679111480713,
+      "input_tokens": 37,
+      "used_tokens": 37,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 47,
+    "example_id": "TEST0046",
+    "message": "The history series in my audio subscription is excellent. The host gives the subject room to breathe without turning every episode into a dramatic cliffhanger.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.5566542148590088,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 48,
+    "example_id": "TEST0047",
+    "message": "My pinned chats disappeared.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.25323450565338135,
+      "input_tokens": 8,
+      "used_tokens": 8,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 49,
+    "example_id": "TEST0048",
+    "message": "In the beehive inspection app, duplicating an inspection copies the photos but changes the hive number on the original record to the new one. The original should retain its own hive number.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.44907107949256897,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 50,
+    "example_id": "TEST0049",
+    "message": "Please add a way to record both the rootstock and scion parent for a grafted tree in the nursery inventory. The current single parent field cannot represent a graft, and we need to trace both sources.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5055027008056641,
+      "input_tokens": 45,
+      "used_tokens": 45,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 51,
+    "example_id": "TEST0050",
+    "message": "Switching the greenhouse dashboard from Celsius to Fahrenheit changes the unit symbol but leaves all the numbers unchanged. A sensor reading of 20 C becomes 20 F on the screen.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7250266075134277,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 52,
+    "example_id": "TEST0051",
+    "message": "The restoration platform released the escrow payment to the contractor while the milestone still says awaiting approval. I never approved its release, and the funds have left escrow. Please investigate the premature payment.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6407679915428162,
+      "input_tokens": 41,
+      "used_tokens": 41,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 53,
+    "example_id": "TEST0052",
+    "message": "More trees on every street! Join the public march for greener neighbourhoods this Sunday. Bring a banner and meet at the town square.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.5491281747817993,
+      "input_tokens": 29,
+      "used_tokens": 29,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 54,
+    "example_id": "TEST0053",
+    "message": "Florists and event planners: our wholesale dried flower catalogue is out now. Order ten cartons for trade pricing. Seasonal stock photographs and order forms are at example.com/flower-catalogue.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.6962209939956665,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 55,
+    "example_id": "TEST0054",
+    "message": "What is the smallest room your virtual staging scanner can capture, and how much clear floor space does it require for calibration?",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7674201130867004,
+      "input_tokens": 28,
+      "used_tokens": 28,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 56,
+    "example_id": "TEST0055",
+    "message": "The animated page turns in the score reader feel a little theatrical for my taste. The whole presentation is more elaborate than the quiet look I enjoy while practising.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.7176649570465088,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 57,
+    "example_id": "TEST0056",
+    "message": "There doesn't seem to be an undo for sorting all my notes. Please add one so experimenting with the order isn't a permanent choice.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.4876241385936737,
+      "input_tokens": 32,
+      "used_tokens": 32,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 58,
+    "example_id": "TEST0057",
+    "message": "Our campaign's settled balance exceeds the payout threshold, but the payout has been withheld for six weeks with below minimum as its reason. Please release the amount due under the stated payout terms.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6137481331825256,
+      "input_tokens": 44,
+      "used_tokens": 44,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 59,
+    "example_id": "TEST0058",
+    "message": "Practice game record: 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7. White paused here to refill the tea.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.2177589386701584,
+      "input_tokens": 49,
+      "used_tokens": 49,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 60,
+    "example_id": "TEST0059",
+    "message": "When I export a notebook as a PDF, are handwritten margin annotations included by default, or is there an export option I should select? I have not exported this notebook yet.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7856990694999695,
+      "input_tokens": 40,
+      "used_tokens": 40,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 61,
+    "example_id": "TEST0060",
+    "message": "The rust-coloured scarf arrived neatly packed and looks like the photos. Having tried it on, I think the shade is a little too bold for my taste.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6752895712852478,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 62,
+    "example_id": "TEST0061",
+    "message": "A one-handed mode with the main controls near the bottom would help me use the app while carrying a bag. There isn't anything like that in the current layout.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.580170750617981,
+      "input_tokens": 37,
+      "used_tokens": 37,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 63,
+    "example_id": "TEST0062",
+    "message": "Where do I find the revision history for a survey, and how do I compare two saved versions? I would like to understand the existing history controls before editing ours.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.7775620222091675,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 64,
+    "example_id": "TEST0063",
+    "message": "The embroidery pattern preview contains all 80 columns, but printing at actual size omits the far right column of stitches. The missing column is also absent from the print-to-PDF output.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.6674328446388245,
+      "input_tokens": 40,
+      "used_tokens": 40,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 65,
+    "example_id": "TEST0064",
+    "message": "Please put the lentils on the lower shelf and leave the bread in the cloth bag. I will handle the washing up after dinner.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.31568390130996704,
+      "input_tokens": 29,
+      "used_tokens": 29,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 66,
+    "example_id": "TEST0065",
+    "message": "I'd prefer an optional monthly digest for promotional emails. You currently offer either every promotion or none, and I'd like something in between.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5481049418449402,
+      "input_tokens": 32,
+      "used_tokens": 32,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 67,
+    "example_id": "TEST0066",
+    "message": "Can you add custom names for trusted devices? Both my tablets show the same model name on the security page, and I'd like to call them Kitchen and Studio.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.49369117617607117,
+      "input_tokens": 36,
+      "used_tokens": 36,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 68,
+    "example_id": "TEST0067",
+    "message": "Using only the keyboard in the podcast player, I can open the volume panel but cannot get out of it. Escape does nothing and Tab cycles between its two controls indefinitely. Clicking elsewhere with a mouse closes it.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7040836215019226,
+      "input_tokens": 44,
+      "used_tokens": 44,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 69,
+    "example_id": "TEST0068",
+    "message": "The guide app supports headset controls, according to the help page. Which button action pauses the narration without ending the walking route?",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.6404608488082886,
+      "input_tokens": 28,
+      "used_tokens": 28,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 70,
+    "example_id": "TEST0069",
+    "message": "My sailing log records a departure at 00:30 on 14 June in the boat's local time. The exported CSV puts it on 13 June while keeping the time as 00:30, so the date no longer matches the saved entry.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.4473901689052582,
+      "input_tokens": 51,
+      "used_tokens": 51,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 71,
+    "example_id": "TEST0070",
+    "message": "Could the pottery kiln scheduler suggest groups of bookings with compatible firing temperatures? Currently I compare each booking by hand before assigning pieces to a firing. Automatic grouping would help me plan each kiln load.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.4202427566051483,
+      "input_tokens": 45,
+      "used_tokens": 45,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 72,
+    "example_id": "TEST0071",
+    "message": "Which languages include downloadable pronunciation audio in the offline phrasebook? I want to check the supported list before selecting my travel pack.",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.747693657875061,
+      "input_tokens": 28,
+      "used_tokens": 28,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 73,
+    "example_id": "TEST0072",
+    "message": "After completing a course, where in the learning portal are certificates available to download? Is there a page that explains the certificate steps?",
+    "expected_category": "General Inquiry",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "General Inquiry",
+      "confidence": 0.807655394077301,
+      "input_tokens": 28,
+      "used_tokens": 28,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 74,
+    "example_id": "TEST0073",
+    "message": "I'd use a saved basket that could be split across seperate pickup dates. Your current basket only lets me pick one date for everything, including items I need next week.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.6154782772064209,
+      "input_tokens": 38,
+      "used_tokens": 38,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 75,
+    "example_id": "TEST0074",
+    "message": "My subscription payment is overdue because the saved card expired. I have entered the replacement card, but paying the outstanding invoice is still declined even though the bank says the card is active. Please help me complete this payment.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.649164080619812,
+      "input_tokens": 48,
+      "used_tokens": 48,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 76,
+    "example_id": "TEST0075",
+    "message": "Rain stitches silver threads across the yard. The sleeping gate remembers every storm. A sparrow borrows morning from the wall.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.4258385896682739,
+      "input_tokens": 26,
+      "used_tokens": 26,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 77,
+    "example_id": "TEST0076",
+    "message": "The muted green and copper palette suits this digital collection beautifully. Browsing the objects feels like walking through a small, thoughtfully arranged exhibition.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.632348895072937,
+      "input_tokens": 29,
+      "used_tokens": 29,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 78,
+    "example_id": "TEST0077",
+    "message": "The shop shows three available pickup lockers, but choosing the station locker leaves the compartment menu empty. I can choose a compartment at either of the other locations.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.5718385577201843,
+      "input_tokens": 34,
+      "used_tokens": 34,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 79,
+    "example_id": "TEST0078",
+    "message": "The glaze photographs in your pottery catalogue are lovely. The close views capture the texture so well that browsing the collection has become a pleasure in itself.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6199021935462952,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 80,
+    "example_id": "TEST0079",
+    "message": "Toast the oats in a dry pan until golden, then stir in chopped dates and a little honey. Spread the mixture thinly on a tray and let it cool before breaking it into pieces.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.4538472592830658,
+      "input_tokens": 41,
+      "used_tokens": 41,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 81,
+    "example_id": "TEST0080",
+    "message": "After our catalogue migrated, the royalty statement reset the recoupable advance to its original balance. It ignores $4,000 already recovered and withholds that amount again from this quarter's payment. Please restore the carried-forward balance.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.5741860866546631,
+      "input_tokens": 52,
+      "used_tokens": 52,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 82,
+    "example_id": "TEST0081",
+    "message": "Cancelling a library hold shows a successful cancellation message and removes the title from the list. After refreshing, the same hold is back with its old queue position. I have repeated this twice on the same title.",
+    "expected_category": "Bug Report",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Bug Report",
+      "confidence": 0.7623791098594666,
+      "input_tokens": 44,
+      "used_tokens": 44,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 83,
+    "example_id": "TEST0082",
+    "message": "The bridge toll portal confirmed $6.25 for a single crossing, but settled $625.00 on my card. The receipt has shifted the decimal two places. Please reverse the amount error.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6047781705856323,
+      "input_tokens": 41,
+      "used_tokens": 41,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 84,
+    "example_id": "TEST0083",
+    "message": "Your file search has been surprisingly useful for our club archive. It brings up the minutes I meant, even when I only remember a rough phrase.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.6282408237457275,
+      "input_tokens": 31,
+      "used_tokens": 31,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 85,
+    "example_id": "TEST0084",
+    "message": "The tile cutter return slip confirms Friday, within our agreed rental period. The invoice charged through Sunday, and the full amount has been collected. Please refund those two extra days and correct the invoice.",
+    "expected_category": "Billing Issue",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Billing Issue",
+      "confidence": 0.6555599570274353,
+      "input_tokens": 46,
+      "used_tokens": 46,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 86,
+    "example_id": "TEST0085",
+    "message": "The budgeting app's cheerful mascot feels a bit childish to me. I find the overall tone less appealing than the restrained style of the account charts.",
+    "expected_category": "Customer Feedback",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Customer Feedback",
+      "confidence": 0.7133846879005432,
+      "input_tokens": 33,
+      "used_tokens": 33,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 87,
+    "example_id": "TEST0086",
+    "message": "The village cricket semifinal ended with the visiting side winning by six wickets. The final starts after lunch tomorrow; players should report to the pavilion at noon.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.40761613845825195,
+      "input_tokens": 32,
+      "used_tokens": 32,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 88,
+    "example_id": "TEST0087",
+    "message": "Could venue owners add a sign language welcome video to their accessibility listing? The directory currently allows photographs and written access notes, but no video field. This would let visitors preview the signed welcome before arriving.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.578593373298645,
+      "input_tokens": 42,
+      "used_tokens": 42,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 89,
+    "example_id": "TEST0088",
+    "message": "Open invitation: the community stargazing fair is on Friday evening at the sports field. Local clubs will bring telescopes, and the tea stall opens at sunset. Share this notice widely.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.6651725769042969,
+      "input_tokens": 39,
+      "used_tokens": 39,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 90,
+    "example_id": "TEST0089",
+    "message": "Retail buyers: our handmade terracotta pots are available in mixed wholesale crates. Special rates for garden shops ordering this month. Browse the trade brochure at example.com/terracotta-trade.",
+    "expected_category": "Non-Qualifying",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Non-Qualifying",
+      "confidence": 0.698780357837677,
+      "input_tokens": 46,
+      "used_tokens": 46,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  },
+  {
+    "source_row": 91,
+    "example_id": "TEST0090",
+    "message": "It would save us time if one comment could point to several nonadjacent lines in a note. Currently I have to repeat the same comment beside each passage.",
+    "expected_category": "Feature Request",
+    "rule_ignore_reason": null,
+    "status": "predicted",
+    "prediction": {
+      "category": "Feature Request",
+      "confidence": 0.5775942802429199,
+      "input_tokens": 35,
+      "used_tokens": 35,
+      "max_length": 128,
+      "truncated": false,
+      "device": "cpu"
+    },
+    "match": true
+  }
+]

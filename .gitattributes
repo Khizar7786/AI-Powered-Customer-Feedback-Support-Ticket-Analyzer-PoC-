@@ -1,4 +1,7 @@
-# Generated sample exports are checksummed; preserve their exact bytes on every platform.
-/outputs/*.csv -text whitespace=cr-at-eol
-/outputs/*.json -text
-/outputs/*.db binary
+# Frozen split hashes and exported checksums require exact bytes on every platform.
+*.csv -text whitespace=cr-at-eol
+*.json -text whitespace=cr-at-eol
+*.jsonl -text whitespace=cr-at-eol
+*.db binary
+# The long-message fixture deliberately preserves its original trailing space.
+/data/acceptance/mixed.csv -text whitespace=-trailing-space

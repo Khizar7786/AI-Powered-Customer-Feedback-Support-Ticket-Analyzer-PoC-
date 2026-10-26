@@ -1,87 +1,43 @@
 # Feedback Triage AI
 
-A local customer-feedback and support-ticket analyzer being built as an internship proof of concept.
+Local Streamlit ticket analyzer: read `ticket_id,message` CSV, preserve original text, and save processed, ignored or error outcomes. Replies are drafts.
 
-**Current status: Stage 9 implements the complete review/export interface.** Upload and validate tickets, explicitly analyze with progress, review Processed/Ignored/Errors, filter category/priority/sentiment and inspect original messages/unsent drafts. Four downloads and shared CLI/UI file exports are available. SQLite reuse and explicit reprocessing/retry remain in place. Category validation scored **0.9305 macro-F1 / 93.33% accuracy** on synthetic, assistant-reviewed data; independently reviewed sentiment metrics await your examples. The automated full-flow check passed; the manual browser check is blocked by Computer Use URL detection. Held-out intent-test content remains unopened.
+## Setup (Windows PowerShell)
 
-## Run locally
-
-Use Python 3.12 and PowerShell from the project root. For a supported NVIDIA GPU:
+Use Python 3.12 from the project root. The tested Windows/CUDA versions are pinned in `requirements-windows-cu128.txt`; [CPU setup](docs/setup.md) is also available.
 
 ```powershell
 py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
-.\.venv\Scripts\python.exe -m pip install -e ".[dev]"
-.\.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1 --browser.gatherUsageStats false
-```
-
-Open `http://127.0.0.1:8501`. No API key or model download is needed for the current setup page. [Setup instructions](docs/setup.md) cover the CPU alternative, the tested dependency export, configuration, and environment checks.
-
-Click **Load sample CSV**, or upload a UTF-8 CSV with exactly `ticket_id,message` and click **Validate CSV**. The sample deliberately includes invalid records: expect **6 candidates, 2 ignored, and 4 input errors**. Then click **Analyze categories**: the real saved model produced **5 partial results, 3 ignored, 4 errors and 0 fully processed** on CPU and CUDA. Original text and truncation flags remain visible. Low confidence alone never means spam. The [category inference guide](docs/intent-inference.md) covers CPU fallback, caching, missing-model guidance and actual results.
-
-Click **Analyze tickets** for complete batch analysis and SQLite persistence, then review outcome tabs, filters, details and downloads. Ignored/invalid rows receive no downstream sentiment/API call. Filters/downloads/widget changes use saved session results without repeating analysis or inserts. Optional local category/sentiment checks are in the advanced expander. [Interface/export guide](docs/interface.md)
-
-For one complete ticket, put your OpenAI key in ignored `.env`, click **Refresh API setup**, then use the separate single-ticket form. The model is configurable (`gpt-5.4-mini` by default). No reply is sent. **Show saved live integration check** displays the recorded real draft without another request. See the [Stage 7 guide](docs/generation.md) for validation, retry limits and the explicit `python -m scripts.check_ticket --live` check. Without `--live`, that command checks configuration without requesting the API.
-
-## Verify
-
-```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements-windows-cu128.txt
+.\.venv\Scripts\python.exe -m pip install -c requirements-windows-cu128.txt -e ".[dev]"
 .\.venv\Scripts\python.exe -m pip check
-.\.venv\Scripts\python.exe -m scripts.check_environment
-.\.venv\Scripts\python.exe -m pytest -q
 ```
 
-The full suite passed **379 tests**. The real sample batch saved **5 processed / 3 ignored / 4 input errors** in [SQLite](outputs/tickets.db). Stage 9 CLI/UI checks reused all 12 actual results, verified all four export payloads/files and made zero additional API calls; filters/reruns made no duplicate inserts. [Verification evidence and limits](docs/interface.md). Reviewed sentiment accuracy, held-out intent accuracy, manual browser downloads and a second fresh-environment installation remain unverified.
+Tested: Python 3.12.5, PyTorch 2.11.0+cu128, Transformers 4.57.6, Streamlit 1.66.1, Pydantic 2.14.1, OpenAI SDK 2.54.0, pytest 9.1.1. Copy `.env.example` to ignored `.env`; set `LLM_PROVIDER=openai`, `LLM_MODEL` (tested: `gpt-5.4-mini`) and your own `OPENAI_API_KEY`.
 
-## Analyze and save tickets
+## Models and commands
+
+The reviewed synthetic 420/90/90 splits are included; weights are excluded. Transfer the original `models/ticket_classifier/` directory separately, or train a new checkpoint from the included splits with the pinned revision below. New scores may differ. Download Cardiff sentiment weights with `python -m scripts.evaluate_sentiment --download-model`. [Training](docs/training.md), [sentiment setup](docs/sentiment.md). Data preparation needs the separately transferred raw/review working copy. Future tuning needs a new independent test set.
+
+Use `.\.venv\Scripts\python.exe` in place of `python` below:
 
 ```powershell
-.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv
-# Only when deliberately accepting changed text/configuration for known IDs:
-.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv --reprocess
-# Only when deliberately retrying matching previous failures:
-.\.venv\Scripts\python.exe -m scripts.analyze --input data/sample_tickets.csv --retry-errors
+python -m scripts.prepare_data --audit-only  # requires the separately transferred raw draft
+python -m scripts.train_intent --smoke --revision 12040accade4e8a0f71eabdb258fecc2e7e948be
+python -m scripts.train_intent --revision 12040accade4e8a0f71eabdb258fecc2e7e948be --report-dir reports/intent_training_reproduction
+python -m scripts.evaluate_intent  # requires the exact original checkpoint for saved one-pass result
+python -m scripts.evaluate_sentiment
+python -m scripts.analyze --input data/sample_tickets.csv
+python -m streamlit run app.py
+python -m pytest
 ```
 
-Outcomes go to `outputs/tickets.db`; `--database PATH` overrides it in the CLI. Both interfaces save [results.csv](outputs/results.csv), [ignored.csv](outputs/ignored.csv), [errors.json](outputs/errors.json) and [batch.json](outputs/batch.json) beside the database. CSV protects formula-like text; JSON preserves originals. The sample intentionally has four invalid records, so exit 1 is expected. The [batch guide](docs/batch.md) explains identities, accounting and recovery.
+Open `http://127.0.0.1:8501`, load/upload a CSV, validate, then click **Analyze tickets**. Preview needs no models or key; complete analysis needs both local models and OpenAI. The 12-row sample has four deliberate input errors, so CLI exit code 1 can accompany saved outcomes. Use `--reprocess` for changed inputs/configuration and `--retry-errors` for explicit failed-row retries.
 
-## Prepare category data
+## Design, evidence, and limits
 
-```powershell
-.\.venv\Scripts\python.exe -m scripts.prepare_data --audit-only
-# After your review/corrections and explicit conflict decisions:
-.\.venv\Scripts\python.exe -m scripts.prepare_data
-```
+`src/feedback_analyzer/` validates input, filters blank/exact greetings, uses fine-tuned six-class DistilBERT and pretrained Cardiff sentiment locally, then asks OpenAI once per qualifying ticket for priority, grounded feature and reply. Pydantic validates; SQLite and CSV/JSON save outcomes. `scripts/` and `app.py` share this pipeline. UI caching prevents ordinary reruns from repeating paid calls.
 
-Follow the [data review guide](docs/data-review.md). Raw drafts stay unchanged; the command does not approve labels itself. For the current local corpus, the user explicitly delegated review to the assistant: 24 labels were corrected and 67 flagged test candidates were independently reauthored and checked. Seed 42 keeps whole development groups together and all 90 test-pool IDs held out. Actual hashes, IDs, decisions, review origin, and class-count changes are recorded. Data/review artifacts remain local; this preparation command does not train.
+The 600 English messages are synthetic and assistant-reviewed under user delegation, not independently human validated. The original checkpoint scored **89/90** on the held-out category test (98.89% accuracy; macro-F1 0.9889), with **0/75 valid tickets incorrectly ignored**. A prior live run matched all three assessment examples; the latest 12-row sample saved **5 processed / 3 ignored / 4 input errors**, but gave the dark-mode request **Low** rather than expected **Medium** priority. The mixed batch had four priority disagreements and reply cautions. [Requirement check](docs/submission-checklist.md), [evaluation](docs/evaluation.md), [interview notes](docs/interview-notes.md). Independent sentiment accuracy, physical browser downloads, a clean-machine install and LLM-only cost/speed/privacy/accuracy comparisons remain unmeasured.
 
-## Train the classifier
-
-```powershell
-.\.venv\Scripts\python.exe -m scripts.train_intent --smoke
-.\.venv\Scripts\python.exe -m scripts.train_intent
-.\.venv\Scripts\python.exe -m scripts.train_intent --verify-only
-```
-
-The [training guide](docs/training.md) explains prerequisites, pinned reproduction, memory/CPU options, concepts and artifact transfer. Training refuses to overwrite existing run directories. The best model/tokenizer/labels are in `models/ticket_classifier`; actual configuration, duration, history, validation metrics, curves and reload evidence are in `reports/intent_training`. Weights and caches are excluded from Git. Validation scores on this small synthetic corpus do not establish real-customer accuracy.
-
-## Sentiment setup and evaluation
-
-```powershell
-.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --download-model
-.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --development --output-dir reports/sentiment_development
-.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment
-# After you supply and check your independently written labels:
-.\.venv\Scripts\python.exe -m scripts.evaluate_sentiment --reviewed
-```
-
-Fill the header-only `data/sentiment_eval.csv` with `message,expected_sentiment`, about 30 independent messages/~10 per sentiment. No human labels are supplied for you. The [sentiment guide](docs/sentiment.md) explains review confirmation, source-row validation and saved metrics/errors. Pending data produces no accuracy claims. Actual assessment checks returned T001 Negative, T002 Positive; ignored T003 was skipped. The Twitter-domain model may behave differently on other support tickets, and no sample-specific label rules are used.
-
-## Architecture
-
-Reusable Python code lives in `src/feedback_analyzer/`, workflows in `scripts/`, and the local interface in `app.py`. Application CSV ingestion is separate from labeled-data preparation. Training uses only message text and category targets. Shared category analysis serves the UI and Python callers. The model is resource-cached, and previews/results live in session state; ordinary reruns do not repeat inference. Labels come from saved configuration, and loading never downloads a fallback model.
-
-The local pipeline uses one fine-tuned `distilbert/distilbert-base-uncased` category classifier and the existing `cardiffnlp/twitter-roberta-base-sentiment-latest` sentiment model. Only messages and targets train the classifier; metadata stays outside features. OpenAI generates priority, a grounded product/feature phrase and a reply draft in one structured operation per qualifying ticket; local category/sentiment remain authoritative. Pydantic validates outcomes. SQLite uses unique identities, short transactions and persistent work claims. CLI and Streamlit share both analysis and exports; downloads read prepared session bytes.
-
-Source, tests, dependency files, setup guides and actual sample SQLite/CSV/JSON output are available. Credentials, local environments, caches, downloaded model weights and machine-specific diagnostic reports stay outside Git.
+Actual outputs: [SQLite](outputs/tickets.db), [processed CSV](outputs/results.csv), [ignored CSV](outputs/ignored.csv), [errors](outputs/errors.json), [full batch](outputs/batch.json), plus [three-example acceptance results](reports/acceptance/assessment/results.csv). Keys, environments, caches and weights stay out of Git.

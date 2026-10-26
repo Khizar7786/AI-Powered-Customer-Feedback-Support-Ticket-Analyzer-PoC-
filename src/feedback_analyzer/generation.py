@@ -15,7 +15,7 @@ from feedback_analyzer.config import PROJECT_ROOT, _configured
 from feedback_analyzer.schemas import GeneratedDetails, GenerationContext
 
 
-PROMPT_VERSION = "ticket-details-v1"
+PROMPT_VERSION = "ticket-details-v2"
 SYSTEM_PROMPT = """Generate a short customer-support reply DRAFT and ticket details.
 Return ONLY priority, product_feature, and suggested_reply using the supplied schema.
 The category and sentiment provided by local models are authoritative: never change or repeat them as new fields.
@@ -33,6 +33,8 @@ suggested_reply: one or two short polite sentences acknowledging the issue and, 
 a relevant clarifying question or suggesting a grounded next step. Use plain text, no abbreviations.
 Do not claim a fix, refund, credit, escalation, account update, contact or other action occurred.
 Do not promise to perform actions, guarantee an outcome, or give a resolution time.
+Never use first-person future commitments such as 'we will', 'we'll', or 'our team will'.
+Do not promise to pass along, forward or share feedback. Acknowledge it and ask a useful question instead.
 Do not invent facts, contact information, names or actions. This is an unsent draft for human review.
 """
 
